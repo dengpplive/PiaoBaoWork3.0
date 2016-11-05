@@ -1,0 +1,48 @@
+2013-02-25 09:59:53,343 [7] ERROR - 执行SQL出错: 列名 'UninCode' 无效。
+ update Tb_Order_PayDetail set PayNo='2013022531926196' where  UninCode='100001000002' 
+
+
+ update Tb_Order_PayDetail set PayNo='2013022531926196' where  UninCode='100001000002' 
+
+2013-02-25 09:59:53,437 [7] ERROR -  update Tb_Order_PayDetail set PayNo='2013022531926196' where  UninCode='100001000002' 
+ update Tb_Ticket_PayDetail set PayNo='2013022531926196' where  UninCode='100001000002' 
+ INSERT INTO Log_MoneyDetail (id,OrderId,InPayNo,PayNo,PayType,PayCpyNo,PayCpyType,PayCpyName,RecCpyNo,RecCpyType,RecCpyName,OperTime,OperLoginName,OperUserName,OperReason,Remark,PreRemainMoney,PayMoney,RemainMoney,A1,A2,A3,A4,A5,A6,A7,A8,A9,A10) values('8976df21-e48e-49bd-93d4-e140ab6d5107','0130221111203750538','634970419566875000','2013022531926196','1','100001000002000001','4','陈川分销商','100001000002','2','陈川落地运营商','2013-2-25 09:59:51','chenchuan11','陈川','在线支付','支付宝支付','0.00','188.00','0.00','0','0','0','0','1900-1-1 00:00:00','1900-1-1 00:00:00','','','','')
+ INSERT INTO Log_Tb_AirOrder (id,OrderId,OperType,OperTime,OperLoginName,OperUserName,CpyNo,CpyType,CpyName,OperContent,WatchType,A1,A2,A3,A4,A5,A6,A7,A8,A9,A10) values('03a8f37c-8836-4870-8889-d14d4dcbbdad','0130221111203750538','支付','2013-2-25 09:59:51','chenchuan11','陈川','100001000002000001','4','陈川分销商','订单支付','4','0','0','0','0','1900-1-1 00:00:00','1900-1-1 00:00:00','','','','')
+  update Tb_Ticket_Order set  PayTime='2013-02-25 09:59:51',  PayStatus=1,  PayWay=1,  PayNo='2013022531926196',  OrderStatusCode=3  where id='3bcefcc2-4a5a-410c-bbff-dc3c2cd42296' 
+System.Data.SqlClient.SqlException (0x80131904): 列名 'UninCode' 无效。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 DataBase.DbHelper.ExecuteNonQuerySQL(String sql)
+   在 PbProject.Dal.ControlBase.BaseData`1.ExecuteSqlTran(List`1 SQLList) 位置 F:\V3.0\(2013-02-22)-PbProject3.0\Dal\ControlBase\BaseData.cs:行号 383
+2013-02-25 10:00:38,312 [7] ERROR - 执行SQL出错: 列名 'UninCode' 无效。
+ update Tb_Order_PayDetail set PayNo='2013022531926196' where  UninCode='100001000002' 
+
+
+ update Tb_Order_PayDetail set PayNo='2013022531926196' where  UninCode='100001000002' 
+
+2013-02-25 10:02:22,156 [7] ERROR - 执行SQL出错: 列名 'UninCode' 无效。
+ update Tb_Order_PayDetail set PayNo='2013022531926196' where  UninCode='100001000002' 
+
+
+ update Tb_Order_PayDetail set PayNo='2013022531926196' where  UninCode='100001000002' 
+
+2013-02-25 10:02:22,234 [7] ERROR -  update Tb_Order_PayDetail set PayNo='2013022531926196' where  UninCode='100001000002' 
+ update Tb_Ticket_PayDetail set PayNo='2013022531926196' where  UninCode='100001000002' 
+ INSERT INTO Log_MoneyDetail (id,OrderId,InPayNo,PayNo,PayType,PayCpyNo,PayCpyType,PayCpyName,RecCpyNo,RecCpyType,RecCpyName,OperTime,OperLoginName,OperUserName,OperReason,Remark,PreRemainMoney,PayMoney,RemainMoney,A1,A2,A3,A4,A5,A6,A7,A8,A9,A10) values('8976df21-e48e-49bd-93d4-e140ab6d5107','0130221111203750538','634970419566875000','2013022531926196','1','100001000002000001','4','陈川分销商','100001000002','2','陈川落地运营商','2013-2-25 09:59:51','chenchuan11','陈川','在线支付','支付宝支付','0.00','188.00','0.00','0','0','0','0','1900-1-1 00:00:00','1900-1-1 00:00:00','','','','')
+ INSERT INTO Log_Tb_AirOrder (id,OrderId,OperType,OperTime,OperLoginName,OperUserName,CpyNo,CpyType,CpyName,OperContent,WatchType,A1,A2,A3,A4,A5,A6,A7,A8,A9,A10) values('03a8f37c-8836-4870-8889-d14d4dcbbdad','0130221111203750538','支付','2013-2-25 09:59:51','chenchuan11','陈川','100001000002000001','4','陈川分销商','订单支付','4','0','0','0','0','1900-1-1 00:00:00','1900-1-1 00:00:00','','','','')
+  update Tb_Ticket_Order set  PayTime='2013-02-25 09:59:51',  PayStatus=1,  PayWay=1,  PayNo='2013022531926196',  OrderStatusCode=3  where id='3bcefcc2-4a5a-410c-bbff-dc3c2cd42296' 
+System.Data.SqlClient.SqlException (0x80131904): 列名 'UninCode' 无效。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 DataBase.DbHelper.ExecuteNonQuerySQL(String sql)
+   在 PbProject.Dal.ControlBase.BaseData`1.ExecuteSqlTran(List`1 SQLList) 位置 F:\V3.0\(2013-02-22)-PbProject3.0\Dal\ControlBase\BaseData.cs:行号 383

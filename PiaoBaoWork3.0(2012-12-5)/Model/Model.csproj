@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2F0A008B-F5B9-4149-AE2D-5949F5E662AD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PbProject.Model</RootNamespace>
+    <AssemblyName>Model</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bd_Air_Aircraft.cs" />
+    <Compile Include="Bd_Air_AirPort.cs" />
+    <Compile Include="Bd_Air_BaseCabin.cs" />
+    <Compile Include="Bd_Air_CabinDiscount.cs" />
+    <Compile Include="Bd_Air_Carrier.cs" />
+    <Compile Include="Bd_Air_Fares.cs" />
+    <Compile Include="Bd_Air_TGQProvision.cs" />
+    <Compile Include="Bd_Base_Dictionary.cs" />
+    <Compile Include="Bd_Base_Notice.cs" />
+    <Compile Include="Bd_Base_Page.cs" />
+    <Compile Include="Bd_Base_Parameters.cs" />
+    <Compile Include="definitionParam\airSelectErrorShow.cs" />
+    <Compile Include="definitionParam\BaseSwitch.cs" />
+    <Compile Include="definitionParam\OrderParam.cs" />
+    <Compile Include="definitionParam\paramsName.cs" />
+    <Compile Include="definitionParam\PolicySourceParam.cs" />
+    <Compile Include="definitionParam\selectCityParams.cs" />
+    <Compile Include="Log_Error.cs" />
+    <Compile Include="Log_MoneyDetail.cs" />
+    <Compile Include="Log_Operation.cs" />
+    <Compile Include="Log_Pnr.cs" />
+    <Compile Include="Log_Tb_AirOrder.cs" />
+    <Compile Include="OrderParam\AjaxPolicyMatchOutData.cs" />
+    <Compile Include="OrderParam\ConfigParam.cs" />
+    <Compile Include="OrderParam\OrderInputParam.cs" />
+    <Compile Include="OrderParam\PnrImportParam.cs" />
+    <Compile Include="OrderParam\QueryParam.cs" />
+    <Compile Include="OrderParam\SetModelProperty.cs" />
+    <Compile Include="PayParam\AliPayParam.cs" />
+    <Compile Include="PayParam\ChinaPnrParam.cs" />
+    <Compile Include="PayParam\TenPayParam.cs" />
+    <Compile Include="PayParam\_99BillParam.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SysNode.cs" />
+    <Compile Include="Tb_Air_AirQuery.cs" />
+    <Compile Include="Tb_Air_BuildOilInfo.cs" />
+    <Compile Include="Tb_B2B_AirAccount.cs" />
+    <Compile Include="Tb_BookPolicy_Guide.cs" />
+    <Compile Include="Tb_Company_BankAccount.cs" />
+    <Compile Include="Tb_Order_PayDetail.cs" />
+    <Compile Include="Tb_Policy_Guide.cs" />
+    <Compile Include="Tb_Policy_Protect.cs" />
+    <Compile Include="Tb_Policy_Supply.cs" />
+    <Compile Include="Tb_PosInfo.cs" />
+    <Compile Include="Tb_SendInsData.cs" />
+    <Compile Include="Tb_ShareInterface_TakeOff.cs" />
+    <Compile Include="Tb_Sms_Filters.cs" />
+    <Compile Include="Tb_Sms_RateSet.cs" />
+    <Compile Include="Tb_Sms_ReCharge.cs" />
+    <Compile Include="Tb_Sms_SendInfo.cs" />
+    <Compile Include="Tb_Sms_Template.cs" />
+    <Compile Include="Tb_Sms_User.cs" />
+    <Compile Include="Tb_SpecialCabin.cs" />
+    <Compile Include="Tb_SpecialCabin_PriceInfo.cs" />
+    <Compile Include="Tb_System_TakeOff.cs" />
+    <Compile Include="Tb_Ticket_BookPolicy.cs" />
+    <Compile Include="Tb_Ticket_Order.cs" />
+    <Compile Include="Tb_Ticket_Passenger.cs" />
+    <Compile Include="Tb_Ticket_PayDetail.cs" />
+    <Compile Include="Tb_Ticket_Policy.cs" />
+    <Compile Include="Tb_Ticket_PrintOffice.cs" />
+    <Compile Include="Tb_Ticket_SkyWay.cs" />
+    <Compile Include="Tb_Ticket_StrategyGroup.cs" />
+    <Compile Include="Tb_Ticket_TakeOffDetail.cs" />
+    <Compile Include="Tb_Ticket_UGroupPolicy.cs" />
+    <Compile Include="Tb_TripDistribution.cs" />
+    <Compile Include="Tb_TripNumApply.cs" />
+    <Compile Include="User_Company.cs" />
+    <Compile Include="User_Employees.cs" />
+    <Compile Include="User_Flyer.cs" />
+    <Compile Include="User_LoginLog.cs" />
+    <Compile Include="User_Login_RestrictIp.cs" />
+    <Compile Include="User_Permissions.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PnrAnalysis\PnrAnalysis.csproj">
+      <Project>{8B4C3980-A7B8-4A81-8DF2-CFFA576FE414}</Project>
+      <Name>PnrAnalysis</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

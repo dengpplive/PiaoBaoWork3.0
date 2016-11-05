@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AC38A4B4-BC4D-4C34-95A9-79120A124B96}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PbProject.WebCommon</RootNamespace>
+    <AssemblyName>WebCommon</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Utility\BaseParams.cs" />
+    <Compile Include="CacheDefines.cs" />
+    <Compile Include="Database\MSSQLHelper.cs" />
+    <Compile Include="Log\Log.cs" />
+    <Compile Include="Messaging\MQHelper\Defines.cs" />
+    <Compile Include="Messaging\MQHelper\MSMQAgent.cs" />
+    <Compile Include="Messaging\MQHelper\MSMQReceiver.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Script\PageUtils.cs" />
+    <Compile Include="Script\ScriptUtils.cs" />
+    <Compile Include="Script\WebResource.cs" />
+    <Compile Include="Utility\Cache\CacheByNet.cs" />
+    <Compile Include="Utility\Cache\CacheObjectItem.cs" />
+    <Compile Include="Utility\Cache\HashTableCachedObject.cs" />
+    <Compile Include="Utility\Cache\ICachedObject.cs" />
+    <Compile Include="Utility\Cache\ProcessCacheFactory.cs" />
+    <Compile Include="Utility\CommonData.cs" />
+    <Compile Include="Utility\CommonManage.cs" />
+    <Compile Include="Utility\Convertor.cs" />
+    <Compile Include="Utility\CryptionDataHelper.cs" />
+    <Compile Include="Utility\Encoding\IJson.cs" />
+    <Compile Include="Utility\Encoding\JsonHelper.cs" />
+    <Compile Include="Utility\Encryption\HashEncrypt.cs" />
+    <Compile Include="Utility\Encryption\RC4Encrypt.cs" />
+    <Compile Include="Utility\HttpSend.cs" />
+    <Compile Include="Utility\IPUtility.cs" />
+    <Compile Include="Utility\Script\ScriptUtils.cs" />
+    <Compile Include="Web\Cache\CacheManage.cs" />
+    <Compile Include="Web\Cache\IISHashTableCachedObject.cs" />
+    <Compile Include="Web\Cache\IISSingleCachedObject.cs" />
+    <Compile Include="Web\Cookie\CookieUserInfo.cs" />
+    <Compile Include="Web\Cookie\Core.cs" />
+    <Compile Include="Web\Cookie\SiteCookie.cs" />
+    <Compile Include="Web\Cookie\ISignHandler.cs" />
+    <Compile Include="Web\Cookie\SignHttpHandle.cs" />
+    <Compile Include="Web\Cookie\SignMasterPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Cookie\SignPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Script\css\jquery.msgbox.css" />
+    <Content Include="Script\css\style.css" />
+    <Content Include="Script\images\alert.png" />
+    <Content Include="Script\images\background.png" />
+    <Content Include="Script\images\close.gif" />
+    <Content Include="Script\images\confirm.png" />
+    <Content Include="Script\images\dialog_bg.jpg" />
+    <Content Include="Script\images\dialog_cb.png" />
+    <Content Include="Script\images\dialog_closebtn.gif" />
+    <Content Include="Script\images\dialog_closebtn.png" />
+    <Content Include="Script\images\dialog_closebtn_over.gif" />
+    <Content Include="Script\images\dialog_closebtn_over.png" />
+    <Content Include="Script\images\dialog_ct.png" />
+    <Content Include="Script\images\dialog_footercenter.png" />
+    <Content Include="Script\images\dialog_footerleft.png" />
+    <Content Include="Script\images\dialog_footerright.png" />
+    <Content Include="Script\images\dialog_lb.png" />
+    <Content Include="Script\images\dialog_lt.png" />
+    <Content Include="Script\images\dialog_mc.gif" />
+    <Content Include="Script\images\dialog_mc.png" />
+    <Content Include="Script\images\dialog_mlb.png" />
+    <Content Include="Script\images\dialog_mlm.png" />
+    <Content Include="Script\images\dialog_mlt.png" />
+    <Content Include="Script\images\dialog_mrb.png" />
+    <Content Include="Script\images\dialog_mrm.png" />
+    <Content Include="Script\images\dialog_mrt.png" />
+    <Content Include="Script\images\dialog_rb.png" />
+    <Content Include="Script\images\dialog_rt.png" />
+    <Content Include="Script\images\dialog_title.png" />
+    <Content Include="Script\images\error.gif" />
+    <Content Include="Script\images\error.png" />
+    <Content Include="Script\images\focus_bg.jpg" />
+    <Content Include="Script\images\hint.gif" />
+    <Content Include="Script\images\hintbg1.gif" />
+    <Content Include="Script\images\hintbg2.gif" />
+    <Content Include="Script\images\icon_alert.gif" />
+    <Content Include="Script\images\icon_dialog.gif" />
+    <Content Include="Script\images\icon_query.gif" />
+    <Content Include="Script\images\info.png" />
+    <Content Include="Script\images\question.png" />
+    <Content Include="Script\images\success.gif" />
+    <Content Include="Script\images\window.gif" />
+    <Content Include="Script\js\cursorfocus.js" />
+    <Content Include="Script\js\jquery-1.8.1.min.js" />
+    <Content Include="Script\js\jquery.dialog.js" />
+    <Content Include="Script\js\jquery.metadata.js" />
+    <Content Include="Script\js\jquery.msgbox.min.js" />
+    <Content Include="Script\js\jquery.validate.min.js" />
+    <Content Include="Script\js\messages_cn.js" />
+    <Content Include="Script\js\msgboxinit.js" />
+    <Content Include="Script\js\validateinit.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{2F0A008B-F5B9-4149-AE2D-5949F5E662AD}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

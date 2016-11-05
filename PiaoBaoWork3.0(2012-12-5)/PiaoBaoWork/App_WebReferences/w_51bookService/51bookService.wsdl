@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://203.88.210.234:113/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://203.88.210.234:113/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://203.88.210.234:113/">
+      <s:element name="bookGetPolicyData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AgencyCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SignCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="departure" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="arrival" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="isIncludeSpecialPolicy" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="isBusinessUnitPolicy" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="page" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="rowPerPage" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="bookGetPolicyDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="bookGetPolicyDataResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="booksynchronizePolicyData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AgencyCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SignCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="lastUpdateTime" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="returnRecordCount" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="policyId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="booksynchronizePolicyDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="booksynchronizePolicyDataResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="bookGetPolicyDataByPNR">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AgencyCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PNRCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SignCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="param1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="param2" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="bookGetPolicyDataByPNRResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="bookGetPolicyDataByPNRResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="bookGetPolicyDataByPNRTxt">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AgencyCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pnrTxt" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pataTxt" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SignCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="bookGetPolicyDataByPNRTxtResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="bookGetPolicyDataByPNRTxtResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="bookCreatePolicyOrderByPNR">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AgencyCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PNRCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="policyId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="paymentReturnUrl" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="notifiedUrl" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="b2cCreatorCn" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SignCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="param1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="param2" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="bookCreatePolicyOrderByPNRResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="bookCreatePolicyOrderByPNRResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="bookCreatePolicyOrderByPNRTxt">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AgencyCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pnrTxt" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pataTxt" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="policyId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="paymentReturnUrl" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="notifiedUrl" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="b2cCreatorCn" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SignCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="bookCreatePolicyOrderByPNRTxtResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="bookCreatePolicyOrderByPNRTxtResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="bookPayPolicyOrderByPNR">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AgencyCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="OrderNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SignCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="bookPayPolicyOrderByPNRResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="bookPayPolicyOrderByPNRResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="bookGetPolicyOrderStatusByOrderNo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AgencyCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="orderNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="statusType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SignCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="bookGetPolicyOrderStatusByOrderNoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="bookGetPolicyOrderStatusByOrderNoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="bookgetPolicyOrderByOrderNo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AgencyCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sequenceNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sequenceNoType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SignCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="bookgetPolicyOrderByOrderNoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="bookgetPolicyOrderByOrderNoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="bookApplyPolicyOrderRefund">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AgencyCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="orderSequenceNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="orderSequenceNoType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="actionType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ticketNos" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="segment" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="logMassage" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="refundAnnexDirPath" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="refundNotifiedUrl" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="param1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="param2" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="param3" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SignCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="bookApplyPolicyOrderRefundResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="bookApplyPolicyOrderRefundResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="bookGetPolicyDataSoapIn">
+    <wsdl:part name="parameters" element="tns:bookGetPolicyData" />
+  </wsdl:message>
+  <wsdl:message name="bookGetPolicyDataSoapOut">
+    <wsdl:part name="parameters" element="tns:bookGetPolicyDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="booksynchronizePolicyDataSoapIn">
+    <wsdl:part name="parameters" element="tns:booksynchronizePolicyData" />
+  </wsdl:message>
+  <wsdl:message name="booksynchronizePolicyDataSoapOut">
+    <wsdl:part name="parameters" element="tns:booksynchronizePolicyDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="bookGetPolicyDataByPNRSoapIn">
+    <wsdl:part name="parameters" element="tns:bookGetPolicyDataByPNR" />
+  </wsdl:message>
+  <wsdl:message name="bookGetPolicyDataByPNRSoapOut">
+    <wsdl:part name="parameters" element="tns:bookGetPolicyDataByPNRResponse" />
+  </wsdl:message>
+  <wsdl:message name="bookGetPolicyDataByPNRTxtSoapIn">
+    <wsdl:part name="parameters" element="tns:bookGetPolicyDataByPNRTxt" />
+  </wsdl:message>
+  <wsdl:message name="bookGetPolicyDataByPNRTxtSoapOut">
+    <wsdl:part name="parameters" element="tns:bookGetPolicyDataByPNRTxtResponse" />
+  </wsdl:message>
+  <wsdl:message name="bookCreatePolicyOrderByPNRSoapIn">
+    <wsdl:part name="parameters" element="tns:bookCreatePolicyOrderByPNR" />
+  </wsdl:message>
+  <wsdl:message name="bookCreatePolicyOrderByPNRSoapOut">
+    <wsdl:part name="parameters" element="tns:bookCreatePolicyOrderByPNRResponse" />
+  </wsdl:message>
+  <wsdl:message name="bookCreatePolicyOrderByPNRTxtSoapIn">
+    <wsdl:part name="parameters" element="tns:bookCreatePolicyOrderByPNRTxt" />
+  </wsdl:message>
+  <wsdl:message name="bookCreatePolicyOrderByPNRTxtSoapOut">
+    <wsdl:part name="parameters" element="tns:bookCreatePolicyOrderByPNRTxtResponse" />
+  </wsdl:message>
+  <wsdl:message name="bookPayPolicyOrderByPNRSoapIn">
+    <wsdl:part name="parameters" element="tns:bookPayPolicyOrderByPNR" />
+  </wsdl:message>
+  <wsdl:message name="bookPayPolicyOrderByPNRSoapOut">
+    <wsdl:part name="parameters" element="tns:bookPayPolicyOrderByPNRResponse" />
+  </wsdl:message>
+  <wsdl:message name="bookGetPolicyOrderStatusByOrderNoSoapIn">
+    <wsdl:part name="parameters" element="tns:bookGetPolicyOrderStatusByOrderNo" />
+  </wsdl:message>
+  <wsdl:message name="bookGetPolicyOrderStatusByOrderNoSoapOut">
+    <wsdl:part name="parameters" element="tns:bookGetPolicyOrderStatusByOrderNoResponse" />
+  </wsdl:message>
+  <wsdl:message name="bookgetPolicyOrderByOrderNoSoapIn">
+    <wsdl:part name="parameters" element="tns:bookgetPolicyOrderByOrderNo" />
+  </wsdl:message>
+  <wsdl:message name="bookgetPolicyOrderByOrderNoSoapOut">
+    <wsdl:part name="parameters" element="tns:bookgetPolicyOrderByOrderNoResponse" />
+  </wsdl:message>
+  <wsdl:message name="bookApplyPolicyOrderRefundSoapIn">
+    <wsdl:part name="parameters" element="tns:bookApplyPolicyOrderRefund" />
+  </wsdl:message>
+  <wsdl:message name="bookApplyPolicyOrderRefundSoapOut">
+    <wsdl:part name="parameters" element="tns:bookApplyPolicyOrderRefundResponse" />
+  </wsdl:message>
+  <wsdl:portType name="_51bookServiceSoap">
+    <wsdl:operation name="bookGetPolicyData">
+      <wsdl:input message="tns:bookGetPolicyDataSoapIn" />
+      <wsdl:output message="tns:bookGetPolicyDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="booksynchronizePolicyData">
+      <wsdl:input message="tns:booksynchronizePolicyDataSoapIn" />
+      <wsdl:output message="tns:booksynchronizePolicyDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="bookGetPolicyDataByPNR">
+      <wsdl:input message="tns:bookGetPolicyDataByPNRSoapIn" />
+      <wsdl:output message="tns:bookGetPolicyDataByPNRSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="bookGetPolicyDataByPNRTxt">
+      <wsdl:input message="tns:bookGetPolicyDataByPNRTxtSoapIn" />
+      <wsdl:output message="tns:bookGetPolicyDataByPNRTxtSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="bookCreatePolicyOrderByPNR">
+      <wsdl:input message="tns:bookCreatePolicyOrderByPNRSoapIn" />
+      <wsdl:output message="tns:bookCreatePolicyOrderByPNRSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="bookCreatePolicyOrderByPNRTxt">
+      <wsdl:input message="tns:bookCreatePolicyOrderByPNRTxtSoapIn" />
+      <wsdl:output message="tns:bookCreatePolicyOrderByPNRTxtSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="bookPayPolicyOrderByPNR">
+      <wsdl:input message="tns:bookPayPolicyOrderByPNRSoapIn" />
+      <wsdl:output message="tns:bookPayPolicyOrderByPNRSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="bookGetPolicyOrderStatusByOrderNo">
+      <wsdl:input message="tns:bookGetPolicyOrderStatusByOrderNoSoapIn" />
+      <wsdl:output message="tns:bookGetPolicyOrderStatusByOrderNoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="bookgetPolicyOrderByOrderNo">
+      <wsdl:input message="tns:bookgetPolicyOrderByOrderNoSoapIn" />
+      <wsdl:output message="tns:bookgetPolicyOrderByOrderNoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="bookApplyPolicyOrderRefund">
+      <wsdl:input message="tns:bookApplyPolicyOrderRefundSoapIn" />
+      <wsdl:output message="tns:bookApplyPolicyOrderRefundSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="_51bookServiceSoap" type="tns:_51bookServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="bookGetPolicyData">
+      <soap:operation soapAction="http://203.88.210.234:113/bookGetPolicyData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="booksynchronizePolicyData">
+      <soap:operation soapAction="http://203.88.210.234:113/booksynchronizePolicyData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="bookGetPolicyDataByPNR">
+      <soap:operation soapAction="http://203.88.210.234:113/bookGetPolicyDataByPNR" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="bookGetPolicyDataByPNRTxt">
+      <soap:operation soapAction="http://203.88.210.234:113/bookGetPolicyDataByPNRTxt" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="bookCreatePolicyOrderByPNR">
+      <soap:operation soapAction="http://203.88.210.234:113/bookCreatePolicyOrderByPNR" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="bookCreatePolicyOrderByPNRTxt">
+      <soap:operation soapAction="http://203.88.210.234:113/bookCreatePolicyOrderByPNRTxt" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="bookPayPolicyOrderByPNR">
+      <soap:operation soapAction="http://203.88.210.234:113/bookPayPolicyOrderByPNR" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="bookGetPolicyOrderStatusByOrderNo">
+      <soap:operation soapAction="http://203.88.210.234:113/bookGetPolicyOrderStatusByOrderNo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="bookgetPolicyOrderByOrderNo">
+      <soap:operation soapAction="http://203.88.210.234:113/bookgetPolicyOrderByOrderNo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="bookApplyPolicyOrderRefund">
+      <soap:operation soapAction="http://203.88.210.234:113/bookApplyPolicyOrderRefund" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="_51bookServiceSoap12" type="tns:_51bookServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="bookGetPolicyData">
+      <soap12:operation soapAction="http://203.88.210.234:113/bookGetPolicyData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="booksynchronizePolicyData">
+      <soap12:operation soapAction="http://203.88.210.234:113/booksynchronizePolicyData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="bookGetPolicyDataByPNR">
+      <soap12:operation soapAction="http://203.88.210.234:113/bookGetPolicyDataByPNR" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="bookGetPolicyDataByPNRTxt">
+      <soap12:operation soapAction="http://203.88.210.234:113/bookGetPolicyDataByPNRTxt" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="bookCreatePolicyOrderByPNR">
+      <soap12:operation soapAction="http://203.88.210.234:113/bookCreatePolicyOrderByPNR" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="bookCreatePolicyOrderByPNRTxt">
+      <soap12:operation soapAction="http://203.88.210.234:113/bookCreatePolicyOrderByPNRTxt" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="bookPayPolicyOrderByPNR">
+      <soap12:operation soapAction="http://203.88.210.234:113/bookPayPolicyOrderByPNR" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="bookGetPolicyOrderStatusByOrderNo">
+      <soap12:operation soapAction="http://203.88.210.234:113/bookGetPolicyOrderStatusByOrderNo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="bookgetPolicyOrderByOrderNo">
+      <soap12:operation soapAction="http://203.88.210.234:113/bookgetPolicyOrderByOrderNo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="bookApplyPolicyOrderRefund">
+      <soap12:operation soapAction="http://203.88.210.234:113/bookApplyPolicyOrderRefund" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="_51bookService">
+    <wsdl:port name="_51bookServiceSoap" binding="tns:_51bookServiceSoap">
+      <soap:address location="http://210.14.138.26:113/51bookService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="_51bookServiceSoap12" binding="tns:_51bookServiceSoap12">
+      <soap12:address location="http://210.14.138.26:113/51bookService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

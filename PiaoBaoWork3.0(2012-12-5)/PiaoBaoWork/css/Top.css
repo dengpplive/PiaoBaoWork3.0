@@ -1,0 +1,24 @@
+body{font-family:Microsoft YaHei,Arial,Helvetica,sans-serif,Simsun;font-size:12px;margin:0px;}
+html,body{height:100%;background-color:#ffffff;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+table{border-collapse:collapse;border-spacing:0;}
+fieldset,img{border:0 solid;}
+li{list-style:none outside none;}
+ul{list-style-type:none;}
+.outa{text-decoration:none;color:#fff;}
+a:focus{-moz-outline:none;outline:none;}
+.topcss{height:105px;background:url(../img/top/Topbg.gif) repeat-x; position:relative}
+.menu{height:29px; position:absolute; left:200px; top:80px; width:560px;}
+.menuno a{font-size:13px;color:#ffffff;text-decoration:none;cursor:hand;text-align:center;width:80px;height:29px;line-height:29px;float:left;display:block;}
+.menuno a:hover{background:url(../img/top/top2.gif) no-repeat scroll 0px 0px transparent;font-weight:bold;color:#FBFC72;}
+.menuselect a{background:url(../img/top/top2.gif) no-repeat scroll 0px 0px transparent;width:80px;height:29px;line-height:29px;float:left;display:block;font-size:13px;font-weight:bold;color:#FBFC72;text-decoration:none;cursor:hand;text-align:center;font-weight:bold;}
+.topmenu{float:right;width:85px;height:72px;text-align:center;vertical-align:middle;line-height:72px;}
+.admin_txt li{float:right;color:#333333;text-decoration:none;width:64px;height:21px;background-image:url(../img/top/topbot.gif);margin-right:5px;}
+.admin_txt li a{float:right;color:#ffffff;text-decoration:none;font-size:12px;text-align:center;height:21px;line-height:21px;width:64px;}
+.topmenu span{font-size:14px;font-weight:bolder;text-decoration:none;color:#ffffff;cursor:hand;line-height:72px;}
+.wordtopmenu{height:50px;line-height:50px;width:350px;font-size:20px;}
+.wordtopmenu span{font-size:12px;text-decoration:none;color:#333333;cursor:hand;line-height:50px;}
+.wordmenu{float:right;height:15px;line-height:15px;}
+.wordmenu span{font-size:12px;font-weight:bold;text-decoration:none;color:#1D8FCD;cursor:hand;line-height:15px;}
+.gonggao{color:Red;text-decoration:none;}
+.gonggao:hover{text-decoration:underline;}

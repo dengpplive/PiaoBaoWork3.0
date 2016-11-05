@@ -1,0 +1,8 @@
+D:\工具\flashxp汉化破解版2.1\(2013-07-12) V3.0.0.3\PiaoBaoWork3.0(2012-12-5)\Cache\bin\Debug\Cache.dll
+D:\工具\flashxp汉化破解版2.1\(2013-07-12) V3.0.0.3\PiaoBaoWork3.0(2012-12-5)\Cache\bin\Debug\Cache.pdb
+D:\工具\flashxp汉化破解版2.1\(2013-07-12) V3.0.0.3\PiaoBaoWork3.0(2012-12-5)\Cache\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\工具\flashxp汉化破解版2.1\(2013-07-12) V3.0.0.3\PiaoBaoWork3.0(2012-12-5)\Cache\bin\Debug\log4net.dll
+D:\工具\flashxp汉化破解版2.1\(2013-07-12) V3.0.0.3\PiaoBaoWork3.0(2012-12-5)\Cache\bin\Debug\Memcached.ClientLibrary.dll
+D:\工具\flashxp汉化破解版2.1\(2013-07-12) V3.0.0.3\PiaoBaoWork3.0(2012-12-5)\Cache\obj\Debug\ResolveAssemblyReference.cache
+D:\工具\flashxp汉化破解版2.1\(2013-07-12) V3.0.0.3\PiaoBaoWork3.0(2012-12-5)\Cache\obj\Debug\Cache.dll
+D:\工具\flashxp汉化破解版2.1\(2013-07-12) V3.0.0.3\PiaoBaoWork3.0(2012-12-5)\Cache\obj\Debug\Cache.pdb

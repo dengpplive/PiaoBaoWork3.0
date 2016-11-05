@@ -1,0 +1,37 @@
+﻿<?xml version="1.0"?> 
+<Banner 
+	bannerWidth="620"
+	bannerHeight="244"
+
+	textSize="14"
+	textColor=""
+	textAreaWidth=""
+	textLineSpacing="0"	
+	textLetterSpacing="-0.5"	
+	textMarginLeft="12"
+	textMarginBottom="3"
+	
+	transitionType="1"
+	transitionDelayTimeFixed="4" 
+	transitionDelayTimePerWord=".5"
+	transitionSpeed="4"
+	transitionBlur="yes"
+	transitionRandomizeOrder="no"	
+	
+	showTimerClock="yes"
+	showBackButton="yes"
+	showNumberButtons="yes"
+	showNumberButtonsAlways="Yes"
+	showNumberButtonsHorizontal="yes"
+	showNumberButtonsAscending="yes"
+	autoPlay="yes">
+	
+	<item image="images/1.gif"  textBlend="no"><![CDATA[]]></item>
+
+	<item image="images/2.gif"  textBlend="no"><![CDATA[]]></item>
+
+	<item image="images/3.gif"  textBlend="no"><![CDATA[]]></item>
+
+	<item image="images/4.gif"  textBlend="no"><![CDATA[]]></item>
+</Banner>
+

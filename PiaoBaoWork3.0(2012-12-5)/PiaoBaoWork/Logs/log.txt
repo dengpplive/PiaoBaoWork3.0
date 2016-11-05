@@ -1,0 +1,149 @@
+2013-06-05 09:22:44,069 [39] ERROR - 未将对象引用设置到对象的实例。
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 ASP.buy_list_aspx.__RenderHead1(HtmlTextWriter __w, Control parameterContainer) 位置 f:\3.0\2013-04-17\PiaoBaoWork\Buy\List.aspx:行号 205
+   在 System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   在 System.Web.UI.HtmlControls.HtmlHead.RenderChildren(HtmlTextWriter writer)
+   在 System.Web.UI.HtmlControls.HtmlContainerControl.Render(HtmlTextWriter writer)
+   在 System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   在 System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   在 System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   在 ASP.buy_list_aspx.__Render__control1(HtmlTextWriter __w, Control parameterContainer) 位置 c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\piaobaowork\cee4318a\7a95ff6b\App_Web_sohxjpvf.4.cs:行号 0
+   在 System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   在 System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   在 System.Web.UI.Page.Render(HtmlTextWriter writer)
+   在 System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   在 System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   在 System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2013-06-05 10:36:23,412 [52] ERROR - 执行SQL出错: 违反了 UNIQUE KEY 约束 'UQ_AirCode_Cabin_From_To_FlightTime'。不能在对象 'dbo.Tb_SpecialCabin_PriceInfo' 中插入重复键。
+语句已终止。
+insert into Tb_SpecialCabin_PriceInfo (id,SpAirCode,SpFlightCode,SpCabin,FromCityCode,ToCityCode,FlightTime,UpdateTime,SpPrice,SpABFare,SpRQFare,A1,A2,A3,A4,A5) values(@id,@SpAirCode,@SpFlightCode,@SpCabin,@FromCityCode,@ToCityCode,@FlightTime,@UpdateTime,@SpPrice,@SpABFare,@SpRQFare,@A1,@A2,@A3,@A4,@A5)
+
+  id='f6071ef4-bea4-480e-8fc1-4ac84ea8f697'
+  SpAirCode='3U'
+  SpFlightCode='8881'
+  SpCabin='F'
+  FromCityCode='CTU'
+  ToCityCode='PEK'
+  FlightTime='2013-07-20 07:30:00'
+  UpdateTime='2013-06-05 10:36:00'
+  SpPrice=3890.00
+  SpABFare=50.00
+  SpRQFare=110.00
+  A1=NULL
+  A2=NULL
+  A3=NULL
+  A4=NULL
+  A5=NULL
+
+insert into Tb_SpecialCabin_PriceInfo (id,SpAirCode,SpFlightCode,SpCabin,FromCityCode,ToCityCode,FlightTime,UpdateTime,SpPrice,SpABFare,SpRQFare,A1,A2,A3,A4,A5) values('f6071ef4-bea4-480e-8fc1-4ac84ea8f697','3U','8881','F','CTU','PEK','2013-07-20 07:30:00','2013-06-05 10:36:00',3890.00,50.00,110.00,NULL,NULL,NULL,NULL,NULL)
+
+2013-06-05 10:46:28,313 [25] ERROR - 执行SQL出错: 违反了 UNIQUE KEY 约束 'UQ_AirCode_Cabin_From_To_FlightTime'。不能在对象 'dbo.Tb_SpecialCabin_PriceInfo' 中插入重复键。
+语句已终止。
+insert into Tb_SpecialCabin_PriceInfo (id,SpAirCode,SpFlightCode,SpCabin,FromCityCode,ToCityCode,FlightTime,UpdateTime,SpPrice,SpABFare,SpRQFare,A1,A2,A3,A4,A5) values(@id,@SpAirCode,@SpFlightCode,@SpCabin,@FromCityCode,@ToCityCode,@FlightTime,@UpdateTime,@SpPrice,@SpABFare,@SpRQFare,@A1,@A2,@A3,@A4,@A5)
+
+  id='49c35c27-4add-4a56-8ae7-fadf789b2776'
+  SpAirCode='3U'
+  SpFlightCode='8881'
+  SpCabin='F'
+  FromCityCode='CTU'
+  ToCityCode='PEK'
+  FlightTime='2013-07-20 07:30:00'
+  UpdateTime='2013-06-05 10:46:00'
+  SpPrice=3890.00
+  SpABFare=50.00
+  SpRQFare=110.00
+  A1=NULL
+  A2=NULL
+  A3=NULL
+  A4=NULL
+  A5=NULL
+
+insert into Tb_SpecialCabin_PriceInfo (id,SpAirCode,SpFlightCode,SpCabin,FromCityCode,ToCityCode,FlightTime,UpdateTime,SpPrice,SpABFare,SpRQFare,A1,A2,A3,A4,A5) values('49c35c27-4add-4a56-8ae7-fadf789b2776','3U','8881','F','CTU','PEK','2013-07-20 07:30:00','2013-06-05 10:46:00',3890.00,50.00,110.00,NULL,NULL,NULL,NULL,NULL)
+
+2013-06-05 10:50:54,020 [36] ERROR - 未将对象引用设置到对象的实例。
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 ASP.buy_list_aspx.__RenderHead1(HtmlTextWriter __w, Control parameterContainer) 位置 f:\3.0\2013-04-17\PiaoBaoWork\Buy\List.aspx:行号 205
+   在 System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   在 System.Web.UI.HtmlControls.HtmlHead.RenderChildren(HtmlTextWriter writer)
+   在 System.Web.UI.HtmlControls.HtmlContainerControl.Render(HtmlTextWriter writer)
+   在 System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   在 System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   在 System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   在 ASP.buy_list_aspx.__Render__control1(HtmlTextWriter __w, Control parameterContainer) 位置 c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\piaobaowork\cee4318a\7a95ff6b\App_Web_yt5dke0f.6.cs:行号 0
+   在 System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   在 System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   在 System.Web.UI.Page.Render(HtmlTextWriter writer)
+   在 System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   在 System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   在 System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2013-06-05 11:13:35,907 [29] ERROR - 执行SQL出错: 违反了 UNIQUE KEY 约束 'UQ_AirCode_Cabin_From_To_FlightTime'。不能在对象 'dbo.Tb_SpecialCabin_PriceInfo' 中插入重复键。
+语句已终止。
+insert into Tb_SpecialCabin_PriceInfo (id,SpAirCode,SpFlightCode,SpCabin,FromCityCode,ToCityCode,FlightTime,UpdateTime,SpPrice,SpABFare,SpRQFare,A1,A2,A3,A4,A5) values(@id,@SpAirCode,@SpFlightCode,@SpCabin,@FromCityCode,@ToCityCode,@FlightTime,@UpdateTime,@SpPrice,@SpABFare,@SpRQFare,@A1,@A2,@A3,@A4,@A5)
+
+  id='4b254c11-1042-4d6f-8684-65f3938043f7'
+  SpAirCode='3U'
+  SpFlightCode='8881'
+  SpCabin='F'
+  FromCityCode='CTU'
+  ToCityCode='PEK'
+  FlightTime='2013-07-20 07:30:00'
+  UpdateTime='2013-06-05 11:13:00'
+  SpPrice=3890.00
+  SpABFare=50.00
+  SpRQFare=110.00
+  A1=NULL
+  A2=NULL
+  A3=NULL
+  A4=NULL
+  A5=NULL
+
+insert into Tb_SpecialCabin_PriceInfo (id,SpAirCode,SpFlightCode,SpCabin,FromCityCode,ToCityCode,FlightTime,UpdateTime,SpPrice,SpABFare,SpRQFare,A1,A2,A3,A4,A5) values('4b254c11-1042-4d6f-8684-65f3938043f7','3U','8881','F','CTU','PEK','2013-07-20 07:30:00','2013-06-05 11:13:00',3890.00,50.00,110.00,NULL,NULL,NULL,NULL,NULL)
+
+2013-06-05 11:28:54,210 [29] ERROR - 执行SQL出错: 违反了 UNIQUE KEY 约束 'UQ_AirCode_Cabin_From_To_FlightTime'。不能在对象 'dbo.Tb_SpecialCabin_PriceInfo' 中插入重复键。
+语句已终止。
+insert into Tb_SpecialCabin_PriceInfo (id,SpAirCode,SpFlightCode,SpCabin,FromCityCode,ToCityCode,FlightTime,UpdateTime,SpPrice,SpABFare,SpRQFare,A1,A2,A3,A4,A5) values(@id,@SpAirCode,@SpFlightCode,@SpCabin,@FromCityCode,@ToCityCode,@FlightTime,@UpdateTime,@SpPrice,@SpABFare,@SpRQFare,@A1,@A2,@A3,@A4,@A5)
+
+  id='e9fed823-5de9-492e-835b-b0c368b27742'
+  SpAirCode='3U'
+  SpFlightCode='8881'
+  SpCabin='F'
+  FromCityCode='CTU'
+  ToCityCode='PEK'
+  FlightTime='2013-07-20 07:30:00'
+  UpdateTime='2013-06-05 11:28:00'
+  SpPrice=3890.00
+  SpABFare=50.00
+  SpRQFare=110.00
+  A1=NULL
+  A2=NULL
+  A3=NULL
+  A4=NULL
+  A5=NULL
+
+insert into Tb_SpecialCabin_PriceInfo (id,SpAirCode,SpFlightCode,SpCabin,FromCityCode,ToCityCode,FlightTime,UpdateTime,SpPrice,SpABFare,SpRQFare,A1,A2,A3,A4,A5) values('e9fed823-5de9-492e-835b-b0c368b27742','3U','8881','F','CTU','PEK','2013-07-20 07:30:00','2013-06-05 11:28:00',3890.00,50.00,110.00,NULL,NULL,NULL,NULL,NULL)
+
+2013-06-05 11:50:22,903 [36] ERROR - 执行SQL出错: 违反了 UNIQUE KEY 约束 'UQ_AirCode_Cabin_From_To_FlightTime'。不能在对象 'dbo.Tb_SpecialCabin_PriceInfo' 中插入重复键。
+语句已终止。
+insert into Tb_SpecialCabin_PriceInfo (id,SpAirCode,SpFlightCode,SpCabin,FromCityCode,ToCityCode,FlightTime,UpdateTime,SpPrice,SpABFare,SpRQFare,A1,A2,A3,A4,A5) values(@id,@SpAirCode,@SpFlightCode,@SpCabin,@FromCityCode,@ToCityCode,@FlightTime,@UpdateTime,@SpPrice,@SpABFare,@SpRQFare,@A1,@A2,@A3,@A4,@A5)
+
+  id='2d8dbd03-3e14-46e7-bcd2-0410d2c36b8b'
+  SpAirCode='3U'
+  SpFlightCode='8881'
+  SpCabin='F'
+  FromCityCode='CTU'
+  ToCityCode='PEK'
+  FlightTime='2013-07-20 07:30:00'
+  UpdateTime='2013-06-05 11:50:00'
+  SpPrice=3890.00
+  SpABFare=50.00
+  SpRQFare=110.00
+  A1=NULL
+  A2=NULL
+  A3=NULL
+  A4=NULL
+  A5=NULL
+
+insert into Tb_SpecialCabin_PriceInfo (id,SpAirCode,SpFlightCode,SpCabin,FromCityCode,ToCityCode,FlightTime,UpdateTime,SpPrice,SpABFare,SpRQFare,A1,A2,A3,A4,A5) values('2d8dbd03-3e14-46e7-bcd2-0410d2c36b8b','3U','8881','F','CTU','PEK','2013-07-20 07:30:00','2013-06-05 11:50:00',3890.00,50.00,110.00,NULL,NULL,NULL,NULL,NULL)
+

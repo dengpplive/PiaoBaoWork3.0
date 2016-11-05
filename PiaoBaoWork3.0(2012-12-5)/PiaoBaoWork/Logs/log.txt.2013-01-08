@@ -1,0 +1,24 @@
+2013-01-08 18:00:34,781 [18] ERROR - 执行SQL出错: '，' 附近有语法错误。
+ update Tb_Ticket_Order set  HandlingRate='0.003'，  HandlingMoney='0.66',  PayWay=2  where id='3c236b61-5417-42c9-99be-c5f4320b6286' 
+
+
+ update Tb_Ticket_Order set  HandlingRate='0.003'，  HandlingMoney='0.66',  PayWay=2  where id='3c236b61-5417-42c9-99be-c5f4320b6286' 
+
+2013-01-08 18:02:44,843 [27] ERROR - 执行SQL出错: '，' 附近有语法错误。
+ update Tb_Ticket_Order set  HandlingRate='0.003'，  HandlingMoney='0.66',  PayWay=2  where id='3c236b61-5417-42c9-99be-c5f4320b6286' 
+
+
+ update Tb_Ticket_Order set  HandlingRate='0.003'，  HandlingMoney='0.66',  PayWay=2  where id='3c236b61-5417-42c9-99be-c5f4320b6286' 
+
+2013-01-08 18:03:13,781 [22] ERROR - 执行SQL出错: '，' 附近有语法错误。
+ update Tb_Ticket_Order set  HandlingRate='0.003'，  HandlingMoney='0.66',  PayWay=2  where id='3c236b61-5417-42c9-99be-c5f4320b6286' 
+
+
+ update Tb_Ticket_Order set  HandlingRate='0.003'，  HandlingMoney='0.66',  PayWay=2  where id='3c236b61-5417-42c9-99be-c5f4320b6286' 
+
+2013-01-08 18:03:53,968 [22] ERROR - 执行SQL出错: '，' 附近有语法错误。
+ update Tb_Ticket_Order set  HandlingRate='0.003'，  HandlingMoney='0.66',  PayWay=2  where id='3c236b61-5417-42c9-99be-c5f4320b6286' 
+
+
+ update Tb_Ticket_Order set  HandlingRate='0.003'，  HandlingMoney='0.66',  PayWay=2  where id='3c236b61-5417-42c9-99be-c5f4320b6286' 
+

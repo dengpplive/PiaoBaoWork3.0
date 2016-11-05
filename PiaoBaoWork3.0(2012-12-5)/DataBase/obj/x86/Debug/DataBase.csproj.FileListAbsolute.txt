@@ -1,0 +1,8 @@
+D:\工具\flashxp汉化破解版2.1\(2013-07-12) V3.0.0.3\PiaoBaoWork3.0(2012-12-5)\DataBase\bin\Debug\DataBase.dll
+D:\工具\flashxp汉化破解版2.1\(2013-07-12) V3.0.0.3\PiaoBaoWork3.0(2012-12-5)\DataBase\bin\Debug\DataBase.pdb
+D:\工具\flashxp汉化破解版2.1\(2013-07-12) V3.0.0.3\PiaoBaoWork3.0(2012-12-5)\DataBase\bin\Debug\FirebirdSql.Data.FirebirdClient.dll
+D:\工具\flashxp汉化破解版2.1\(2013-07-12) V3.0.0.3\PiaoBaoWork3.0(2012-12-5)\DataBase\bin\Debug\log4net.dll
+D:\工具\flashxp汉化破解版2.1\(2013-07-12) V3.0.0.3\PiaoBaoWork3.0(2012-12-5)\DataBase\bin\Debug\MySql.Data.dll
+D:\工具\flashxp汉化破解版2.1\(2013-07-12) V3.0.0.3\PiaoBaoWork3.0(2012-12-5)\DataBase\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\工具\flashxp汉化破解版2.1\(2013-07-12) V3.0.0.3\PiaoBaoWork3.0(2012-12-5)\DataBase\obj\x86\Debug\DataBase.dll
+D:\工具\flashxp汉化破解版2.1\(2013-07-12) V3.0.0.3\PiaoBaoWork3.0(2012-12-5)\DataBase\obj\x86\Debug\DataBase.pdb

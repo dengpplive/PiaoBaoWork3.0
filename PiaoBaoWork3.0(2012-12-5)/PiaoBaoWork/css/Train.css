@@ -1,0 +1,126 @@
+﻿.l{float:left;}.r{float:right; clear:right;}.c{clear:both;font-size:0;}
+.tal{text-align:left;}.tar{text-align:right;}.tac{text-align:center;}
+.main-normal{ padding:20px;}
+input.text{background:white;padding:2px;border:1px solid lavender;}
+input.btn.big{width:100px;height:30px;background:url(../img/btn_big.gif);border:none;color:white;font-size:14px;font-weight:bold;}
+input.btn.small{width:56px;height:22px;background:url(../img/btn_small.gif);border:none;color:white;font-size:12px;font-weight:bold;}
+.wdate{ background:url(../js/My97DatePicker/skin/datePicker.gif) right center no-repeat!important;}
+.wdate.date, .wdate.time{ width:15ex;}
+.wdate.datetime{ width:25ex; }
+/* func */
+.sector{border:none; width:845px;}
+.sector h5{height:25px;line-height:25px;font-weight:bold;font-size:12px;}
+.sector h6{height:27px;margin:0;line-height:27px;color:#404040;font-weight:normal;font-size:12px; }
+.sector h6 label{background:url(../images/sector.jpg) left top no-repeat;float:left;padding-left:12px;}
+.sector h6 span{background:url(../images/sector.jpg) right bottom no-repeat;float:right;padding-right:12px;}
+.sector div.content{zoom:1;overflow:hidden; }
+.item{padding:5px 10px 10px 10px; width:818px; border-bottom:1px dashed #a6c8e3; }
+.scolor89{color:#898989;}
+.rooms{ border:1px solid #a6c8e3; border-collapse:collapse;}
+.rooms th{ border:1px solid #a6c8e3;height:28px;}
+.rooms td{ border:1px solid #a6c8e3;height:28px;}
+/* form */
+.form{padding-top:8px;}
+.form div{ zoom:1; overflow:hidden; margin-bottom:8px;}
+.form div label {float:left;width:120px;text-align:center;}
+.form div label b{font-weight:bold;color:red}
+.form div p{ float:left;}
+.form div p label{ float:none;width:auto;text-align:right;margin-right:12px;}
+/* star */
+.cp{cursor:pointer;}
+.dn{display:none;}
+.hotel_page{margin:10px; text-align:right;}
+.hotel_page a{ padding-left:2px; padding-right:2px; font-weight:bold; font-size:12px; vertical-align:bottom;}
+.hotel_page_on a{ padding-left:5px; padding-right:5px; font-weight:bold; font-size:16px; color:Black;}
+.title{color:#ffffff;font-size:14px; height:20px; font-weight:bold;width:99%; padding-left:10px; background-color:#3088E0; text-align:left;}
+.titlerow{ background-color:#E0E8FF; }
+table.cc { background-color:#DAEDF7; width: 100%; }
+table.cc th { font-weight: normal; background-color: #4d87b9; line-height: 20px; color: white; text-align: center !important; }
+table.cc td { line-height: 22px;text-align: center; }
+.case_div{    background: none repeat scroll 0 0 #F5F5F5;
+    border: 1px solid #CCCCCC;
+    height: 145px;
+    margin: 10px 3px 10px auto;
+    padding: 6px; width:825px;
+}
+.case_div2 {
+    background: none repeat scroll 0 0 #D6F1FF;
+    border: 1px solid #93D6FF;
+    height: 145px;
+    margin: 10px 3px 10px auto;
+    padding: 6px;width:825px;}
+    
+    .case_div_con {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #CCCCCC;
+    height: 100%;
+    overflow: auto;
+}
+
+.table_info
+{
+	font-size: 12px;
+	line-height: 18px;
+	text-align: center;
+	border: 1px solid #dfeffc;
+	margin-top: 10px;
+	border-collapse:collapse;
+    font-size: 12px;
+    line-height: normal;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-family: "Trebuchet MS", sans-serif;
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-bottom: 3px;
+}
+.table_info th
+{
+	background: #dfeffc;
+}
+.table_info td
+{
+	margin: 0;
+	font-size: 12px;
+	text-align: left;
+	color: Black;
+	line-height: 24px;
+	background-color: #fff;
+}
+.table_info th, .table_info td
+{
+	border-left: 0 solid #dfeffc;
+	border-right: 1px solid #dfeffc;
+	border-top: 1px solid #dfeffc;
+	border-bottom: 0 solid #dfeffc;
+}
+.text
+{
+    background:white;
+      padding:2px;
+      border:1px solid lavender;
+}
+.btn {
+background:url("../img/btn_big.gif") repeat scroll 0 0 transparent;
+border:medium none;
+color:white;
+font-size:14px;
+font-weight:bold;
+height:30px;
+width:100px;
+border:0;
+}
+.bt
+{
+	margin: 0;
+	font-size: 12px;
+	text-align: left;
+	padding-left: 10px;
+	font-weight: bolder;
+	line-height: 23px;
+	height: 23px;
+	white-space: nowrap; 
+	background-color:#F7F7F7;
+	color: #CC0000;
+}

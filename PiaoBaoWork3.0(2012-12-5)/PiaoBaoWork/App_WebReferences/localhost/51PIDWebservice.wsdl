@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://201.136.254.99:8888" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s1="http://201.136.254.99:8888/AbstractTypes" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://201.136.254.99:8888" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://201.136.254.99:8888">
+      <s:element name="_51cbcPID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="code" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="systemInfo" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="_51cbcPIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="_51cbcPIDResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="_51cbcPIDToByte">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="code" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="systemInfo" type="tns:ArrayOfString" />
+            <s:element minOccurs="1" maxOccurs="1" name="i" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="_51cbcPIDToByteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="_51cbcPIDToByteResult" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string" />
+      <s:element name="base64Binary" nillable="true" type="s:base64Binary" />
+    </s:schema>
+    <s:schema targetNamespace="http://201.136.254.99:8888/AbstractTypes">
+      <s:import namespace="http://schemas.xmlsoap.org/soap/encoding/" />
+      <s:complexType name="StringArray">
+        <s:complexContent mixed="false">
+          <s:restriction base="soapenc:Array">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="unbounded" name="String" type="s:string" />
+            </s:sequence>
+          </s:restriction>
+        </s:complexContent>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="_51cbcPIDSoapIn">
+    <wsdl:part name="parameters" element="tns:_51cbcPID" />
+  </wsdl:message>
+  <wsdl:message name="_51cbcPIDSoapOut">
+    <wsdl:part name="parameters" element="tns:_51cbcPIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="_51cbcPIDToByteSoapIn">
+    <wsdl:part name="parameters" element="tns:_51cbcPIDToByte" />
+  </wsdl:message>
+  <wsdl:message name="_51cbcPIDToByteSoapOut">
+    <wsdl:part name="parameters" element="tns:_51cbcPIDToByteResponse" />
+  </wsdl:message>
+  <wsdl:message name="_51cbcPIDHttpGetIn">
+    <wsdl:part name="code" type="s:string" />
+    <wsdl:part name="systemInfo" type="s1:StringArray" />
+  </wsdl:message>
+  <wsdl:message name="_51cbcPIDHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="_51cbcPIDToByteHttpGetIn">
+    <wsdl:part name="code" type="s:string" />
+    <wsdl:part name="systemInfo" type="s1:StringArray" />
+    <wsdl:part name="i" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="_51cbcPIDToByteHttpGetOut">
+    <wsdl:part name="Body" element="tns:base64Binary" />
+  </wsdl:message>
+  <wsdl:message name="_51cbcPIDHttpPostIn">
+    <wsdl:part name="code" type="s:string" />
+    <wsdl:part name="systemInfo" type="s1:StringArray" />
+  </wsdl:message>
+  <wsdl:message name="_51cbcPIDHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="_51cbcPIDToByteHttpPostIn">
+    <wsdl:part name="code" type="s:string" />
+    <wsdl:part name="systemInfo" type="s1:StringArray" />
+    <wsdl:part name="i" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="_51cbcPIDToByteHttpPostOut">
+    <wsdl:part name="Body" element="tns:base64Binary" />
+  </wsdl:message>
+  <wsdl:portType name="_51PIDWebserviceSoap">
+    <wsdl:operation name="_51cbcPID">
+      <wsdl:input message="tns:_51cbcPIDSoapIn" />
+      <wsdl:output message="tns:_51cbcPIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="_51cbcPIDToByte">
+      <wsdl:input message="tns:_51cbcPIDToByteSoapIn" />
+      <wsdl:output message="tns:_51cbcPIDToByteSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="_51PIDWebserviceHttpGet">
+    <wsdl:operation name="_51cbcPID">
+      <wsdl:input message="tns:_51cbcPIDHttpGetIn" />
+      <wsdl:output message="tns:_51cbcPIDHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="_51cbcPIDToByte">
+      <wsdl:input message="tns:_51cbcPIDToByteHttpGetIn" />
+      <wsdl:output message="tns:_51cbcPIDToByteHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="_51PIDWebserviceHttpPost">
+    <wsdl:operation name="_51cbcPID">
+      <wsdl:input message="tns:_51cbcPIDHttpPostIn" />
+      <wsdl:output message="tns:_51cbcPIDHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="_51cbcPIDToByte">
+      <wsdl:input message="tns:_51cbcPIDToByteHttpPostIn" />
+      <wsdl:output message="tns:_51cbcPIDToByteHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="_51PIDWebserviceSoap" type="tns:_51PIDWebserviceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="_51cbcPID">
+      <soap:operation soapAction="http://201.136.254.99:8888/_51cbcPID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="_51cbcPIDToByte">
+      <soap:operation soapAction="http://201.136.254.99:8888/_51cbcPIDToByte" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="_51PIDWebserviceSoap12" type="tns:_51PIDWebserviceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="_51cbcPID">
+      <soap12:operation soapAction="http://201.136.254.99:8888/_51cbcPID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="_51cbcPIDToByte">
+      <soap12:operation soapAction="http://201.136.254.99:8888/_51cbcPIDToByte" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="_51PIDWebserviceHttpGet" type="tns:_51PIDWebserviceHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="_51cbcPID">
+      <http:operation location="/_51cbcPID" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="_51cbcPIDToByte">
+      <http:operation location="/_51cbcPIDToByte" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="_51PIDWebserviceHttpPost" type="tns:_51PIDWebserviceHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="_51cbcPID">
+      <http:operation location="/_51cbcPID" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="_51cbcPIDToByte">
+      <http:operation location="/_51cbcPIDToByte" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="_51PIDWebservice">
+    <wsdl:port name="_51PIDWebserviceSoap" binding="tns:_51PIDWebserviceSoap">
+      <soap:address location="http://localhost:2177/WebServiceOne/51PIDWebservice.asmx" />
+    </wsdl:port>
+    <wsdl:port name="_51PIDWebserviceSoap12" binding="tns:_51PIDWebserviceSoap12">
+      <soap12:address location="http://localhost:2177/WebServiceOne/51PIDWebservice.asmx" />
+    </wsdl:port>
+    <wsdl:port name="_51PIDWebserviceHttpGet" binding="tns:_51PIDWebserviceHttpGet">
+      <http:address location="http://localhost:2177/WebServiceOne/51PIDWebservice.asmx" />
+    </wsdl:port>
+    <wsdl:port name="_51PIDWebserviceHttpPost" binding="tns:_51PIDWebserviceHttpPost">
+      <http:address location="http://localhost:2177/WebServiceOne/51PIDWebservice.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,49 @@
+2013-01-05 18:49:05,187 [9] ERROR - 执行SQL出错: 违反了 UNIQUE KEY 约束 'UQ_PayNo_OrderId'。不能在对象 'dbo.Log_MoneyDetail' 中插入重复键。
+语句已终止。
+INSERT INTO Log_MoneyDetail (id,OrderId,InPayNo,PayNo,PayType,PayCpyNo,PayCpyType,PayCpyName,RecCpyNo,RecCpyType,RecCpyName,OperTime,OperLoginName,OperUserName,OperReason,Remark,PreRemainMoney,PayMoney,RemainMoney,A1,A2,A3,A4,A5,A6,A7,A8,A9,A10) values('fae89989-8975-48c2-8ecf-91fd0ad52c3e','11315173842820193','634930085434843750','2013010573079141','3','100001000002000001000001000001','5','陈川4级账号','100001000002','2','陈川落地运营商','2013-1-5 18:49:04','chenchuan1111','陈川','在线充值','在线充值','12180.00','120.00','12300.00','0','0','0','0','1900-1-1 00:00:00','1900-1-1 00:00:00','','','','')
+
+
+INSERT INTO Log_MoneyDetail (id,OrderId,InPayNo,PayNo,PayType,PayCpyNo,PayCpyType,PayCpyName,RecCpyNo,RecCpyType,RecCpyName,OperTime,OperLoginName,OperUserName,OperReason,Remark,PreRemainMoney,PayMoney,RemainMoney,A1,A2,A3,A4,A5,A6,A7,A8,A9,A10) values('fae89989-8975-48c2-8ecf-91fd0ad52c3e','11315173842820193','634930085434843750','2013010573079141','3','100001000002000001000001000001','5','陈川4级账号','100001000002','2','陈川落地运营商','2013-1-5 18:49:04','chenchuan1111','陈川','在线充值','在线充值','12180.00','120.00','12300.00','0','0','0','0','1900-1-1 00:00:00','1900-1-1 00:00:00','','','','')
+
+2013-01-06 18:35:18,703 [4] ERROR - 执行SQL出错: 违反了 PRIMARY KEY 约束 'PK_Tb_Ticket_Passenger'。不能在对象 'dbo.Tb_Ticket_Passenger' 中插入重复键。
+语句已终止。
+INSERT INTO Tb_Ticket_Passenger (id,OrderId,PassengerType,PassengerName,CType,Cid,SetCode,TicketNumber,TravelNumber,PMFee,ABFee,FuelFee,TGQHandlingFee,Remark,Suspended,TicketStatus,A1,A2,A3,A4,A5,A6,A7,A8,A9,A10) values('00000000-0000-0000-0000-000000000000','','0','','','','','','','100','5','14','0','','False','0','0','0','0','0','1900-1-1 00:00:00','1900-1-1 00:00:00','','','','')
+
+
+INSERT INTO Tb_Ticket_Passenger (id,OrderId,PassengerType,PassengerName,CType,Cid,SetCode,TicketNumber,TravelNumber,PMFee,ABFee,FuelFee,TGQHandlingFee,Remark,Suspended,TicketStatus,A1,A2,A3,A4,A5,A6,A7,A8,A9,A10) values('00000000-0000-0000-0000-000000000000','','0','','','','','','','100','5','14','0','','False','0','0','0','0','0','1900-1-1 00:00:00','1900-1-1 00:00:00','','','','')
+
+2013-01-06 18:35:48,125 [4] ERROR - 执行SQL出错: 违反了 PRIMARY KEY 约束 'PK_Tb_Ticket_Passenger'。不能在对象 'dbo.Tb_Ticket_Passenger' 中插入重复键。
+语句已终止。
+INSERT INTO Tb_Ticket_Passenger (id,OrderId,PassengerType,PassengerName,CType,Cid,SetCode,TicketNumber,TravelNumber,PMFee,ABFee,FuelFee,TGQHandlingFee,Remark,Suspended,TicketStatus,A1,A2,A3,A4,A5,A6,A7,A8,A9,A10) values('00000000-0000-0000-0000-000000000000','','0','','','','','','','100','5','14','0','','False','0','0','0','0','0','1900-1-1 00:00:00','1900-1-1 00:00:00','','','','')
+
+
+INSERT INTO Tb_Ticket_Passenger (id,OrderId,PassengerType,PassengerName,CType,Cid,SetCode,TicketNumber,TravelNumber,PMFee,ABFee,FuelFee,TGQHandlingFee,Remark,Suspended,TicketStatus,A1,A2,A3,A4,A5,A6,A7,A8,A9,A10) values('00000000-0000-0000-0000-000000000000','','0','','','','','','','100','5','14','0','','False','0','0','0','0','0','1900-1-1 00:00:00','1900-1-1 00:00:00','','','','')
+
+2013-01-06 18:36:01,703 [4] ERROR - 执行SQL出错: 违反了 PRIMARY KEY 约束 'PK_Tb_Ticket_Passenger'。不能在对象 'dbo.Tb_Ticket_Passenger' 中插入重复键。
+语句已终止。
+INSERT INTO Tb_Ticket_Passenger (id,OrderId,PassengerType,PassengerName,CType,Cid,SetCode,TicketNumber,TravelNumber,PMFee,ABFee,FuelFee,TGQHandlingFee,Remark,Suspended,TicketStatus,A1,A2,A3,A4,A5,A6,A7,A8,A9,A10) values('00000000-0000-0000-0000-000000000000','','0','','','','','','','100','5','14','0','','False','0','0','0','0','0','1900-1-1 00:00:00','1900-1-1 00:00:00','','','','')
+
+
+INSERT INTO Tb_Ticket_Passenger (id,OrderId,PassengerType,PassengerName,CType,Cid,SetCode,TicketNumber,TravelNumber,PMFee,ABFee,FuelFee,TGQHandlingFee,Remark,Suspended,TicketStatus,A1,A2,A3,A4,A5,A6,A7,A8,A9,A10) values('00000000-0000-0000-0000-000000000000','','0','','','','','','','100','5','14','0','','False','0','0','0','0','0','1900-1-1 00:00:00','1900-1-1 00:00:00','','','','')
+
+2013-01-06 18:38:40,093 [9] ERROR - 执行SQL出错: 违反了 PRIMARY KEY 约束 'PK_Tb_Ticket_Passenger'。不能在对象 'dbo.Tb_Ticket_Passenger' 中插入重复键。
+语句已终止。
+INSERT INTO Tb_Ticket_Passenger (id,OrderId,PassengerType,PassengerName,CType,Cid,SetCode,TicketNumber,TravelNumber,PMFee,ABFee,FuelFee,TGQHandlingFee,Remark,Suspended,TicketStatus,A1,A2,A3,A4,A5,A6,A7,A8,A9,A10) values('00000000-0000-0000-0000-000000000000','','0','','','','','','','100','5','14','0','','False','0','0','0','0','0','1900-1-1 00:00:00','1900-1-1 00:00:00','','','','')
+
+
+INSERT INTO Tb_Ticket_Passenger (id,OrderId,PassengerType,PassengerName,CType,Cid,SetCode,TicketNumber,TravelNumber,PMFee,ABFee,FuelFee,TGQHandlingFee,Remark,Suspended,TicketStatus,A1,A2,A3,A4,A5,A6,A7,A8,A9,A10) values('00000000-0000-0000-0000-000000000000','','0','','','','','','','100','5','14','0','','False','0','0','0','0','0','1900-1-1 00:00:00','1900-1-1 00:00:00','','','','')
+
+2013-01-06 18:40:11,750 [4] ERROR - 执行SQL出错: 违反了 PRIMARY KEY 约束 'PK_Tb_Ticket_Passenger'。不能在对象 'dbo.Tb_Ticket_Passenger' 中插入重复键。
+语句已终止。
+INSERT INTO Tb_Ticket_Passenger (id,OrderId,PassengerType,PassengerName,CType,Cid,SetCode,TicketNumber,TravelNumber,PMFee,ABFee,FuelFee,TGQHandlingFee,Remark,Suspended,TicketStatus,A1,A2,A3,A4,A5,A6,A7,A8,A9,A10) values('00000000-0000-0000-0000-000000000000','0131618397420197','0','456','','','','','','100','5','14','0','','False','0','0','0','0','0','1900-1-1 00:00:00','1900-1-1 00:00:00','','','','')
+
+
+INSERT INTO Tb_Ticket_Passenger (id,OrderId,PassengerType,PassengerName,CType,Cid,SetCode,TicketNumber,TravelNumber,PMFee,ABFee,FuelFee,TGQHandlingFee,Remark,Suspended,TicketStatus,A1,A2,A3,A4,A5,A6,A7,A8,A9,A10) values('00000000-0000-0000-0000-000000000000','0131618397420197','0','456','','','','','','100','5','14','0','','False','0','0','0','0','0','1900-1-1 00:00:00','1900-1-1 00:00:00','','','','')
+
+2013-01-06 18:41:33,859 [10] ERROR - 执行SQL出错: 违反了 PRIMARY KEY 约束 'PK_Tb_Ticket_Passenger'。不能在对象 'dbo.Tb_Ticket_Passenger' 中插入重复键。
+语句已终止。
+INSERT INTO Tb_Ticket_Passenger (id,OrderId,PassengerType,PassengerName,CType,Cid,SetCode,TicketNumber,TravelNumber,PMFee,ABFee,FuelFee,TGQHandlingFee,Remark,Suspended,TicketStatus,A1,A2,A3,A4,A5,A6,A7,A8,A9,A10) values('00000000-0000-0000-0000-000000000000','01316184022500198','0','李四','','','','','','100','5','14','0','','False','0','0','0','0','0','1900-1-1 00:00:00','1900-1-1 00:00:00','','','','')
+
+
+INSERT INTO Tb_Ticket_Passenger (id,OrderId,PassengerType,PassengerName,CType,Cid,SetCode,TicketNumber,TravelNumber,PMFee,ABFee,FuelFee,TGQHandlingFee,Remark,Suspended,TicketStatus,A1,A2,A3,A4,A5,A6,A7,A8,A9,A10) values('00000000-0000-0000-0000-000000000000','01316184022500198','0','李四','','','','','','100','5','14','0','','False','0','0','0','0','0','1900-1-1 00:00:00','1900-1-1 00:00:00','','','','')
+

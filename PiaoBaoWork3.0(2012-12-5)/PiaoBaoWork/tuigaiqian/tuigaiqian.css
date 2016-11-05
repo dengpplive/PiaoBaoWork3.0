@@ -1,0 +1,96 @@
+BODY {font-family:Microsoft YaHei,Arial,Helvetica,sans-serif,Simsun;font-size:12px;
+	BACKGROUND: #FFFFFF;
+}
+.box {
+	MARGIN-BOTTOM: 5px
+}
+.box .down_box LI {
+	FONT-SIZE: 12px; LINE-HEIGHT: 25px
+}
+.box .down_box LI SPAN {
+	
+}
+.box .down_box LI SPAN A {
+	COLOR: #0a9adf
+}
+.box_title {
+	BORDER: #ccc 1px solid; MARGIN-TOP: 10px; FLOAT: left; WIDTH: 100%;  HEIGHT: auto;border-radius:7px 7px 7px 7px; background:url(bbs_bg_201207.png) repeat-x;
+} 
+.box_title SPAN {
+	PADDING-RIGHT: 5px; FLOAT: left; PADDING-TOP: 5px
+}
+.box .tab H3 {
+	FONT-SIZE: 12px; FLOAT: left
+}
+.box .tab UL.tabitem {
+	FONT-SIZE: 12px; FLOAT: left
+}
+.box .tab UL.tabitem LI {
+	FONT-SIZE: 12px; FLOAT: left
+}
+.box .tab UL.tabitem {
+	MARGIN: 0px
+}
+.box .tab UL.tabitem LI {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; WIDTH: 100px; LINE-HEIGHT: 32px; PADDING-TOP: 5px; LIST-STYLE-TYPE: none; POSITION: relative
+}
+.tabitem A {
+	PADDING-RIGHT: 5px; DISPLAY: block; PADDING-LEFT: 5px; PADDING-BOTTOM: 0px; COLOR: #0a9adf; LINE-HEIGHT: 30px; PADDING-TOP: 0px; TEXT-ALIGN: center; TEXT-DECORATION: none
+}
+.tabitem A:visited {
+	COLOR: #0a9adf
+}
+.box .tab UL.tabitem A.current {
+	COLOR: #ffffff; BACKGROUND-COLOR: #0a9adf;border-radius:5px;
+}
+.box .tab UL.tabitem A:hover {
+	COLOR: #ffffff; BACKGROUND-COLOR: #0a9adf;border-radius:5px;
+}
+.tablez {
+	BACKGROUND-COLOR: #0080c0
+}
+.tablez TD {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; LINE-HEIGHT: 20px; PADDING-TOP: 3px; BACKGROUND-COLOR: #ffffff
+}
+.melo {
+	BORDER: #0080c0 1px solid;BORDER-COLLAPSE: collapse; TEXT-ALIGN: center; background-color:#f1f9fc;
+}
+.melo TR TD {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; LINE-HEIGHT: 20px; PADDING-TOP: 3px
+}
+.tr_bg {
+	
+}
+.al {
+	TEXT-ALIGN: left
+}
+TD {
+	BORDER-RIGHT: #0080c0 1px solid; BORDER-TOP: #0080c0 1px solid; BORDER-LEFT: #0080c0 1px solid; BORDER-BOTTOM: #0080c0 1px solid; BORDER-COLLAPSE: collapse; TEXT-ALIGN: center
+}
+.disable {
+	DISPLAY: none
+}
+BODY {
+	FONT-SIZE: 13px
+}
+TD {
+	FONT-SIZE: 13px
+}
+TH {
+	FONT-SIZE: 13px
+}
+.STYLE1 {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #0a9adf
+}
+.STYLE2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 16px; COLOR: #ff0000
+}
+.feipiao {
+	BORDER: #0a9adf 1px solid; PADDING: 8px; BACKGROUND: #e2ebef; FLOAT: left; MARGIN: 15px 0px;WIDTH: 98.8%;  HEIGHT: auto;border-radius:7px 7px 7px 7px;
+}
+.feipiaotext
+{ background-color:White; BORDER: #9cdfff 1px solid;border-radius:7px 7px 7px 7px;
+    }
+.Main_table {
+	FLOAT: left
+}

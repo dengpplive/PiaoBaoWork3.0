@@ -1,0 +1,22 @@
+﻿@charset "utf-8";.dialog_link{padding:.4em 1em .4em 20px;text-decoration:none;position:relative;font-size:12px;}
+.dialog_link span.ui-icon{margin:0 5px 0 0;position:absolute;left:.2em;top:50%;margin-top:-8px;}
+#table_info{font-size:12px;line-height:18px;width:98%;text-align:center;border-collapse:collapse;font:12px,"Trebuchet MS",sans-serif;margin:3px;margin-top:20px;}
+#table_info th{background:#dfeffc;}
+form,p{margin:0;padding:0}
+#table_info th,#table_info td{border:1px solid #B7B7B7;}
+#table_info .bt{margin:0;font-size:12px;text-align:left;padding-left:10px;font-weight:bolder;line-height:23px;height:23px;white-space:nowrap;background-color:#F7F7F7;color:#ff6600;}
+#table_info td{margin:0;font-size:12px;text-align:left;color:Black;line-height:24px;background-color:#fff;}
+#table_info td input{margin-left:5px;}
+#table_info td select{margin-left:5px;}
+#table_info .td{margin:0;font-size:12px;text-align:right;line-height:24px;background-color:#F7F7F7;color:#006699;}
+.sugges{font-size:12px;}
+.sugges tr{height:22px;line-height:22px;}
+.sugtitle{color:Orange;}
+.btni a{text-decoration:none;}
+a.btn{color:#000000;display:inline-block;font-size:12px;position:relative;}
+a.btn,input.btn{background:url("../img/button018ba7.png") no-repeat scroll 0 0 transparent;border:medium none;cursor:pointer;height:22px;line-height:22px;padding-bottom:1px !important;text-align:center;}
+a.btnNormal,input.btnNormal{background-position:0 0;width:80px;}
+a.btnNormal:link,a.btnNormal:active,a.btnNormal:visited{color:#000000;}
+a.btnNormal:hover,input.btnNormal:hover{background-position:0 -33px;}
+.inputtxtdat{border-color:#B8B8B8 #DCDCDC #DCDCDC #B8B8B8;border-style:solid;border-width:1px;font:12px/20px "microsoft yahei",simsun;height:20px;padding-left:3px;box-shadow:1px 1px 3px #DDDDDD inset;}
+.inputtxtdat:focus{background-color:#F1F9FF;border-color:#5D9DE5 #67A1E2 #67A1E2 #5D9DE5;border-style:solid;border-width:1px;box-shadow:1px 1px 3px #ffdbce inset;}

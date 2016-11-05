@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3C0B2374-6516-4118-9EA0-EBC6281C5E24}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>DataBase</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="FirebirdSql.Data.FirebirdClient">
+      <HintPath>..\dll\FirebirdSql.Data.FirebirdClient.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\dll\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="mysql.data">
+      <HintPath>..\dll\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Management" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="DataBase\DbHelperState.cs" />
+    <Compile Include="DataBase\DbHelper.cs" />
+    <Compile Include="DataBase\Utils\ReflectionUtils.cs" />
+    <Compile Include="DataBase\Data\IHashObject.cs" />
+    <Compile Include="DataBase\Data\HashObject.cs" />
+    <Compile Include="DataBase\DbCommon\DbParameterHelper.cs" />
+    <Compile Include="DataBase\Data\IHashObjectList.cs" />
+    <Compile Include="DataBase\Common\InternalUtils.cs" />
+    <Compile Include="DataBase\Common\ScriptLogItem.cs" />
+    <Compile Include="DataBase\LogCommon\LogQueue.cs" />
+    <Compile Include="DataBase\Enums\DbHelperCommandKind.cs" />
+    <Compile Include="DataBase\Utils\StringUtils.cs" />
+    <Compile Include="DataBase\LogCommon\Log.cs" />
+    <Compile Include="DataBase\Common\MessageQueue.cs" />
+    <Compile Include="DataBase\LogCommon\LogItem.cs" />
+    <Compile Include="DataBase\DbCommon\SqlHelper.cs" />
+    <Compile Include="DataBase\Unique\Ulid.cs" />
+    <Compile Include="DataBase\LogCommon\SqlLog.cs" />
+    <Compile Include="DataBase\DbInterface\IDbHelperCreator.cs" />
+    <Compile Include="DataBase\LogCommon\SqlLogItem.cs" />
+    <Compile Include="DataBase\Enums\Shortcut.cs" />
+    <Compile Include="DataBase\Enums\DataType.cs" />
+    <Compile Include="DataBase\Data\HashObjectList.cs" />
+    <Compile Include="DataBase\CustomException\MessageException.cs" />
+    <Compile Include="DataBase\Configuration\Settings.cs" />
+    <Compile Include="DataBase\Enums\DbType.cs" />
+    <Compile Include="DataBase\DbInterface\IDbCloudProvider.cs" />
+    <Compile Include="DataBase\DbCommon\MysqlConnectionInfo.cs" />
+    <Compile Include="DataBase\Common\PropInfo.cs" />
+    <Compile Include="DataBase\AppSettings.cs" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+</Project>

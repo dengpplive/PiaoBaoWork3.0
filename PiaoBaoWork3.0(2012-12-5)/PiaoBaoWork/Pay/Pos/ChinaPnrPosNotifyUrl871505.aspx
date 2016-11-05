@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="ChinaPnrPosNotifyUrl871505.aspx.cs" Inherits="Pay_Pos_ChinaPnrPosNotifyUrl871505" %>

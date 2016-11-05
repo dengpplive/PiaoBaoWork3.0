@@ -1,0 +1,8 @@
+记录时间：2013-1-5 17:00:56
+      IP：127.0.0.1
+内    容: Pay_ReturnPage_99BillReturnUrl
+  Request.HttpMethod:GET
+ HttpContext.Current.QueryString.Form.Count = 0 
+----------------------------------------------------------------------------------------------------
+
+

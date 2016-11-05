@@ -1,0 +1,711 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="UserLogin">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoginUserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="LoginPwd" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UserLoginResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserLoginResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTripPrintData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserCpyNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="OrderId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TicketNum" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTripPrintDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTripPrintDataResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetValidTravelNum">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserCpyNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetValidTravelNumResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetValidTravelNumResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTripBindData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="OrderId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CpyNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTripBindDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTripBindDataResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendTrip">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsType" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="TicketNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TravelNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Office" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PasId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TripNumId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="LoginName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CpyNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strHeiPingCanShu" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strDaPeiZhiCanShu" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendTripResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SendTripResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecCommand">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strCmd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CpyNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="LoginName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ServerIP" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ServerPort" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Office" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecCommandResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ExecCommandResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="HxStringToString">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strData" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="HxStringToStringResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HxStringToStringResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DataSet" nillable="true">
+        <s:complexType>
+          <s:sequence>
+            <s:element ref="s:schema" />
+            <s:any />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="UserLoginSoapIn">
+    <wsdl:part name="parameters" element="tns:UserLogin" />
+  </wsdl:message>
+  <wsdl:message name="UserLoginSoapOut">
+    <wsdl:part name="parameters" element="tns:UserLoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTripPrintDataSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTripPrintData" />
+  </wsdl:message>
+  <wsdl:message name="GetTripPrintDataSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTripPrintDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetValidTravelNumSoapIn">
+    <wsdl:part name="parameters" element="tns:GetValidTravelNum" />
+  </wsdl:message>
+  <wsdl:message name="GetValidTravelNumSoapOut">
+    <wsdl:part name="parameters" element="tns:GetValidTravelNumResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTripBindDataSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTripBindData" />
+  </wsdl:message>
+  <wsdl:message name="GetTripBindDataSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTripBindDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="SendTripSoapIn">
+    <wsdl:part name="parameters" element="tns:SendTrip" />
+  </wsdl:message>
+  <wsdl:message name="SendTripSoapOut">
+    <wsdl:part name="parameters" element="tns:SendTripResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExecCommandSoapIn">
+    <wsdl:part name="parameters" element="tns:ExecCommand" />
+  </wsdl:message>
+  <wsdl:message name="ExecCommandSoapOut">
+    <wsdl:part name="parameters" element="tns:ExecCommandResponse" />
+  </wsdl:message>
+  <wsdl:message name="HxStringToStringSoapIn">
+    <wsdl:part name="parameters" element="tns:HxStringToString" />
+  </wsdl:message>
+  <wsdl:message name="HxStringToStringSoapOut">
+    <wsdl:part name="parameters" element="tns:HxStringToStringResponse" />
+  </wsdl:message>
+  <wsdl:message name="UserLoginHttpGetIn">
+    <wsdl:part name="LoginUserName" type="s:string" />
+    <wsdl:part name="LoginPwd" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="UserLoginHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="GetTripPrintDataHttpGetIn">
+    <wsdl:part name="UserCpyNo" type="s:string" />
+    <wsdl:part name="OrderId" type="s:string" />
+    <wsdl:part name="TicketNum" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetTripPrintDataHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="GetValidTravelNumHttpGetIn">
+    <wsdl:part name="UserCpyNo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetValidTravelNumHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="GetTripBindDataHttpGetIn">
+    <wsdl:part name="OrderId" type="s:string" />
+    <wsdl:part name="CpyNo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetTripBindDataHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="SendTripHttpGetIn">
+    <wsdl:part name="InsType" type="s:string" />
+    <wsdl:part name="TicketNumber" type="s:string" />
+    <wsdl:part name="TravelNumber" type="s:string" />
+    <wsdl:part name="Office" type="s:string" />
+    <wsdl:part name="PasId" type="s:string" />
+    <wsdl:part name="TripNumId" type="s:string" />
+    <wsdl:part name="LoginName" type="s:string" />
+    <wsdl:part name="CpyNo" type="s:string" />
+    <wsdl:part name="strHeiPingCanShu" type="s:string" />
+    <wsdl:part name="strDaPeiZhiCanShu" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SendTripHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="ExecCommandHttpGetIn">
+    <wsdl:part name="strCmd" type="s:string" />
+    <wsdl:part name="CpyNo" type="s:string" />
+    <wsdl:part name="LoginName" type="s:string" />
+    <wsdl:part name="ServerIP" type="s:string" />
+    <wsdl:part name="ServerPort" type="s:string" />
+    <wsdl:part name="Office" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ExecCommandHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="HxStringToStringHttpGetIn">
+    <wsdl:part name="strData" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="HxStringToStringHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="UserLoginHttpPostIn">
+    <wsdl:part name="LoginUserName" type="s:string" />
+    <wsdl:part name="LoginPwd" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="UserLoginHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="GetTripPrintDataHttpPostIn">
+    <wsdl:part name="UserCpyNo" type="s:string" />
+    <wsdl:part name="OrderId" type="s:string" />
+    <wsdl:part name="TicketNum" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetTripPrintDataHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="GetValidTravelNumHttpPostIn">
+    <wsdl:part name="UserCpyNo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetValidTravelNumHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="GetTripBindDataHttpPostIn">
+    <wsdl:part name="OrderId" type="s:string" />
+    <wsdl:part name="CpyNo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetTripBindDataHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="SendTripHttpPostIn">
+    <wsdl:part name="InsType" type="s:string" />
+    <wsdl:part name="TicketNumber" type="s:string" />
+    <wsdl:part name="TravelNumber" type="s:string" />
+    <wsdl:part name="Office" type="s:string" />
+    <wsdl:part name="PasId" type="s:string" />
+    <wsdl:part name="TripNumId" type="s:string" />
+    <wsdl:part name="LoginName" type="s:string" />
+    <wsdl:part name="CpyNo" type="s:string" />
+    <wsdl:part name="strHeiPingCanShu" type="s:string" />
+    <wsdl:part name="strDaPeiZhiCanShu" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SendTripHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="ExecCommandHttpPostIn">
+    <wsdl:part name="strCmd" type="s:string" />
+    <wsdl:part name="CpyNo" type="s:string" />
+    <wsdl:part name="LoginName" type="s:string" />
+    <wsdl:part name="ServerIP" type="s:string" />
+    <wsdl:part name="ServerPort" type="s:string" />
+    <wsdl:part name="Office" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ExecCommandHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="HxStringToStringHttpPostIn">
+    <wsdl:part name="strData" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="HxStringToStringHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:portType name="WebTravelPrintServiceSoap">
+    <wsdl:operation name="UserLogin">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;font style="color:red;"&gt;行程单用户登录&lt;/font&gt;</wsdl:documentation>
+      <wsdl:input message="tns:UserLoginSoapIn" />
+      <wsdl:output message="tns:UserLoginSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTripPrintData">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;font style="color:red;"&gt;获取行程单打印信息&lt;/font&gt;</wsdl:documentation>
+      <wsdl:input message="tns:GetTripPrintDataSoapIn" />
+      <wsdl:output message="tns:GetTripPrintDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetValidTravelNum">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;font style="color:red;"&gt;获取有效行程单号&lt;/font&gt;</wsdl:documentation>
+      <wsdl:input message="tns:GetValidTravelNumSoapIn" />
+      <wsdl:output message="tns:GetValidTravelNumSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTripBindData">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;font style="color:red;"&gt;根据订单号获取行程单的数据和乘客数据&lt;/font&gt;</wsdl:documentation>
+      <wsdl:input message="tns:GetTripBindDataSoapIn" />
+      <wsdl:output message="tns:GetTripBindDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendTrip">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;font style="color:red;"&gt;创建或者作废行程单&lt;/font&gt;</wsdl:documentation>
+      <wsdl:input message="tns:SendTripSoapIn" />
+      <wsdl:output message="tns:SendTripSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExecCommand">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;font style="color:red;"&gt;发送指令&lt;/font&gt;</wsdl:documentation>
+      <wsdl:input message="tns:ExecCommandSoapIn" />
+      <wsdl:output message="tns:ExecCommandSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="HxStringToString">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;font style="color:red;"&gt; 十六进制到字符串 解密数据&lt;/font&gt;</wsdl:documentation>
+      <wsdl:input message="tns:HxStringToStringSoapIn" />
+      <wsdl:output message="tns:HxStringToStringSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="WebTravelPrintServiceHttpGet">
+    <wsdl:operation name="UserLogin">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;font style="color:red;"&gt;行程单用户登录&lt;/font&gt;</wsdl:documentation>
+      <wsdl:input message="tns:UserLoginHttpGetIn" />
+      <wsdl:output message="tns:UserLoginHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTripPrintData">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;font style="color:red;"&gt;获取行程单打印信息&lt;/font&gt;</wsdl:documentation>
+      <wsdl:input message="tns:GetTripPrintDataHttpGetIn" />
+      <wsdl:output message="tns:GetTripPrintDataHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetValidTravelNum">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;font style="color:red;"&gt;获取有效行程单号&lt;/font&gt;</wsdl:documentation>
+      <wsdl:input message="tns:GetValidTravelNumHttpGetIn" />
+      <wsdl:output message="tns:GetValidTravelNumHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTripBindData">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;font style="color:red;"&gt;根据订单号获取行程单的数据和乘客数据&lt;/font&gt;</wsdl:documentation>
+      <wsdl:input message="tns:GetTripBindDataHttpGetIn" />
+      <wsdl:output message="tns:GetTripBindDataHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendTrip">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;font style="color:red;"&gt;创建或者作废行程单&lt;/font&gt;</wsdl:documentation>
+      <wsdl:input message="tns:SendTripHttpGetIn" />
+      <wsdl:output message="tns:SendTripHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExecCommand">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;font style="color:red;"&gt;发送指令&lt;/font&gt;</wsdl:documentation>
+      <wsdl:input message="tns:ExecCommandHttpGetIn" />
+      <wsdl:output message="tns:ExecCommandHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="HxStringToString">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;font style="color:red;"&gt; 十六进制到字符串 解密数据&lt;/font&gt;</wsdl:documentation>
+      <wsdl:input message="tns:HxStringToStringHttpGetIn" />
+      <wsdl:output message="tns:HxStringToStringHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="WebTravelPrintServiceHttpPost">
+    <wsdl:operation name="UserLogin">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;font style="color:red;"&gt;行程单用户登录&lt;/font&gt;</wsdl:documentation>
+      <wsdl:input message="tns:UserLoginHttpPostIn" />
+      <wsdl:output message="tns:UserLoginHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTripPrintData">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;font style="color:red;"&gt;获取行程单打印信息&lt;/font&gt;</wsdl:documentation>
+      <wsdl:input message="tns:GetTripPrintDataHttpPostIn" />
+      <wsdl:output message="tns:GetTripPrintDataHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetValidTravelNum">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;font style="color:red;"&gt;获取有效行程单号&lt;/font&gt;</wsdl:documentation>
+      <wsdl:input message="tns:GetValidTravelNumHttpPostIn" />
+      <wsdl:output message="tns:GetValidTravelNumHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTripBindData">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;font style="color:red;"&gt;根据订单号获取行程单的数据和乘客数据&lt;/font&gt;</wsdl:documentation>
+      <wsdl:input message="tns:GetTripBindDataHttpPostIn" />
+      <wsdl:output message="tns:GetTripBindDataHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendTrip">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;font style="color:red;"&gt;创建或者作废行程单&lt;/font&gt;</wsdl:documentation>
+      <wsdl:input message="tns:SendTripHttpPostIn" />
+      <wsdl:output message="tns:SendTripHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExecCommand">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;font style="color:red;"&gt;发送指令&lt;/font&gt;</wsdl:documentation>
+      <wsdl:input message="tns:ExecCommandHttpPostIn" />
+      <wsdl:output message="tns:ExecCommandHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="HxStringToString">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;font style="color:red;"&gt; 十六进制到字符串 解密数据&lt;/font&gt;</wsdl:documentation>
+      <wsdl:input message="tns:HxStringToStringHttpPostIn" />
+      <wsdl:output message="tns:HxStringToStringHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WebTravelPrintServiceSoap" type="tns:WebTravelPrintServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="UserLogin">
+      <soap:operation soapAction="http://tempuri.org/UserLogin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTripPrintData">
+      <soap:operation soapAction="http://tempuri.org/GetTripPrintData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetValidTravelNum">
+      <soap:operation soapAction="http://tempuri.org/GetValidTravelNum" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTripBindData">
+      <soap:operation soapAction="http://tempuri.org/GetTripBindData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendTrip">
+      <soap:operation soapAction="http://tempuri.org/SendTrip" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecCommand">
+      <soap:operation soapAction="http://tempuri.org/ExecCommand" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HxStringToString">
+      <soap:operation soapAction="http://tempuri.org/HxStringToString" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebTravelPrintServiceSoap12" type="tns:WebTravelPrintServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="UserLogin">
+      <soap12:operation soapAction="http://tempuri.org/UserLogin" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTripPrintData">
+      <soap12:operation soapAction="http://tempuri.org/GetTripPrintData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetValidTravelNum">
+      <soap12:operation soapAction="http://tempuri.org/GetValidTravelNum" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTripBindData">
+      <soap12:operation soapAction="http://tempuri.org/GetTripBindData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendTrip">
+      <soap12:operation soapAction="http://tempuri.org/SendTrip" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecCommand">
+      <soap12:operation soapAction="http://tempuri.org/ExecCommand" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HxStringToString">
+      <soap12:operation soapAction="http://tempuri.org/HxStringToString" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebTravelPrintServiceHttpGet" type="tns:WebTravelPrintServiceHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="UserLogin">
+      <http:operation location="/UserLogin" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTripPrintData">
+      <http:operation location="/GetTripPrintData" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetValidTravelNum">
+      <http:operation location="/GetValidTravelNum" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTripBindData">
+      <http:operation location="/GetTripBindData" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendTrip">
+      <http:operation location="/SendTrip" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecCommand">
+      <http:operation location="/ExecCommand" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HxStringToString">
+      <http:operation location="/HxStringToString" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebTravelPrintServiceHttpPost" type="tns:WebTravelPrintServiceHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="UserLogin">
+      <http:operation location="/UserLogin" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTripPrintData">
+      <http:operation location="/GetTripPrintData" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetValidTravelNum">
+      <http:operation location="/GetValidTravelNum" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTripBindData">
+      <http:operation location="/GetTripBindData" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendTrip">
+      <http:operation location="/SendTrip" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecCommand">
+      <http:operation location="/ExecCommand" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HxStringToString">
+      <http:operation location="/HxStringToString" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WebTravelPrintService">
+    <wsdl:port name="WebTravelPrintServiceSoap" binding="tns:WebTravelPrintServiceSoap">
+      <soap:address location="http://webservices3.mypb.cn/WebTravelPrintService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebTravelPrintServiceSoap12" binding="tns:WebTravelPrintServiceSoap12">
+      <soap12:address location="http://webservices3.mypb.cn/WebTravelPrintService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebTravelPrintServiceHttpGet" binding="tns:WebTravelPrintServiceHttpGet">
+      <http:address location="http://webservices3.mypb.cn/WebTravelPrintService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebTravelPrintServiceHttpPost" binding="tns:WebTravelPrintServiceHttpPost">
+      <http:address location="http://webservices3.mypb.cn/WebTravelPrintService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

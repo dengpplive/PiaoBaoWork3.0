@@ -1,0 +1,1326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="GetCityAreaChooseJourney">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetCityAreaChooseJourneyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCityAreaChooseJourneyResult" type="tns:ArrayOfCityAreaJourneyData" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfCityAreaJourneyData">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="CityAreaJourneyData" nillable="true" type="tns:CityAreaJourneyData" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CityAreaJourneyData">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="CityID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="CityName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Pinyin" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AreaStore" type="tns:ArrayOfAreaStore" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfAreaStore">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="AreaStore" nillable="true" type="tns:AreaStore" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="AreaStore">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="AreaID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="AreaName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Store" type="tns:ArrayOfStore" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfStore">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Store" nillable="true" type="tns:Store" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Store">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="StoreID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="StoreName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Address" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Tel" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OpenningTime" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ListOpenningTime" type="tns:ArrayOfString" />
+          <s:element minOccurs="1" maxOccurs="1" name="CityID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="City" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TrafficGuide" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="StorePhoto" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="StoreLon" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="StoreLat" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ValidationSoapHeader" type="tns:ValidationSoapHeader" />
+      <s:complexType name="ValidationSoapHeader">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="LoginName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LoginPassword" type="s:string" />
+        </s:sequence>
+        <s:anyAttribute />
+      </s:complexType>
+      <s:element name="GetChooseCarPrice">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="cityID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="areaID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="rentTime" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="returnTime" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetChooseCarPriceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetChooseCarPriceResult" type="tns:CanChooseCarPrice" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="CanChooseCarPrice">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ErrrorMsg" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ListStoreCarInfo" type="tns:ArrayOfStoreCarList" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfStoreCarList">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="StoreCarList" nillable="true" type="tns:StoreCarList" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="StoreCarList">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="RentStoreID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="RentstoreName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ListChooseCarInfo" type="tns:ArrayOfCanRentCarPrice" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfCanRentCarPrice">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="CanRentCarPrice" nillable="true" type="tns:CanRentCarPrice" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CanRentCarPrice">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ModelID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ModelName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="PreAuthFee" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="SyntheticalServiceFeePerDay" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="OverTimeFeePerHour" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="RentDays" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="NowdayHire" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="NowdayHireTotal" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="LaterdayHire" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="LaterdayHireTotal" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="SyntheticalServiceFeeTotal" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="ServiceFee" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="OverTimeFeeTotal" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="CouponID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="CouponName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CouponCharge" type="s:double" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetChooseJourney">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetChooseJourneyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetChooseJourneyResult" type="tns:ArrayOfJourneyData" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfJourneyData">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="JourneyData" nillable="true" type="tns:JourneyData" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="JourneyData">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="CityID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="City" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ListStore" type="tns:ArrayOfStore" />
+          <s:element minOccurs="1" maxOccurs="1" name="CitySort" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetChooseCarList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="rentStoreID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="returnStoreID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="rentTime" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="returnTime" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetChooseCarListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetChooseCarListResult" type="tns:ChooseCarListResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ChooseCarListResult">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ErrrorMsg" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ListChooseCarInfo" type="tns:ArrayOfChooseCarInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfChooseCarInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ChooseCarInfo" nillable="true" type="tns:ChooseCarInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ChooseCarInfo">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="StoreID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="CityID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="ModelID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ModelName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="LimitMileage" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="ExceedDistanceCharge" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="SyntheticalServiceFeePerDay" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="OverTimeFeePerHour" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="LaterPayFeePerDay" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="ServiceFee" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="NowPayFeePerDay" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="PreAuthFee" type="s:double" />
+          <s:element minOccurs="0" maxOccurs="1" name="Description" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ImageUrl" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DeliveryCapacity" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OilVolume" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Seating" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CoachCount" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Gear" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="SchemeID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="SpecialPriceFeePerDay" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="SpecialPriceDays" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetSelfDriveOrderDetail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="reservationType" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="rentStoreID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="returnStoreID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="rentTime" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="returnTime" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="carModelID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="isUseGPSNavigate" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSelfDriveOrderDetailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSelfDriveOrderDetailResult" type="tns:SelfDriveOrderDetail" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="SelfDriveOrderDetail">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ChooseCarInfo" type="tns:ChooseCarInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="RentStoreInfo" type="tns:Store" />
+          <s:element minOccurs="0" maxOccurs="1" name="ReturnStoreInfo" type="tns:Store" />
+          <s:element minOccurs="0" maxOccurs="1" name="SelfDrivePriceInfo" type="tns:SelfDrivePriceInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="ErrrorMsg" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TrafficMessage" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="SpecialDateID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="KeepWordParameter" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Service" type="tns:ArrayOfValueAddedService" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="SelfDrivePriceInfo">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="SyntheticalServiceFeePerDay" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="SyntheticalServiceFeeuserDay" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="OverTimeFeePerHour" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="GPSNavigatorPricePerDay" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="GpsNavigatorusePerDays" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="DayHire" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="DayHireTotal" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="SyntheticalServiceFeeTotal" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="OverTimeFeeTotal" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="ServiceFee" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="GPSNavigatorPriceFeeTotal" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="RentDays" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="OverTime" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="ExceedDistance" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="ExceedDistanceCharge" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="ExceedDistanceCount" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="OtherReturnCharge" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="TotolPayFee" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="PrecontractAmountCharge" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="FixedAmountCharge" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="SavingFee" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="RealCount" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="RealAmount" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="DiscountCash" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="ActivityCouponDiscountCharge" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="AccountPayCharge" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="ElectronicPayCharge" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="PointToAccount" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="PreCharge" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="CouponCharge" type="s:double" />
+          <s:element minOccurs="0" maxOccurs="1" name="DiscountCashName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ActivityCouponDiscountName" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfValueAddedService">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ValueAddedService" nillable="true" type="tns:ValueAddedService" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ValueAddedService">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ServiceID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ServiceName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="PricePerDay" type="s:double" />
+          <s:element minOccurs="0" maxOccurs="1" name="Unit" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Required" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetSelfDriveCostDetail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="reservationType" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="rentStoreID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="returnStoreID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="rentTime" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="returnTime" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="carModelID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="isUseGPSNavigate" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="CouponProductID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSelfDriveCostDetailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSelfDriveCostDetailResult" type="tns:SelfDriveOrderDetail" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSelfDriveOrderDetailExt">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="custName" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="custPaperTypeID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="custPaperNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mobilePhone" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="reservationType" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="rentStoreID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="returnStoreID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="rentTime" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="returnTime" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="carModelID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="isUseGPSNavigate" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSelfDriveOrderDetailExtResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSelfDriveOrderDetailExtResult" type="tns:SelfDriveOrderDetail" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SelfDriveOrderSave">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="custName" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="gender" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="custPaperTypeID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="custPaperNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mobilePhone" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="rentTime" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="returnTime" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="rentStoreID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="returnStoreID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="modelID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="isUseGPSNavigator" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="remark" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="reservationType" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SelfDriveOrderSaveResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SelfDriveOrderSaveResult" type="tns:SaveResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="SaveResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="BillID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="OrderSN" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsSuccess" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="CustomerID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="RealCharge" type="s:double" />
+          <s:element minOccurs="0" maxOccurs="1" name="ErrrorMsg" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SelfDriveOrderSaveExt">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="custName" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="gender" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="custPaperTypeID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="custPaperNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mobilePhone" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="rentTime" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="returnTime" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="rentStoreID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="returnStoreID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="modelID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="isUseGPSNavigator" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="remark" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="reservationType" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="CouponProductID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SelfDriveOrderSaveExtResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SelfDriveOrderSaveExtResult" type="tns:SaveResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPaymentURL">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="billID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="backUrl" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="errorUrl" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="payTypeID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPaymentURLResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPaymentURLResult" type="tns:PaymentURL" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="PaymentURL">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="URL" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ErrrorMsg" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="CancelOrder">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="orderID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CancelOrderResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CancelOrderResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetOrderList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="orderID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="mobilePhoneNo" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="searchBeginTime" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="searchEndTime" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="statusID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pageSize" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pageNum" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="totalRecord" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetOrderListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetOrderListResult" type="tns:ArrayOfOrder" />
+            <s:element minOccurs="1" maxOccurs="1" name="totalRecord" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfOrder">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Order" nillable="true" type="tns:Order" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Order">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="OrderID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="StatusName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="StatusID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="PayStatusID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="CustName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MobilePhoneNO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CustPaperTypeID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CustPaperNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RentStoreName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ReturnStoreName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="RentTime" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="ReturnTime" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="PreTime" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="CarModel" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="PriceTypeValue" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="PriceTypeName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="PrecontractTypeValue" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="PrecontractTypeName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ProductTypeID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="PayAmount" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="RebateDiscount" type="s:double" />
+          <s:element minOccurs="0" maxOccurs="1" name="ChooseCarInfo" type="tns:ChooseCarInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="RentStoreInfo" type="tns:Store" />
+          <s:element minOccurs="0" maxOccurs="1" name="ReturnStoreInfo" type="tns:Store" />
+          <s:element minOccurs="0" maxOccurs="1" name="SelfDrivePriceInfo" type="tns:SelfDrivePriceInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="CustomerMessage" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetCustomerOrderList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="custPaperTypeID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="custPaperNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mobilePhone" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pageSize" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pageNum" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="totalRecord" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCustomerOrderListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCustomerOrderListResult" type="tns:ArrayOfOrder" />
+            <s:element minOccurs="1" maxOccurs="1" name="totalRecord" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCarModelBrandList">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetCarModelBrandListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCarModelBrandListResult" type="tns:ArrayOfCarModelBrand" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfCarModelBrand">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="CarModelBrand" nillable="true" type="tns:CarModelBrand" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CarModelBrand">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="BrandID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="BrandName" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetCarModelList">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetCarModelListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCarModelListResult" type="tns:ArrayOfCarModelSimple" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfCarModelSimple">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="CarModelSimple" nillable="true" type="tns:CarModelSimple" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CarModelSimple">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ModelID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="BrandID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="BrandName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CoachCount" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="DeliveryCapacity" type="s:double" />
+          <s:element minOccurs="0" maxOccurs="1" name="ImagePath" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ModelName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="OilVolume" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="Seating" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Gear" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="GeneralDayHire" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="DiscountDayHire" type="s:double" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetParameter">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="custName" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="gender" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="custPaperTypeID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="custPaperNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mobilePhone" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetParameterResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetParameterResult" type="tns:KeepWordParameter" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="KeepWordParameter">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Parameter" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ErrrorMsg" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetFirstRent">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="custName" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="gender" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="custPaperTypeID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="custPaperNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mobilePhone" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFirstRentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetFirstRentResult" type="tns:FirstRent" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="FirstRent">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="CustID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsFirstRent" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="ErrrorMsg" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetCityID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CityName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="errorMsg" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCityIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetCityIDResult" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="errorMsg" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetActivityCouponListByDistributor">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="productID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="rentStoreID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="rentTime" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="returnTime" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="carModelID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetActivityCouponListByDistributorResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetActivityCouponListByDistributorResult" type="tns:ArrayOfActivityCoupon" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfActivityCoupon">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ActivityCoupon" nillable="true" type="tns:ActivityCoupon" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ActivityCoupon">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="CouponID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="CouponName" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetCityAreaChooseJourneySoapIn">
+    <wsdl:part name="parameters" element="tns:GetCityAreaChooseJourney" />
+  </wsdl:message>
+  <wsdl:message name="GetCityAreaChooseJourneySoapOut">
+    <wsdl:part name="parameters" element="tns:GetCityAreaChooseJourneyResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCityAreaChooseJourneyValidationSoapHeader">
+    <wsdl:part name="ValidationSoapHeader" element="tns:ValidationSoapHeader" />
+  </wsdl:message>
+  <wsdl:message name="GetChooseCarPriceSoapIn">
+    <wsdl:part name="parameters" element="tns:GetChooseCarPrice" />
+  </wsdl:message>
+  <wsdl:message name="GetChooseCarPriceSoapOut">
+    <wsdl:part name="parameters" element="tns:GetChooseCarPriceResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetChooseCarPriceValidationSoapHeader">
+    <wsdl:part name="ValidationSoapHeader" element="tns:ValidationSoapHeader" />
+  </wsdl:message>
+  <wsdl:message name="GetChooseJourneySoapIn">
+    <wsdl:part name="parameters" element="tns:GetChooseJourney" />
+  </wsdl:message>
+  <wsdl:message name="GetChooseJourneySoapOut">
+    <wsdl:part name="parameters" element="tns:GetChooseJourneyResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetChooseJourneyValidationSoapHeader">
+    <wsdl:part name="ValidationSoapHeader" element="tns:ValidationSoapHeader" />
+  </wsdl:message>
+  <wsdl:message name="GetChooseCarListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetChooseCarList" />
+  </wsdl:message>
+  <wsdl:message name="GetChooseCarListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetChooseCarListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetChooseCarListValidationSoapHeader">
+    <wsdl:part name="ValidationSoapHeader" element="tns:ValidationSoapHeader" />
+  </wsdl:message>
+  <wsdl:message name="GetSelfDriveOrderDetailSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSelfDriveOrderDetail" />
+  </wsdl:message>
+  <wsdl:message name="GetSelfDriveOrderDetailSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSelfDriveOrderDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSelfDriveOrderDetailValidationSoapHeader">
+    <wsdl:part name="ValidationSoapHeader" element="tns:ValidationSoapHeader" />
+  </wsdl:message>
+  <wsdl:message name="GetSelfDriveCostDetailSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSelfDriveCostDetail" />
+  </wsdl:message>
+  <wsdl:message name="GetSelfDriveCostDetailSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSelfDriveCostDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSelfDriveCostDetailValidationSoapHeader">
+    <wsdl:part name="ValidationSoapHeader" element="tns:ValidationSoapHeader" />
+  </wsdl:message>
+  <wsdl:message name="GetSelfDriveOrderDetailExtSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSelfDriveOrderDetailExt" />
+  </wsdl:message>
+  <wsdl:message name="GetSelfDriveOrderDetailExtSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSelfDriveOrderDetailExtResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSelfDriveOrderDetailExtValidationSoapHeader">
+    <wsdl:part name="ValidationSoapHeader" element="tns:ValidationSoapHeader" />
+  </wsdl:message>
+  <wsdl:message name="SelfDriveOrderSaveSoapIn">
+    <wsdl:part name="parameters" element="tns:SelfDriveOrderSave" />
+  </wsdl:message>
+  <wsdl:message name="SelfDriveOrderSaveSoapOut">
+    <wsdl:part name="parameters" element="tns:SelfDriveOrderSaveResponse" />
+  </wsdl:message>
+  <wsdl:message name="SelfDriveOrderSaveValidationSoapHeader">
+    <wsdl:part name="ValidationSoapHeader" element="tns:ValidationSoapHeader" />
+  </wsdl:message>
+  <wsdl:message name="SelfDriveOrderSaveExtSoapIn">
+    <wsdl:part name="parameters" element="tns:SelfDriveOrderSaveExt" />
+  </wsdl:message>
+  <wsdl:message name="SelfDriveOrderSaveExtSoapOut">
+    <wsdl:part name="parameters" element="tns:SelfDriveOrderSaveExtResponse" />
+  </wsdl:message>
+  <wsdl:message name="SelfDriveOrderSaveExtValidationSoapHeader">
+    <wsdl:part name="ValidationSoapHeader" element="tns:ValidationSoapHeader" />
+  </wsdl:message>
+  <wsdl:message name="GetPaymentURLSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPaymentURL" />
+  </wsdl:message>
+  <wsdl:message name="GetPaymentURLSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPaymentURLResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPaymentURLValidationSoapHeader">
+    <wsdl:part name="ValidationSoapHeader" element="tns:ValidationSoapHeader" />
+  </wsdl:message>
+  <wsdl:message name="CancelOrderSoapIn">
+    <wsdl:part name="parameters" element="tns:CancelOrder" />
+  </wsdl:message>
+  <wsdl:message name="CancelOrderSoapOut">
+    <wsdl:part name="parameters" element="tns:CancelOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="CancelOrderValidationSoapHeader">
+    <wsdl:part name="ValidationSoapHeader" element="tns:ValidationSoapHeader" />
+  </wsdl:message>
+  <wsdl:message name="GetOrderListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetOrderList" />
+  </wsdl:message>
+  <wsdl:message name="GetOrderListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetOrderListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetOrderListValidationSoapHeader">
+    <wsdl:part name="ValidationSoapHeader" element="tns:ValidationSoapHeader" />
+  </wsdl:message>
+  <wsdl:message name="GetCustomerOrderListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCustomerOrderList" />
+  </wsdl:message>
+  <wsdl:message name="GetCustomerOrderListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCustomerOrderListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCustomerOrderListValidationSoapHeader">
+    <wsdl:part name="ValidationSoapHeader" element="tns:ValidationSoapHeader" />
+  </wsdl:message>
+  <wsdl:message name="GetCarModelBrandListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCarModelBrandList" />
+  </wsdl:message>
+  <wsdl:message name="GetCarModelBrandListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCarModelBrandListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCarModelBrandListValidationSoapHeader">
+    <wsdl:part name="ValidationSoapHeader" element="tns:ValidationSoapHeader" />
+  </wsdl:message>
+  <wsdl:message name="GetCarModelListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCarModelList" />
+  </wsdl:message>
+  <wsdl:message name="GetCarModelListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCarModelListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCarModelListValidationSoapHeader">
+    <wsdl:part name="ValidationSoapHeader" element="tns:ValidationSoapHeader" />
+  </wsdl:message>
+  <wsdl:message name="GetParameterSoapIn">
+    <wsdl:part name="parameters" element="tns:GetParameter" />
+  </wsdl:message>
+  <wsdl:message name="GetParameterSoapOut">
+    <wsdl:part name="parameters" element="tns:GetParameterResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetParameterValidationSoapHeader">
+    <wsdl:part name="ValidationSoapHeader" element="tns:ValidationSoapHeader" />
+  </wsdl:message>
+  <wsdl:message name="GetFirstRentSoapIn">
+    <wsdl:part name="parameters" element="tns:GetFirstRent" />
+  </wsdl:message>
+  <wsdl:message name="GetFirstRentSoapOut">
+    <wsdl:part name="parameters" element="tns:GetFirstRentResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetFirstRentValidationSoapHeader">
+    <wsdl:part name="ValidationSoapHeader" element="tns:ValidationSoapHeader" />
+  </wsdl:message>
+  <wsdl:message name="GetCityIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCityID" />
+  </wsdl:message>
+  <wsdl:message name="GetCityIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCityIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCityIDValidationSoapHeader">
+    <wsdl:part name="ValidationSoapHeader" element="tns:ValidationSoapHeader" />
+  </wsdl:message>
+  <wsdl:message name="GetActivityCouponListByDistributorSoapIn">
+    <wsdl:part name="parameters" element="tns:GetActivityCouponListByDistributor" />
+  </wsdl:message>
+  <wsdl:message name="GetActivityCouponListByDistributorSoapOut">
+    <wsdl:part name="parameters" element="tns:GetActivityCouponListByDistributorResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetActivityCouponListByDistributorValidationSoapHeader">
+    <wsdl:part name="ValidationSoapHeader" element="tns:ValidationSoapHeader" />
+  </wsdl:message>
+  <wsdl:portType name="SelfDriveSerivceSoap">
+    <wsdl:operation name="GetCityAreaChooseJourney">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">得到包含区域行程数据</wsdl:documentation>
+      <wsdl:input message="tns:GetCityAreaChooseJourneySoapIn" />
+      <wsdl:output message="tns:GetCityAreaChooseJourneySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetChooseCarPrice">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">得到区域门店可供车型选择</wsdl:documentation>
+      <wsdl:input message="tns:GetChooseCarPriceSoapIn" />
+      <wsdl:output message="tns:GetChooseCarPriceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetChooseJourney">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">得到行程数据</wsdl:documentation>
+      <wsdl:input message="tns:GetChooseJourneySoapIn" />
+      <wsdl:output message="tns:GetChooseJourneySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetChooseCarList">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">得到车型选择列表</wsdl:documentation>
+      <wsdl:input message="tns:GetChooseCarListSoapIn" />
+      <wsdl:output message="tns:GetChooseCarListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSelfDriveOrderDetail">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">得到订单明细的方法(无会员登录直接得到订单明细)</wsdl:documentation>
+      <wsdl:input message="tns:GetSelfDriveOrderDetailSoapIn" />
+      <wsdl:output message="tns:GetSelfDriveOrderDetailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSelfDriveCostDetail">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">得到费用明细的方法(无会员登录直接得到费用明细)</wsdl:documentation>
+      <wsdl:input message="tns:GetSelfDriveCostDetailSoapIn" />
+      <wsdl:output message="tns:GetSelfDriveCostDetailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSelfDriveOrderDetailExt">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">得到订单明细的方法(适用会员先登录得到订单明细)</wsdl:documentation>
+      <wsdl:input message="tns:GetSelfDriveOrderDetailExtSoapIn" />
+      <wsdl:output message="tns:GetSelfDriveOrderDetailExtSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SelfDriveOrderSave">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">保存订单的方法</wsdl:documentation>
+      <wsdl:input message="tns:SelfDriveOrderSaveSoapIn" />
+      <wsdl:output message="tns:SelfDriveOrderSaveSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SelfDriveOrderSaveExt">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">保存订单的方法</wsdl:documentation>
+      <wsdl:input message="tns:SelfDriveOrderSaveExtSoapIn" />
+      <wsdl:output message="tns:SelfDriveOrderSaveExtSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPaymentURL">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">得到支付的跳转地址</wsdl:documentation>
+      <wsdl:input message="tns:GetPaymentURLSoapIn" />
+      <wsdl:output message="tns:GetPaymentURLSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CancelOrder">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">订单取消</wsdl:documentation>
+      <wsdl:input message="tns:CancelOrderSoapIn" />
+      <wsdl:output message="tns:CancelOrderSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOrderList">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根据条件查询订单</wsdl:documentation>
+      <wsdl:input message="tns:GetOrderListSoapIn" />
+      <wsdl:output message="tns:GetOrderListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerOrderList">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">通过证件类型、证件号码、手机号码定位查询该会员下个人的订单信息。三个条件必选</wsdl:documentation>
+      <wsdl:input message="tns:GetCustomerOrderListSoapIn" />
+      <wsdl:output message="tns:GetCustomerOrderListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCarModelBrandList">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">提供至尊现有车型品牌列表</wsdl:documentation>
+      <wsdl:input message="tns:GetCarModelBrandListSoapIn" />
+      <wsdl:output message="tns:GetCarModelBrandListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCarModelList">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">返回车型列表</wsdl:documentation>
+      <wsdl:input message="tns:GetCarModelListSoapIn" />
+      <wsdl:output message="tns:GetCarModelListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetParameter">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">得到信用守约指数</wsdl:documentation>
+      <wsdl:input message="tns:GetParameterSoapIn" />
+      <wsdl:output message="tns:GetParameterSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFirstRent">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">得到是否首租</wsdl:documentation>
+      <wsdl:input message="tns:GetFirstRentSoapIn" />
+      <wsdl:output message="tns:GetFirstRentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCityID">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根据城市名得到城市ID</wsdl:documentation>
+      <wsdl:input message="tns:GetCityIDSoapIn" />
+      <wsdl:output message="tns:GetCityIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetActivityCouponListByDistributor">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">得到优惠产品</wsdl:documentation>
+      <wsdl:input message="tns:GetActivityCouponListByDistributorSoapIn" />
+      <wsdl:output message="tns:GetActivityCouponListByDistributorSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SelfDriveSerivceSoap" type="tns:SelfDriveSerivceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetCityAreaChooseJourney">
+      <soap:operation soapAction="http://tempuri.org/GetCityAreaChooseJourney" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetCityAreaChooseJourneyValidationSoapHeader" part="ValidationSoapHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetChooseCarPrice">
+      <soap:operation soapAction="http://tempuri.org/GetChooseCarPrice" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetChooseCarPriceValidationSoapHeader" part="ValidationSoapHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetChooseJourney">
+      <soap:operation soapAction="http://tempuri.org/GetChooseJourney" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetChooseJourneyValidationSoapHeader" part="ValidationSoapHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetChooseCarList">
+      <soap:operation soapAction="http://tempuri.org/GetChooseCarList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetChooseCarListValidationSoapHeader" part="ValidationSoapHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSelfDriveOrderDetail">
+      <soap:operation soapAction="http://tempuri.org/GetSelfDriveOrderDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetSelfDriveOrderDetailValidationSoapHeader" part="ValidationSoapHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSelfDriveCostDetail">
+      <soap:operation soapAction="http://tempuri.org/GetSelfDriveCostDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetSelfDriveCostDetailValidationSoapHeader" part="ValidationSoapHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSelfDriveOrderDetailExt">
+      <soap:operation soapAction="http://tempuri.org/GetSelfDriveOrderDetailExt" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetSelfDriveOrderDetailExtValidationSoapHeader" part="ValidationSoapHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelfDriveOrderSave">
+      <soap:operation soapAction="http://tempuri.org/SelfDriveOrderSave" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:SelfDriveOrderSaveValidationSoapHeader" part="ValidationSoapHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelfDriveOrderSaveExt">
+      <soap:operation soapAction="http://tempuri.org/SelfDriveOrderSaveExt" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:SelfDriveOrderSaveExtValidationSoapHeader" part="ValidationSoapHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPaymentURL">
+      <soap:operation soapAction="http://tempuri.org/GetPaymentURL" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetPaymentURLValidationSoapHeader" part="ValidationSoapHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CancelOrder">
+      <soap:operation soapAction="http://tempuri.org/CancelOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:CancelOrderValidationSoapHeader" part="ValidationSoapHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrderList">
+      <soap:operation soapAction="http://tempuri.org/GetOrderList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetOrderListValidationSoapHeader" part="ValidationSoapHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerOrderList">
+      <soap:operation soapAction="http://tempuri.org/GetCustomerOrderList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetCustomerOrderListValidationSoapHeader" part="ValidationSoapHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCarModelBrandList">
+      <soap:operation soapAction="http://tempuri.org/GetCarModelBrandList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetCarModelBrandListValidationSoapHeader" part="ValidationSoapHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCarModelList">
+      <soap:operation soapAction="http://tempuri.org/GetCarModelList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetCarModelListValidationSoapHeader" part="ValidationSoapHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetParameter">
+      <soap:operation soapAction="http://tempuri.org/GetParameter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetParameterValidationSoapHeader" part="ValidationSoapHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFirstRent">
+      <soap:operation soapAction="http://tempuri.org/GetFirstRent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetFirstRentValidationSoapHeader" part="ValidationSoapHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCityID">
+      <soap:operation soapAction="http://tempuri.org/GetCityID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetCityIDValidationSoapHeader" part="ValidationSoapHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetActivityCouponListByDistributor">
+      <soap:operation soapAction="http://tempuri.org/GetActivityCouponListByDistributor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetActivityCouponListByDistributorValidationSoapHeader" part="ValidationSoapHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="SelfDriveSerivceSoap12" type="tns:SelfDriveSerivceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetCityAreaChooseJourney">
+      <soap12:operation soapAction="http://tempuri.org/GetCityAreaChooseJourney" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetCityAreaChooseJourneyValidationSoapHeader" part="ValidationSoapHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetChooseCarPrice">
+      <soap12:operation soapAction="http://tempuri.org/GetChooseCarPrice" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetChooseCarPriceValidationSoapHeader" part="ValidationSoapHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetChooseJourney">
+      <soap12:operation soapAction="http://tempuri.org/GetChooseJourney" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetChooseJourneyValidationSoapHeader" part="ValidationSoapHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetChooseCarList">
+      <soap12:operation soapAction="http://tempuri.org/GetChooseCarList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetChooseCarListValidationSoapHeader" part="ValidationSoapHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSelfDriveOrderDetail">
+      <soap12:operation soapAction="http://tempuri.org/GetSelfDriveOrderDetail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetSelfDriveOrderDetailValidationSoapHeader" part="ValidationSoapHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSelfDriveCostDetail">
+      <soap12:operation soapAction="http://tempuri.org/GetSelfDriveCostDetail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetSelfDriveCostDetailValidationSoapHeader" part="ValidationSoapHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSelfDriveOrderDetailExt">
+      <soap12:operation soapAction="http://tempuri.org/GetSelfDriveOrderDetailExt" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetSelfDriveOrderDetailExtValidationSoapHeader" part="ValidationSoapHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelfDriveOrderSave">
+      <soap12:operation soapAction="http://tempuri.org/SelfDriveOrderSave" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:SelfDriveOrderSaveValidationSoapHeader" part="ValidationSoapHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelfDriveOrderSaveExt">
+      <soap12:operation soapAction="http://tempuri.org/SelfDriveOrderSaveExt" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:SelfDriveOrderSaveExtValidationSoapHeader" part="ValidationSoapHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPaymentURL">
+      <soap12:operation soapAction="http://tempuri.org/GetPaymentURL" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetPaymentURLValidationSoapHeader" part="ValidationSoapHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CancelOrder">
+      <soap12:operation soapAction="http://tempuri.org/CancelOrder" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:CancelOrderValidationSoapHeader" part="ValidationSoapHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrderList">
+      <soap12:operation soapAction="http://tempuri.org/GetOrderList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetOrderListValidationSoapHeader" part="ValidationSoapHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerOrderList">
+      <soap12:operation soapAction="http://tempuri.org/GetCustomerOrderList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetCustomerOrderListValidationSoapHeader" part="ValidationSoapHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCarModelBrandList">
+      <soap12:operation soapAction="http://tempuri.org/GetCarModelBrandList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetCarModelBrandListValidationSoapHeader" part="ValidationSoapHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCarModelList">
+      <soap12:operation soapAction="http://tempuri.org/GetCarModelList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetCarModelListValidationSoapHeader" part="ValidationSoapHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetParameter">
+      <soap12:operation soapAction="http://tempuri.org/GetParameter" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetParameterValidationSoapHeader" part="ValidationSoapHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFirstRent">
+      <soap12:operation soapAction="http://tempuri.org/GetFirstRent" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetFirstRentValidationSoapHeader" part="ValidationSoapHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCityID">
+      <soap12:operation soapAction="http://tempuri.org/GetCityID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetCityIDValidationSoapHeader" part="ValidationSoapHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetActivityCouponListByDistributor">
+      <soap12:operation soapAction="http://tempuri.org/GetActivityCouponListByDistributor" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetActivityCouponListByDistributorValidationSoapHeader" part="ValidationSoapHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SelfDriveSerivce">
+    <wsdl:port name="SelfDriveSerivceSoap" binding="tns:SelfDriveSerivceSoap">
+      <soap:address location="http://dsfws2.toponecn.cn/SelfDriveSerivce.asmx" />
+    </wsdl:port>
+    <wsdl:port name="SelfDriveSerivceSoap12" binding="tns:SelfDriveSerivceSoap12">
+      <soap12:address location="http://dsfws2.toponecn.cn/SelfDriveSerivce.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

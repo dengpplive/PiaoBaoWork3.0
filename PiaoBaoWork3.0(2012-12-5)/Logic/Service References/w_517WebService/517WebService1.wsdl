@@ -1,0 +1,725 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://203.88.210.234:115/517WebService.asmx" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://203.88.210.234:115/517WebService.asmx" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://203.88.210.234:115/517WebService.asmx">
+      <s:element name="GetBenefitDataPnrContent">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UserPwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AgentSine" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PNRContent" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PatContent" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PNRCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetBenefitDataPnrContentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetBenefitDataPnrContentResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateOrderByPnrAndPAT">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UserPwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AgentSine" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PnrContent" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="BigPnr" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="BenefitID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="Linker" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="LinkTel" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SplitBenefitID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PatContent" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PNRCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateOrderByPnrAndPATResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CreateOrderByPnrAndPATResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateOrderByPnrAndPATCeshi">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UserPwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AgentSine" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PnrContent" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="BigPnr" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="BenefitID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="Linker" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="LinkTel" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SplitBenefitID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PatContent" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PNRCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateOrderByPnrAndPATCeshiResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CreateOrderByPnrAndPATCeshiResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateOrderByPnrAndPATNew">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UserPwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AgentSine" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Account" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="APWD" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PNRContent" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PATContent" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="BigPNR" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="PolicyID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="PolicyChildID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PayPrice" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Linker" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="LinkTel" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PNRCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateOrderByPnrAndPATNewResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CreateOrderByPnrAndPATNewResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="OrderPay">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UserPwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AgentSine" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Account" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="APWD" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="OrderID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="Amount" type="s:decimal" />
+            <s:element minOccurs="0" maxOccurs="1" name="NotifyUrl" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PNRCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="OrderPayResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="OrderPayResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="OrderNoPwdPay">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UserPwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="OrderID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="Amount" type="s:decimal" />
+            <s:element minOccurs="0" maxOccurs="1" name="AgentSine" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="OrderNoPwdPayResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="OrderNoPwdPayResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetOrderInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UserPwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AgentSine" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="OrderID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PNRCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetOrderInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetOrderInfoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CancelOrder">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UserPwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AgentSine" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="OrderID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CancelOrderResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CancelOrderResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RefundTicket">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UserPwd" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="RefundType" type="s:unsignedByte" />
+            <s:element minOccurs="0" maxOccurs="1" name="AgentSine" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="XmlParameters" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RefundTicketResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RefundTicketResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRefundReason">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UserPwd" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="RefundType" type="s:unsignedByte" />
+            <s:element minOccurs="0" maxOccurs="1" name="AgentSine" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRefundReasonResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetRefundReasonResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRefoundDetailInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="OrderId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TicketNum" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UserPwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AgentSine" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRefoundDetailInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetRefoundDetailInfoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetVoidTicketInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="OrderId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TicketNum" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UserPwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AgentSine" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetVoidTicketInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetVoidTicketInfoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUrlData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="url" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUrlDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUrlDataResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetBenefitDataPnrContentSoapIn">
+    <wsdl:part name="parameters" element="tns:GetBenefitDataPnrContent" />
+  </wsdl:message>
+  <wsdl:message name="GetBenefitDataPnrContentSoapOut">
+    <wsdl:part name="parameters" element="tns:GetBenefitDataPnrContentResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateOrderByPnrAndPATSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateOrderByPnrAndPAT" />
+  </wsdl:message>
+  <wsdl:message name="CreateOrderByPnrAndPATSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateOrderByPnrAndPATResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateOrderByPnrAndPATCeshiSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateOrderByPnrAndPATCeshi" />
+  </wsdl:message>
+  <wsdl:message name="CreateOrderByPnrAndPATCeshiSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateOrderByPnrAndPATCeshiResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateOrderByPnrAndPATNewSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateOrderByPnrAndPATNew" />
+  </wsdl:message>
+  <wsdl:message name="CreateOrderByPnrAndPATNewSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateOrderByPnrAndPATNewResponse" />
+  </wsdl:message>
+  <wsdl:message name="OrderPaySoapIn">
+    <wsdl:part name="parameters" element="tns:OrderPay" />
+  </wsdl:message>
+  <wsdl:message name="OrderPaySoapOut">
+    <wsdl:part name="parameters" element="tns:OrderPayResponse" />
+  </wsdl:message>
+  <wsdl:message name="OrderNoPwdPaySoapIn">
+    <wsdl:part name="parameters" element="tns:OrderNoPwdPay" />
+  </wsdl:message>
+  <wsdl:message name="OrderNoPwdPaySoapOut">
+    <wsdl:part name="parameters" element="tns:OrderNoPwdPayResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetOrderInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetOrderInfo" />
+  </wsdl:message>
+  <wsdl:message name="GetOrderInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetOrderInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="CancelOrderSoapIn">
+    <wsdl:part name="parameters" element="tns:CancelOrder" />
+  </wsdl:message>
+  <wsdl:message name="CancelOrderSoapOut">
+    <wsdl:part name="parameters" element="tns:CancelOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="RefundTicketSoapIn">
+    <wsdl:part name="parameters" element="tns:RefundTicket" />
+  </wsdl:message>
+  <wsdl:message name="RefundTicketSoapOut">
+    <wsdl:part name="parameters" element="tns:RefundTicketResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetRefundReasonSoapIn">
+    <wsdl:part name="parameters" element="tns:GetRefundReason" />
+  </wsdl:message>
+  <wsdl:message name="GetRefundReasonSoapOut">
+    <wsdl:part name="parameters" element="tns:GetRefundReasonResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetRefoundDetailInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetRefoundDetailInfo" />
+  </wsdl:message>
+  <wsdl:message name="GetRefoundDetailInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetRefoundDetailInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetVoidTicketInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetVoidTicketInfo" />
+  </wsdl:message>
+  <wsdl:message name="GetVoidTicketInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetVoidTicketInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUrlDataSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUrlData" />
+  </wsdl:message>
+  <wsdl:message name="GetUrlDataSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUrlDataResponse" />
+  </wsdl:message>
+  <wsdl:portType name="_517WebServiceSoap">
+    <wsdl:operation name="GetBenefitDataPnrContent">
+      <wsdl:input message="tns:GetBenefitDataPnrContentSoapIn" />
+      <wsdl:output message="tns:GetBenefitDataPnrContentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateOrderByPnrAndPAT">
+      <wsdl:input message="tns:CreateOrderByPnrAndPATSoapIn" />
+      <wsdl:output message="tns:CreateOrderByPnrAndPATSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateOrderByPnrAndPATCeshi">
+      <wsdl:input message="tns:CreateOrderByPnrAndPATCeshiSoapIn" />
+      <wsdl:output message="tns:CreateOrderByPnrAndPATCeshiSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateOrderByPnrAndPATNew">
+      <wsdl:input message="tns:CreateOrderByPnrAndPATNewSoapIn" />
+      <wsdl:output message="tns:CreateOrderByPnrAndPATNewSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="OrderPay">
+      <wsdl:input message="tns:OrderPaySoapIn" />
+      <wsdl:output message="tns:OrderPaySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="OrderNoPwdPay">
+      <wsdl:input message="tns:OrderNoPwdPaySoapIn" />
+      <wsdl:output message="tns:OrderNoPwdPaySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOrderInfo">
+      <wsdl:input message="tns:GetOrderInfoSoapIn" />
+      <wsdl:output message="tns:GetOrderInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CancelOrder">
+      <wsdl:input message="tns:CancelOrderSoapIn" />
+      <wsdl:output message="tns:CancelOrderSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RefundTicket">
+      <wsdl:input message="tns:RefundTicketSoapIn" />
+      <wsdl:output message="tns:RefundTicketSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRefundReason">
+      <wsdl:input message="tns:GetRefundReasonSoapIn" />
+      <wsdl:output message="tns:GetRefundReasonSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRefoundDetailInfo">
+      <wsdl:input message="tns:GetRefoundDetailInfoSoapIn" />
+      <wsdl:output message="tns:GetRefoundDetailInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVoidTicketInfo">
+      <wsdl:input message="tns:GetVoidTicketInfoSoapIn" />
+      <wsdl:output message="tns:GetVoidTicketInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUrlData">
+      <wsdl:input message="tns:GetUrlDataSoapIn" />
+      <wsdl:output message="tns:GetUrlDataSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="_517WebServiceSoap" type="tns:_517WebServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetBenefitDataPnrContent">
+      <soap:operation soapAction="http://203.88.210.234:115/517WebService.asmx/GetBenefitDataPnrContent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateOrderByPnrAndPAT">
+      <soap:operation soapAction="http://203.88.210.234:115/517WebService.asmx/CreateOrderByPnrAndPAT" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateOrderByPnrAndPATCeshi">
+      <soap:operation soapAction="http://203.88.210.234:115/517WebService.asmx/CreateOrderByPnrAndPATCeshi" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateOrderByPnrAndPATNew">
+      <soap:operation soapAction="http://203.88.210.234:115/517WebService.asmx/CreateOrderByPnrAndPATNew" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OrderPay">
+      <soap:operation soapAction="http://203.88.210.234:115/517WebService.asmx/OrderPay" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OrderNoPwdPay">
+      <soap:operation soapAction="http://203.88.210.234:115/517WebService.asmx/OrderNoPwdPay" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrderInfo">
+      <soap:operation soapAction="http://203.88.210.234:115/517WebService.asmx/GetOrderInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CancelOrder">
+      <soap:operation soapAction="http://203.88.210.234:115/517WebService.asmx/CancelOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RefundTicket">
+      <soap:operation soapAction="http://203.88.210.234:115/517WebService.asmx/RefundTicket" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRefundReason">
+      <soap:operation soapAction="http://203.88.210.234:115/517WebService.asmx/GetRefundReason" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRefoundDetailInfo">
+      <soap:operation soapAction="http://203.88.210.234:115/517WebService.asmx/GetRefoundDetailInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVoidTicketInfo">
+      <soap:operation soapAction="http://203.88.210.234:115/517WebService.asmx/GetVoidTicketInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUrlData">
+      <soap:operation soapAction="http://203.88.210.234:115/517WebService.asmx/GetUrlData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="_517WebServiceSoap12" type="tns:_517WebServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetBenefitDataPnrContent">
+      <soap12:operation soapAction="http://203.88.210.234:115/517WebService.asmx/GetBenefitDataPnrContent" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateOrderByPnrAndPAT">
+      <soap12:operation soapAction="http://203.88.210.234:115/517WebService.asmx/CreateOrderByPnrAndPAT" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateOrderByPnrAndPATCeshi">
+      <soap12:operation soapAction="http://203.88.210.234:115/517WebService.asmx/CreateOrderByPnrAndPATCeshi" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateOrderByPnrAndPATNew">
+      <soap12:operation soapAction="http://203.88.210.234:115/517WebService.asmx/CreateOrderByPnrAndPATNew" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OrderPay">
+      <soap12:operation soapAction="http://203.88.210.234:115/517WebService.asmx/OrderPay" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OrderNoPwdPay">
+      <soap12:operation soapAction="http://203.88.210.234:115/517WebService.asmx/OrderNoPwdPay" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrderInfo">
+      <soap12:operation soapAction="http://203.88.210.234:115/517WebService.asmx/GetOrderInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CancelOrder">
+      <soap12:operation soapAction="http://203.88.210.234:115/517WebService.asmx/CancelOrder" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RefundTicket">
+      <soap12:operation soapAction="http://203.88.210.234:115/517WebService.asmx/RefundTicket" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRefundReason">
+      <soap12:operation soapAction="http://203.88.210.234:115/517WebService.asmx/GetRefundReason" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRefoundDetailInfo">
+      <soap12:operation soapAction="http://203.88.210.234:115/517WebService.asmx/GetRefoundDetailInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVoidTicketInfo">
+      <soap12:operation soapAction="http://203.88.210.234:115/517WebService.asmx/GetVoidTicketInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUrlData">
+      <soap12:operation soapAction="http://203.88.210.234:115/517WebService.asmx/GetUrlData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="_517WebService">
+    <wsdl:port name="_517WebServiceSoap" binding="tns:_517WebServiceSoap">
+      <soap:address location="http://210.14.138.26:115/517WebService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="_517WebServiceSoap12" binding="tns:_517WebServiceSoap12">
+      <soap12:address location="http://210.14.138.26:115/517WebService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

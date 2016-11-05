@@ -1,0 +1,72 @@
+2013-01-16 17:33:03,093 [18] ERROR - 未将对象引用设置到对象的实例。
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Air_Buy_Confirmation.PriceShow(OrderInputParam InputParam) 位置 f:\V3.0\(2013-01-06)-PbProject3.0\PiaoBaoWork\Buy\Confirmation.aspx.cs:行号 356
+   在 Air_Buy_Confirmation.ShowPageData() 位置 f:\V3.0\(2013-01-06)-PbProject3.0\PiaoBaoWork\Buy\Confirmation.aspx.cs:行号 262
+   在 Air_Buy_Confirmation.Page_Load(Object sender, EventArgs e) 位置 f:\V3.0\(2013-01-06)-PbProject3.0\PiaoBaoWork\Buy\Confirmation.aspx.cs:行号 125
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2013-01-16 17:33:45,359 [10] ERROR - 执行SQL出错: 将字符串转换为 uniqueidentifier 时失败。
+select * from Tb_Ticket_Order where id = @id
+
+  @id='0'
+
+select * from Tb_Ticket_Order where id = '0'
+
+2013-01-16 17:34:07,437 [13] ERROR - 执行SQL出错: 将字符串转换为 uniqueidentifier 时失败。
+select * from Tb_Ticket_Order where id = @id
+
+  @id='0'
+
+select * from Tb_Ticket_Order where id = '0'
+
+2013-01-21 17:46:57,875 [12] ERROR - 执行SQL出错: 将截断字符串或二进制数据。
+语句已终止。
+ update Tb_Ticket_Passenger set  TicketStatus=2, TicketNumber='111111111111111111111111111111111111' where id='984f268a-f1d8-4b72-b23a-02d8db864727'
+
+
+ update Tb_Ticket_Passenger set  TicketStatus=2, TicketNumber='111111111111111111111111111111111111' where id='984f268a-f1d8-4b72-b23a-02d8db864727'
+
+2013-01-21 17:47:41,250 [12] ERROR - 执行SQL出错: 将截断字符串或二进制数据。
+语句已终止。
+ update Tb_Ticket_Passenger set  TicketStatus=2, TicketNumber='111111111111111111111111111111111111' where id='984f268a-f1d8-4b72-b23a-02d8db864727'
+
+
+ update Tb_Ticket_Passenger set  TicketStatus=2, TicketNumber='111111111111111111111111111111111111' where id='984f268a-f1d8-4b72-b23a-02d8db864727'
+
+2013-01-21 17:48:04,031 [12] ERROR - 执行SQL出错: 将截断字符串或二进制数据。
+语句已终止。
+ update Tb_Ticket_Passenger set  TicketStatus=2, TicketNumber='111111111111111111111111111111111111' where id='984f268a-f1d8-4b72-b23a-02d8db864727'
+
+
+ update Tb_Ticket_Passenger set  TicketStatus=2, TicketNumber='111111111111111111111111111111111111' where id='984f268a-f1d8-4b72-b23a-02d8db864727'
+
+2013-02-21 10:56:52,078 [8] ERROR - 执行SQL出错: Timeout 时间已到。在操作完成之前超时时间已过或服务器未响应。
+select  *  from Bd_Air_Carrier 
+
+
+select  *  from Bd_Air_Carrier 
+
+2013-02-22 14:05:18,562 [4] ERROR - 执行SQL出错: 违反了 UNIQUE KEY 约束 'UQ_PayNo_OrderId'。不能在对象 'dbo.Log_MoneyDetail' 中插入重复键。
+语句已终止。
+INSERT INTO Log_MoneyDetail (id,OrderId,InPayNo,PayNo,PayType,PayCpyNo,PayCpyType,PayCpyName,RecCpyNo,RecCpyType,RecCpyName,OperTime,OperLoginName,OperUserName,OperReason,Remark,PreRemainMoney,PayMoney,RemainMoney,A1,A2,A3,A4,A5,A6,A7,A8,A9,A10) values('e6473e48-f7ea-4cd7-a4ed-b0855073ebe5','0130219175314410499','634968930713437500','2013021918469721','1','100001000002000001','4','陈川分销商','100001000002','2','陈川落地运营商','2013-2-22 14:05:05','chenchuan11','陈川','在线退款','支付宝退款','0.00','188.00','0.00','0','0','0','0','1900-1-1 00:00:00','1900-1-1 00:00:00','','','','')
+
+
+INSERT INTO Log_MoneyDetail (id,OrderId,InPayNo,PayNo,PayType,PayCpyNo,PayCpyType,PayCpyName,RecCpyNo,RecCpyType,RecCpyName,OperTime,OperLoginName,OperUserName,OperReason,Remark,PreRemainMoney,PayMoney,RemainMoney,A1,A2,A3,A4,A5,A6,A7,A8,A9,A10) values('e6473e48-f7ea-4cd7-a4ed-b0855073ebe5','0130219175314410499','634968930713437500','2013021918469721','1','100001000002000001','4','陈川分销商','100001000002','2','陈川落地运营商','2013-2-22 14:05:05','chenchuan11','陈川','在线退款','支付宝退款','0.00','188.00','0.00','0','0','0','0','1900-1-1 00:00:00','1900-1-1 00:00:00','','','','')
+
+2013-02-22 14:05:18,671 [4] ERROR - INSERT INTO Log_MoneyDetail (id,OrderId,InPayNo,PayNo,PayType,PayCpyNo,PayCpyType,PayCpyName,RecCpyNo,RecCpyType,RecCpyName,OperTime,OperLoginName,OperUserName,OperReason,Remark,PreRemainMoney,PayMoney,RemainMoney,A1,A2,A3,A4,A5,A6,A7,A8,A9,A10) values('e6473e48-f7ea-4cd7-a4ed-b0855073ebe5','0130219175314410499','634968930713437500','2013021918469721','1','100001000002000001','4','陈川分销商','100001000002','2','陈川落地运营商','2013-2-22 14:05:05','chenchuan11','陈川','在线退款','支付宝退款','0.00','188.00','0.00','0','0','0','0','1900-1-1 00:00:00','1900-1-1 00:00:00','','','','')
+ INSERT INTO Log_Tb_AirOrder (id,OrderId,OperType,OperTime,OperLoginName,OperUserName,CpyNo,CpyType,CpyName,OperContent,WatchType,A1,A2,A3,A4,A5,A6,A7,A8,A9,A10) values('54642e18-182a-474d-9c0a-c2d58f123bab','0130219175314410499','退款','2013-2-22 14:05:11','chenchuan11','陈川','100001000002000001','4','陈川分销商','订单退款','4','0','0','0','0','1900-1-1 00:00:00','1900-1-1 00:00:00','','','','')
+  update Tb_Ticket_Order set  PayTime='2013-02-22 14:05:14',  OrderStatusCode= 5 where id='717f8a55-382f-4aa2-8cac-43117695e2fb' 
+System.Data.SqlClient.SqlException (0x80131904): 违反了 UNIQUE KEY 约束 'UQ_PayNo_OrderId'。不能在对象 'dbo.Log_MoneyDetail' 中插入重复键。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 DataBase.DbHelper.ExecuteNonQuerySQL(String sql)
+   在 PbProject.Dal.ControlBase.BaseData`1.ExecuteSqlTran(List`1 SQLList) 位置 F:\V3.0\(2013-02-22)-PbProject3.0\Dal\ControlBase\BaseData.cs:行号 383

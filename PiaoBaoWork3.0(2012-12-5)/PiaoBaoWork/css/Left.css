@@ -1,0 +1,19 @@
+body{font-family:Microsoft YaHei,Arial,Helvetica,sans-serif,Simsun;font-size:12px;margin:0px;}
+html,body{height:100%;background-color:#ffffff;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+table{border-collapse:collapse;border-spacing:0;}
+fieldset,img{border:0 solid;}
+li{list-style:none outside none;}
+a{color:#05a;text-decoration:none;}
+a:hover{text-decoration:underline;}
+.demo{width:176px;}
+.demo h3{width:146px;height:32px;background-image:url(../img/left/button.gif);text-align:left;line-height:32px;font-size:12px;padding:0 0 0px 30px;outline:none; cursor:pointer;}
+.demo h3 a{color:#323232;text-decoration:none;cursor:pointer;}
+.demo ul{margin-left:0px;}
+.demo ul li a{display:block;height:30px;color:#13425B;font-size:12px;line-height:30px;text-indent:30px;background:url(../img/left/jj.gif) no-repeat scroll 0 0;}
+.demo ul li{list-style:none;}
+.demo ul li a:hover{text-decoration:none;color:#ff0000;}
+.ui-accordion .ui-accordion-content{padding:1em 2.2em;border-top:0;margin-top:-2px;position:relative;top:1px;margin-bottom:2px;overflow:auto;display:none;zoom:1;}
+.ui-accordion .ui-accordion-content-active{display:block;}
+.qq{text-align:center;width:57px;height:17px;line-height:17px;font-size:12px;background:url(../img/pa.gif) no-repeat scroll 0 0 transparent;margin:5px 0 5px 15px;cursor:pointer;padding-left:20px;color:Red;}
+.demo h3.ui-state-active{background-image:url(../img/left/buttonhover.gif);}

@@ -1,0 +1,133 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>Dialog MC</title>
+<style type="text/css">
+* { margin:0; padding:0;}
+html { overflow:hidden;}
+a { text-decoration:none;}
+.frame_class {height:100%;border:none;font-size: 12px; margin-left:auto; margin-right:auto;}
+#demo { border:1px solid #999999}
+#demo tr td { border-color:#999999; font-size:13px; line-height:30px; height:30px; padding-left:5px;}
+#demo .left { border-bottom:1px solid #999999; border-right:1px solid #999999; background:#0099FF; color:#FFFFFF; font-weight:bold; font-size:14px; width:14%;}
+</style>
+<script language="javascript" src="Include/yessky.js" type="text/javascript"></script>
+<script language="javascript" src="Include/Dialog.js" type="text/javascript"></script>
+<script language="javascript" type="text/javascript">
+
+//加载外部iframe
+function MC_Iframe() {
+	var diag = new Dialog("class");
+	diag.Width = 900;
+	diag.Height = 400;
+	diag.Title = "系统提示";
+	diag.URL = "inner.html";
+	diag.ShowMessageRow = true;
+	diag.MessageTitle = "添加分类";
+	diag.Message = "为文章频道添加栏目分类";
+	diag.ShowButtonRow = false;
+	diag.show();
+}
+function MC_Iframe1() {
+	var diag = new Dialog("live");
+	diag.Width = 960;
+	diag.Height = 500;
+	diag.Title = "在线精彩 126更精彩 http://live126.cn - Windows Internet Exploer";
+	diag.URL = "http://www.jb51.net";
+	diag.ShowMessageRow = true;
+	diag.MessageTitle = "126更精彩";
+	diag.Message = "在线精彩 126更精彩 http://live126.cn";
+	diag.ShowButtonRow = false;
+	diag.show();
+}
+
+//confirm例子 模态模拟
+function MC_Confirm() {
+	confirm("你确定嘛?",function(){alert("你点击了确定");},function(){alert("你点击了取消");});
+}
+//alert例子 这里是重写了系统的alert 调用方法alert('alert');
+page.onload(function(){
+	//alert("欢迎来到MC Dialog,亲爱朋友!");
+	MC_Iframe1();
+})
+</script>
+</head>
+<body class="frame_class">
+<div style="margin-left:10%; margin-right:10%;margin-top:30px; width:80%; text-align:center; margin-bottom:10px;"><h2 id="cc">MC Dialog 演示DEMO</h2></div>
+<div style=" width:80%; margin-bottom:5px;"><h3>1.调用说明</h3></div>
+<table id="demo" width="98%" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <td class="left">模拟alert</td>
+    <td><a href="javascript:void(0);"  onClick="alert('用点力气撒!')"><b>点我试试</b></a>	</td>
+    <td>调用方法：alert('你要在这里输入字符串!')</td>
+  </tr>
+  <tr>
+    <td class="left">模拟confirm</td>
+    <td><a href="javascript:void(0);"  onClick="MC_Confirm()"><b>该你做出选择的时候了</b></a>	</td>
+    <td>调用方法：confirm("你确定嘛?",function(){alert("为确定按钮添加事件");},function(){alert("为取消按钮添加事件");});</td>
+  </tr>
+  <tr>
+    <td class="left">内嵌iframe</td>
+    <td><a href="javascript:void(0);"  onClick="MC_Iframe()"><b>看看里面套了点什么</b></a>	</td>
+    <td>见参数说明</td>
+  </tr>
+  <tr>
+    <td class="left">同时弹出多个alert</td>
+    <td><div  style="position:absolute; top:184px; z-index:200000;border:2px solid #FF0000; background:#FFFFFF; height:24px; line-height:24px;" ><a href="javascript:void(0);" onMouseOver="alert('on this');"><b>鼠标放上去然后移开</b></a></div></td>
+    <td>调用方法：--;</td>
+  </tr>
+  <tr>
+    <td class="left">远程iframe</td>
+    <td><a href="javascript:void(0);"  onClick="MC_Iframe1()"><b>远程加载iframe</b></a>	</td>
+    <td>见参数说明</td>
+  </tr>
+
+</table>
+<div style=" width:80%; margin-top:5px; margin-bottom:5px;"><h3>2.参数说明</h3></div>
+<table id="demo" width="98%" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <td class="left">参数说明</td>
+    <td>
+    ID: MC Dialog实例对象id<br>
+    Width: 弹出层宽度不带单位<br>
+    Height: 弹出层高度<br>
+    Title: 窗口标题栏<br>
+    URL: 内嵌iframe的url地址 如不是本域 必须添加协议即带有http://等<br>
+    Alert: 当直接写入内容时提供的字符串内容 在alert中用到 或者你可以扩展其他<br>
+    DialogArguments: 保存MC Dialog对象中内嵌的iframe对象 以便于轻松访问iframe中的内容<br>
+    Message: 标题详细栏内容<br>
+    MessageTitle: 子标题<br>
+    ShowMessageRow: 是否显示子标题栏<br>
+    ShowButtonRow: 是否显示按钮栏<br>
+    Icon: 图标<br>
+    Mask: 遮罩对象<br>
+    OKButton: 确认按钮<br>
+    CancelButton: 取消按钮  <br> 
+    </td>
+    <td></td>
+  </tr>
+</table>
+<div style=" width:80%; margin-top:5px; margin-bottom:5px;"><h3>3.内置方法</h3></div>
+<table id="demo" width="98%" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <td class="left">参数说明</td>
+    <td>
+    $TW:获取最顶级的window对象<br>
+    stopEvent: 阻止事件冒泡<br>
+    Dialog.Stock: 保存dialog队列 这里存的是ID<br>
+    Dialog.prototype.show: 创建弹出层 同时根据是否已创建了遮罩创建或者显示遮罩<br>
+    Dialog.prototype.close: MC Dialog实例的关闭方法<br>
+    Dialog.blink: 监听click 当在层外部click了 将焦点移回层 同时闪烁提示或者铃声提示<br>
+    Dialog.getInstance: 根据提供的ID 返回MC Dialog对应ID的实例<br>
+    Dialog.Alert: 内置的alert方法 window.alert被该方法替代<br>
+    Dialog.Confirm: 类似alert<br>
+    Dialog.setPosition: 队列中最后一个MC Dialog修正其位置 始终在屏幕居中<br>
+    Dialog.prototype.setPosition: 同上 这个是实例方法<br>
+    Dialog.onKeyUp: 监听键盘事件 防止tab切换焦点 按esc关闭 按enter回车执行确定按钮方法 禁止ctrl+a不能全选 在世界之窗下esc焦点将只想地址栏 这是浏览器bug<br>
+    Drag: 拖拽类 为MC Dialog提供拖拽功能的类  <br>
+    </td>
+    <td></td>
+  </tr>
+</table>
+</body>
+</html>

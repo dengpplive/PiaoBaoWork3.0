@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<banks>
+  <bank num="1" name="工商银行" code="ICBC"/>
+  <bank num="2" name="建设银行" code="CCB"/>
+  <bank num="3" name="农业银行" code="ABC"/>
+  <bank num="4" name="招商银行" code="CMB"/>
+  <bank num="5" name="上海浦发银行" code="SPDB"/>
+  <bank num="6" name="深圳发展银行" code="SDB"/>
+  <bank num="7" name="兴业银行" code="CIB"/>
+  <bank num="8" name="北京银行" code="BOB"/>
+  <bank num="9" name="光大银行" code="CEB"/>
+  <bank num="10" name="民生银行" code="CMBC"/>
+  <bank num="11" name="中信银行" code="CITIC"/>
+  <bank num="12" name="广东发展银行" code="GDB"/>
+  <bank num="13" name="平安银行" code="PAB"/>
+  <bank num="14" name="中国银行" code="BOC"/>
+  <bank num="15" name="交通银行" code="COMM"/>
+  <bank num="16" name="南京银行" code="NJCB"/>
+  <bank num="17" name="宁波银行" code="NBCB"/>
+  <bank num="18" name="上海农商" code="SRCB"/>
+  <bank num="19" name="东亚银行" code="BEA"/>
+  <bank num="20" name="邮储" code="POSTGC"/>
+  <bank num="21" name="工商银行（企业）" code="ICBCB2B"/>
+  <bank num="22" name="招商银行（企业）" code="CMBB2B"/>
+  <bank num="23" name="建设银行（企业）" code="CCBB2B"/>
+  <bank num="24" name="农业银行（企业）" code="ABCB2B"/>
+  <bank num="25" name="浦发银行（企业）" code="SPDBB2B"/>
+  <bank num="26" name="光大银行（企业）" code="CEBB2B"/>
+</banks>

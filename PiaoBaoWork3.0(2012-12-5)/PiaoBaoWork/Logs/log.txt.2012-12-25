@@ -1,0 +1,151 @@
+<<<<<<< .mine
+2012-12-25 16:17:42,156 [4] ERROR - 未将对象引用设置到对象的实例。
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Account_OpenAccount.BindAccountInfo(String id) 位置 f:\V3.0\v3.0(2012-12-20)\PiaoBaoWork\User\OpenAccount.aspx.cs:行号 182
+   在 Account_OpenAccount.Page_Load(Object sender, EventArgs e) 位置 f:\V3.0\v3.0(2012-12-20)\PiaoBaoWork\User\OpenAccount.aspx.cs:行号 26
+=======
+<<<<<<< .mine
+2012-12-24 11:55:58,406 [4] ERROR - 执行SQL出错: 必须声明标量变量 "@PayAccount"。
+update Tb_Order_PayDetail set PayAccount=@PayAccount,RealPayMoney=@RealPayMoney where id=@id 
+
+
+update Tb_Order_PayDetail set PayAccount=@PayAccount,RealPayMoney=@RealPayMoney where id=@id 
+
+=======
+2012-12-21 14:41:14,828 [4] ERROR - “ddlZT”的 DataSourceID 必须是 IDataSource 类型的控件的 ID。未能找到 ID 为“ObjectDataSource3”的控件。
+System.Web.HttpException (0x80004005): “ddlZT”的 DataSourceID 必须是 IDataSource 类型的控件的 ID。未能找到 ID 为“ObjectDataSource3”的控件。
+   在 System.Web.UI.WebControls.DataBoundControl.GetDataSource()
+   在 System.Web.UI.WebControls.DataBoundControl.ConnectToDataSourceView()
+   在 System.Web.UI.WebControls.DataBoundControl.GetData()
+   在 System.Web.UI.WebControls.ListControl.OnDataBinding(EventArgs e)
+   在 System.Web.UI.WebControls.ListControl.PerformSelect()
+   在 System.Web.UI.WebControls.BaseDataBoundControl.DataBind()
+   在 User_FlyerEdit.BindZJType() 位置 f:\V3.0\v3.0(2012-12-20)\PiaoBaoWork\User\FlyerEdit.aspx.cs:行号 35
+   在 User_FlyerEdit.Page_Load(Object sender, EventArgs e) 位置 f:\V3.0\v3.0(2012-12-20)\PiaoBaoWork\User\FlyerEdit.aspx.cs:行号 16
+>>>>>>> .r9488
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2012-12-25 16:29:24,062 [11] ERROR - 未将对象引用设置到对象的实例。
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Account_OpenAccount.BindAccountInfo(String id) 位置 f:\V3.0\v3.0(2012-12-20)\PiaoBaoWork\User\OpenAccount.aspx.cs:行号 182
+   在 Account_OpenAccount.Page_Load(Object sender, EventArgs e) 位置 f:\V3.0\v3.0(2012-12-20)\PiaoBaoWork\User\OpenAccount.aspx.cs:行号 26
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2012-12-25 16:29:34,250 [11] ERROR - 未将对象引用设置到对象的实例。
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Account_OpenAccount.BindAccountInfo(String id) 位置 f:\V3.0\v3.0(2012-12-20)\PiaoBaoWork\User\OpenAccount.aspx.cs:行号 182
+   在 Account_OpenAccount.Page_Load(Object sender, EventArgs e) 位置 f:\V3.0\v3.0(2012-12-20)\PiaoBaoWork\User\OpenAccount.aspx.cs:行号 26
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+<<<<<<< .mine
+2012-12-25 16:29:49,937 [4] ERROR - 未将对象引用设置到对象的实例。
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Account_OpenAccount.BindAccountInfo(String id) 位置 f:\V3.0\v3.0(2012-12-20)\PiaoBaoWork\User\OpenAccount.aspx.cs:行号 182
+   在 Account_OpenAccount.Page_Load(Object sender, EventArgs e) 位置 f:\V3.0\v3.0(2012-12-20)\PiaoBaoWork\User\OpenAccount.aspx.cs:行号 26
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2012-12-25 16:30:11,796 [9] ERROR - 未将对象引用设置到对象的实例。
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Account_OpenAccount.BindAccountInfo(String id) 位置 f:\V3.0\v3.0(2012-12-20)\PiaoBaoWork\User\OpenAccount.aspx.cs:行号 182
+   在 Account_OpenAccount.Page_Load(Object sender, EventArgs e) 位置 f:\V3.0\v3.0(2012-12-20)\PiaoBaoWork\User\OpenAccount.aspx.cs:行号 26
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2012-12-25 16:30:29,015 [8] ERROR - 未将对象引用设置到对象的实例。
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Account_OpenAccount.BindAccountInfo(String id) 位置 f:\V3.0\v3.0(2012-12-20)\PiaoBaoWork\User\OpenAccount.aspx.cs:行号 182
+   在 Account_OpenAccount.Page_Load(Object sender, EventArgs e) 位置 f:\V3.0\v3.0(2012-12-20)\PiaoBaoWork\User\OpenAccount.aspx.cs:行号 26
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2012-12-25 16:35:06,218 [4] ERROR - 未将对象引用设置到对象的实例。
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Account_OpenAccount.BindAccountInfo(String id) 位置 f:\V3.0\v3.0(2012-12-20)\PiaoBaoWork\User\OpenAccount.aspx.cs:行号 182
+   在 Account_OpenAccount.Page_Load(Object sender, EventArgs e) 位置 f:\V3.0\v3.0(2012-12-20)\PiaoBaoWork\User\OpenAccount.aspx.cs:行号 26
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2012-12-25 16:42:01,890 [12] ERROR - 未将对象引用设置到对象的实例。
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Account_OpenAccount.BindAccountInfo(String id) 位置 f:\V3.0\v3.0(2012-12-20)\PiaoBaoWork\User\OpenAccount.aspx.cs:行号 182
+   在 Account_OpenAccount.Page_Load(Object sender, EventArgs e) 位置 f:\V3.0\v3.0(2012-12-20)\PiaoBaoWork\User\OpenAccount.aspx.cs:行号 26
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2012-12-25 16:46:35,593 [9] ERROR - 未将对象引用设置到对象的实例。
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Account_OpenAccount.BindAccountInfo(String id) 位置 f:\V3.0\v3.0(2012-12-20)\PiaoBaoWork\User\OpenAccount.aspx.cs:行号 182
+   在 Account_OpenAccount.Page_Load(Object sender, EventArgs e) 位置 f:\V3.0\v3.0(2012-12-20)\PiaoBaoWork\User\OpenAccount.aspx.cs:行号 26
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2012-12-25 16:47:31,453 [9] ERROR - 未将对象引用设置到对象的实例。
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Account_OpenAccount.BindAccountInfo(String id) 位置 f:\V3.0\v3.0(2012-12-20)\PiaoBaoWork\User\OpenAccount.aspx.cs:行号 184
+   在 Account_OpenAccount.Page_Load(Object sender, EventArgs e) 位置 f:\V3.0\v3.0(2012-12-20)\PiaoBaoWork\User\OpenAccount.aspx.cs:行号 26
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2012-12-25 16:49:01,578 [11] ERROR - 未将对象引用设置到对象的实例。
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Account_OpenAccount.BindAccountInfo(String id) 位置 f:\V3.0\v3.0(2012-12-20)\PiaoBaoWork\User\OpenAccount.aspx.cs:行号 185
+   在 Account_OpenAccount.Page_Load(Object sender, EventArgs e) 位置 f:\V3.0\v3.0(2012-12-20)\PiaoBaoWork\User\OpenAccount.aspx.cs:行号 26
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2012-12-25 16:50:55,031 [11] ERROR - 未将对象引用设置到对象的实例。
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Account_OpenAccount.BindAccountInfo(String id) 位置 f:\V3.0\v3.0(2012-12-20)\PiaoBaoWork\User\OpenAccount.aspx.cs:行号 185
+   在 Account_OpenAccount.Page_Load(Object sender, EventArgs e) 位置 f:\V3.0\v3.0(2012-12-20)\PiaoBaoWork\User\OpenAccount.aspx.cs:行号 26
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+=======
+>>>>>>> .r9478
+>>>>>>> .r9488
+2012-12-25 17:31:33,250 [4] ERROR - 未将对象引用设置到对象的实例。
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 UserContrl_ImportanterC.BindDictionary() 位置 f:\V3.0\v3.0(2012-12-20)\PiaoBaoWork\UserContrl\ImportanterC.ascx.cs:行号 29
+   在 UserContrl_ImportanterC.OnInit(EventArgs e) 位置 f:\V3.0\v3.0(2012-12-20)\PiaoBaoWork\UserContrl\ImportanterC.ascx.cs:行号 18
+   在 System.Web.UI.Control.InitRecursive(Control namingContainer)
+   在 System.Web.UI.Control.InitRecursive(Control namingContainer)
+   在 System.Web.UI.Control.InitRecursive(Control namingContainer)
+   在 System.Web.UI.Control.InitRecursive(Control namingContainer)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2012-12-25 17:33:09,781 [4] ERROR - 索引超出了数组界限。
+System.IndexOutOfRangeException: 索引超出了数组界限。
+   在 Account_OpenAccount.BindAccountInfo(String id) 位置 f:\V3.0\v3.0(2012-12-20)\PiaoBaoWork\User\OpenAccount.aspx.cs:行号 187
+   在 Account_OpenAccount.Page_Load(Object sender, EventArgs e) 位置 f:\V3.0\v3.0(2012-12-20)\PiaoBaoWork\User\OpenAccount.aspx.cs:行号 26
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)

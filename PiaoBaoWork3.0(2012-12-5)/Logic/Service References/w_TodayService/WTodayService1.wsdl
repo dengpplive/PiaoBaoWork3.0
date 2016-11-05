@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="GetRateListByPNR">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pnrCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PnrInfo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRateListByPNRResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetRateListByPNRResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateOrderByPNR">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pnrCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="rateid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="dotnum" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="newRateId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PnrInfo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="rateWay" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateOrderByPNRResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CreateOrderByPNRResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetOrderInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="orderno" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetOrderInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetOrderInfoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AutoPayOrder">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="orderno" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AutoPayOrderResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AutoPayOrderResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TuiFeiOrder">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="type" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="orderno" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Repeal" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="personName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="isCancelSeat" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Cause" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Remarks" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Rnum" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TicketNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TuiFeiOrderResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TuiFeiOrderResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetRateListByPNRSoapIn">
+    <wsdl:part name="parameters" element="tns:GetRateListByPNR" />
+  </wsdl:message>
+  <wsdl:message name="GetRateListByPNRSoapOut">
+    <wsdl:part name="parameters" element="tns:GetRateListByPNRResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateOrderByPNRSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateOrderByPNR" />
+  </wsdl:message>
+  <wsdl:message name="CreateOrderByPNRSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateOrderByPNRResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetOrderInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetOrderInfo" />
+  </wsdl:message>
+  <wsdl:message name="GetOrderInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetOrderInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="AutoPayOrderSoapIn">
+    <wsdl:part name="parameters" element="tns:AutoPayOrder" />
+  </wsdl:message>
+  <wsdl:message name="AutoPayOrderSoapOut">
+    <wsdl:part name="parameters" element="tns:AutoPayOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="TuiFeiOrderSoapIn">
+    <wsdl:part name="parameters" element="tns:TuiFeiOrder" />
+  </wsdl:message>
+  <wsdl:message name="TuiFeiOrderSoapOut">
+    <wsdl:part name="parameters" element="tns:TuiFeiOrderResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WTodayServiceSoap">
+    <wsdl:operation name="GetRateListByPNR">
+      <wsdl:input message="tns:GetRateListByPNRSoapIn" />
+      <wsdl:output message="tns:GetRateListByPNRSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateOrderByPNR">
+      <wsdl:input message="tns:CreateOrderByPNRSoapIn" />
+      <wsdl:output message="tns:CreateOrderByPNRSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOrderInfo">
+      <wsdl:input message="tns:GetOrderInfoSoapIn" />
+      <wsdl:output message="tns:GetOrderInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AutoPayOrder">
+      <wsdl:input message="tns:AutoPayOrderSoapIn" />
+      <wsdl:output message="tns:AutoPayOrderSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TuiFeiOrder">
+      <wsdl:input message="tns:TuiFeiOrderSoapIn" />
+      <wsdl:output message="tns:TuiFeiOrderSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WTodayServiceSoap" type="tns:WTodayServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetRateListByPNR">
+      <soap:operation soapAction="http://tempuri.org/GetRateListByPNR" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateOrderByPNR">
+      <soap:operation soapAction="http://tempuri.org/CreateOrderByPNR" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrderInfo">
+      <soap:operation soapAction="http://tempuri.org/GetOrderInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AutoPayOrder">
+      <soap:operation soapAction="http://tempuri.org/AutoPayOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TuiFeiOrder">
+      <soap:operation soapAction="http://tempuri.org/TuiFeiOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WTodayServiceSoap12" type="tns:WTodayServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetRateListByPNR">
+      <soap12:operation soapAction="http://tempuri.org/GetRateListByPNR" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateOrderByPNR">
+      <soap12:operation soapAction="http://tempuri.org/CreateOrderByPNR" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrderInfo">
+      <soap12:operation soapAction="http://tempuri.org/GetOrderInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AutoPayOrder">
+      <soap12:operation soapAction="http://tempuri.org/AutoPayOrder" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TuiFeiOrder">
+      <soap12:operation soapAction="http://tempuri.org/TuiFeiOrder" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WTodayService">
+    <wsdl:port name="WTodayServiceSoap" binding="tns:WTodayServiceSoap">
+      <soap:address location="http://210.14.138.26:118/WTodayService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WTodayServiceSoap12" binding="tns:WTodayServiceSoap12">
+      <soap12:address location="http://210.14.138.26:118/WTodayService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

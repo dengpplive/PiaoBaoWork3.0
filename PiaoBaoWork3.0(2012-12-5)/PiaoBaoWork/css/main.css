@@ -1,0 +1,179 @@
+﻿body{font-family:Microsoft YaHei,Arial,Helvetica,sans-serif,Simsun;font-size:12px;margin:0px;}
+html,body{height:100%;background-color:#ffffff;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+table{border-collapse:collapse;border-spacing:0;}
+fieldset,img{border:0 solid;}
+li{list-style:none outside none;}
+.index1{display:block;margin-left:10px;width:810px;}
+.index2{display:block;margin-left:20px;width:840px;}
+.indeximg{background:url("../img/login/index.jpg") no-repeat scroll 0 0 transparent;height:180px;margin-bottom:10px;width:810px;}
+.indeximg1{background:url("../eat/images/eatindex.jpg") no-repeat scroll 0 0 transparent;height:185px;width:815px;}
+.indeximg2{background:url("../img/login/airindex.jpg") no-repeat scroll 0 0 transparent;width:735px;}
+.indeximg2 .tab-pannel{height:200px;}
+.indeximg3{background:url("../img/login/hotelindex.gif") no-repeat scroll 0 0 transparent;width:733px;}
+.indeximg3 .tab-pannel{height:220px;}
+.indeximg6{background:url("../img/login/tourIndex.gif") no-repeat scroll 0 0 transparent;width:733px;}
+.indeximg5{background:url("../img/login/banner_alipay.jpg") no-repeat scroll 0 0 transparent;width:748px;}
+.indeximg5 .tab-pannel{height:180px;}
+.indeximg7{background:url("../img/login/busticket.gif") no-repeat scroll 0 0 transparent;width:733px;padding-top:10px;}
+.indeximg4{background:url("../img/login/car1.gif") no-repeat scroll 0 0 transparent;padding-top:5px;width:800px;}
+.indeximg4 .tab-pannel{height:180px;}
+.infor{padding:40px 0 0 25px;}
+.infor-title{margin-bottom:10px;}
+.index1 .infor ul{margin-bottom:20px;}
+.index1 .infor li{line-height:2;list-style:disc inside none;}
+.ui-title{background-image:url("../img/login/gg.gif");padding:5px 0 0 5px;}
+.new-title{height:51px;margin-top:15px;width:805px;}
+.ui-title,ui-title-relative{position:relative;}
+.new-title h2{color:#000000;float:left;font-size:20px;font-weight:500;padding:5px 0 0 5px;width:190px;}
+.new-title p{color:#999999;float:left;margin-top:15px;width:600px;}
+.new-channels{color:#545454;}
+.new-channels .ui-repeater-item{background:url("../img/login/new-thumb-detail.png") repeat-x scroll 0 0 transparent;border:1px solid #E9E9E9;cursor:pointer;float:left;height:86px;margin:0 5px 10px;padding-left:12px;width:380px;}
+.ui-repeater li:hover{background:url("../img/login/new-thumb-detail.png") repeat-x scroll 0 -111px transparent;border-color:#FFD38B;}
+.ui-intro-content li{line-height:20px;list-style-type:circle;}
+.ui-intro-content li:hover{background:none repeat scroll 0 0 transparent;}
+.new-channels .ui-intro-icon{margin:10px 10px 0 0;text-align:center;width:67px;}
+.ui-intro-icon,.ui-intro-container{float:right;width:295px;}
+.ui-intro-title{font-size:14px;font-weight:600;line-height:1.7;white-space:nowrap;}
+.ui-intro{display:block;width:376px;}
+.ui-intro p{background:url("../img/login/tubiao.gif") repeat scroll 0 0 transparent;display:block;float:left;height:50px;margin:22px 10px 0 0;text-align:center;width:50px;}
+.ui-intro p.tubiao1{background-position:0 0;}
+.ui-intro p.tubiao2{background-position:0 -50px;}
+.ui-intro p.tubiao4{background-position:0 -102px;}
+.ui-intro p.tubiao3{background-position:0 -153px;}
+.col-a{margin-left:16px;}
+.col-a1{background:url("../eat/images/wydc1.gif") no-repeat scroll 570px 20px transparent;margin-left:16px;}
+#qqmoney-step{margin:0 0 0 25px;}
+.mod-step .hd{padding:29px 0 20px;}
+.mod-step .bd{height:60px;}
+.mod-step .hd h3{background:url("../img/login/life_main.jpg") no-repeat scroll -880px -29px transparent;color:#668CB3;font:bold 14px Arial;left:-11px;padding:0 0 0 12px;position:relative;}
+.mod-step .bd li{background:url("../img/login/life_main.jpg") no-repeat scroll -682px -75px transparent;float:left;line-height:1.5;list-style:none outside none;padding:0 0 0 36px;}
+.mod-step .bd li.nv1{background:none repeat scroll 0 0 transparent;padding:0;width:62px;}
+.mod-step .bd li.nv2{padding-left:36px;width:62px;}
+.mod-step .bd li .rc1{background:url("../img/login/life_main.jpg") no-repeat scroll -740px -77px transparent;float:left;padding:0 0 0 7px;}
+.mod-step .bd li .rc2{background:url("../img/login/life_main.jpg") no-repeat scroll right -77px transparent;height:60px;padding:0 7px 0 0;}
+.mod-step .bd li span{display:block;padding:21px 0 0;text-align:center;}
+.index1 .ft{border-bottom:1px solid #E3E3E3;margin:20px 0 0 28px;}
+.ipt-01{border:1px solid #CCCCCC;height:15px;line-height:15px;margin:0;padding:2px;}
+.logo{float:left;position:relative;z-index:2;}
+.login{background:none repeat scroll 0 0 transparent;float:left;margin-top:30px;min-height:304px;position:relative;width:327px;z-index:1;}
+.login .tips .arr,.login .tips .close,.changetheme span,.zxdt li a,.login .domain,.zxdt,.zxdt h3,.zxdt .end,.btn,.ipt-b,.ipt-t,.login h3,.intro li,.logo .word,.bg{}
+.login .hd{background:url("../img/login/box_bg.png") no-repeat scroll 325px 0 transparent;height:36px;}
+.login .bd{background:url("../img/login/box_bg.png") repeat-y scroll -600px 0 transparent;padding:0 6px 0 4px;}
+.login .box{background:url("../img/login/box_bg.png") no-repeat scroll -604px 0 #FAFAFA;padding:8px 20px 0;}
+.ft1{background:url("../img/login/box_bg.png") no-repeat scroll -950px bottom transparent;font-size:0;height:6px;}
+.login .hd li{height:36px;width:325px;}
+.login .hd h2{color:#000000;cursor:default;font-size:14px;line-height:38px;position:relative;z-index:1;}
+.login .hd h2,.login .hd a{background:url("../img/login/box_bg.png") no-repeat scroll -10px 0 transparent;display:block;height:36px;overflow:hidden;text-align:center;}
+.login .hd a{background-position:-10px 0;color:#999999;font-size:12px;font-weight:bold;line-height:36px;text-decoration:none;}
+.login .fi{clear:left;overflow:hidden;padding:6px 0;}
+.login .lb{float:left;font-size:14px;line-height:30px;margin-right:10px;text-align:right;width:44px;}
+.login label{color:#525252;}
+.login .ipt-t{background-position:0 -72px;border:1px solid #737373;color:#454545;font-size:14px;height:22px;margin-right:-5px;padding:3px 2px 2px;width:203px;}
+.login .ipt-t-focus{background:none repeat scroll 0 0 #FEFBBD;border-color:#84D2FF;}
+.login .fi-chkbox{overflow:visible;position:relative;}
+.ipt-c,.ipt-r{height:16px;margin:0 3px 0 0;overflow:hidden;padding:0;vertical-align:middle;width:16px;}
+.login .fi-nolb,.login .fi-btn{padding-left:53px;}
+.login #autoLoginDiv{background:none repeat scroll 0 0 #FFFFFF;border:1px solid #C7C7C7;color:#FF5A00;display:none;line-height:150%;padding:5px;position:absolute;text-align:left;width:202px;}
+.login .btn,.login .ipt-b{color:#373737;height:31px;width:90px;}
+.ipt-b,.btn{cursor:pointer;font-size:14px;font-weight:bold;}
+.btn{background:url("../img/btn_big.gif") no-repeat scroll 0 0 transparent;border:0 none;color:white;font-size:14px;font-weight:bold;height:30px;width:100px;}
+.login .ipt-b{background-position:0 -180px;border:0 none;margin-right:6px;padding:0;}
+.login .ipt-b-hover{background-position:0 -216px;}
+.forget-pw{color:#808080;line-height:26px;}
+.login .reg{border-top:1px solid #E0E0E0;height:38px;margin:20px 0 0 24px;padding-left:42px;padding-top:8px;}
+.login .reg li{background:url("/images/stuff.png") no-repeat scroll -337px -225px transparent;float:left;padding:0 10px;}
+.login .reg .dynamic-pwd{background-position:-321px -196px;padding-left:23px;}
+.reg li a{text-decoration:none;}
+.reg li a:hover{text-decoration:underline;}
+.intro{float:left;height:400px;position:relative;width:489px;z-index:1;}
+.intro li{background-position:0 -256px;padding-left:20px;}
+.intro .introtxt{color:#848484;font-size:14px;line-height:30px;}
+.intro .piclink{display:block;font-size:12px;height:190px;left:0;line-height:normal;padding:20px 0 0 4px;position:absolute;text-decoration:none;width:481px;}
+.zxdt{background-position:0 -108px;background-repeat:repeat-x;height:33px;line-height:31px;margin:0 auto 25px;overflow:hidden;width:960px;}
+.zxdt h3{background-position:0 -144px;color:#FFFFFF;float:left;font-size:14px;height:33px;letter-spacing:2px;margin:0;text-align:center;width:111px;}
+.zxdt h3 a{color:#FFFFFF;text-decoration:none;}
+.zxdt ul{margin:0 76px 0 160px;}
+.zxdt li{display:inline;float:left;line-height:18px;margin-top:6px;overflow:hidden;text-align:center;width:33%;}
+.zxdt .end{background-position:-111px -144px;float:right;height:33px;width:16px;}
+.zxdt li a{color:#737373;text-decoration:none;}
+.zxdt li a{background-position:-252px -5px;padding-left:13px;}
+.zxdt a:hover{text-decoration:underline;}
+.submit{margin-bottom:5px;overflow:hidden;padding:10px 0 0 55px;}
+.submit button{background:url("../../img/login/stuff.png") no-repeat scroll 0 -100px transparent;border:0 none;height:27px;line-height:100px;margin-right:6px;overflow:hidden;vertical-align:middle;width:86px;}
+.submit button:hover{background-position:-128px -100px;}
+#loginSuggestion{clear:both;color:#404040;margin-bottom:40px;padding:20px 0 0;text-align:center;}
+#loginSuggestion a{color:#0077FF;}
+#loginSuggestion a:hover{color:#FF6600;text-decoration:underline;}
+.tsearch-panel1-fields,.tsearch-panel1 button,.tsearch-panel1-fields input{background:url("/item/images/Tsearch.png") no-repeat scroll -999em 0 transparent;}
+.tsearch-panel1{background:none repeat scroll 0 0 #EFEFEF;border:1px solid #D0D0D0;float:left;height:30px;margin:20px 0 0 140px;width:430px;}
+.tsearch-panel1-fields{background-color:#FFFFFF;background-position:0 0;border:1px solid #9B9F9F;float:left;height:24px;width:345px;}
+.tsearch-panel1-fields label{background:url("/item/images/Tsearch.png") no-repeat scroll -468px -70px transparent;color:#BABABA;cursor:text;font-size:14px;line-height:24px;padding-left:24px;position:absolute;}
+.tsearch-panel1-fields input{border:0 none;color:#333333;font-family:verdana,tahoma,arial,宋体;font-size:14px;height:18px;line-height:20px;padding:3px 4px 3px 6px;position:absolute;width:250px;}
+.tsearch-panel1 button{background-color:#F68911;background-position:-269px -30px;border:0 none;cursor:pointer;float:left;height:26px;margin-top:2px;padding:0;text-indent:-999em;width:80px;}
+.ts-cat{background-color:#FFFFFF;border-left:1px solid #E1E1E1;cursor:pointer;height:22px;overflow:hidden;padding-left:10px;position:absolute;right:100px;top:2px;width:150px;}
+input.btn.big{background:url("../img/btn_big.gif") repeat scroll 0 0 transparent;border:medium none;color:white;font-size:14px;font-weight:bold;height:30px;width:100px;}
+input.btn.big{background:url("../img/btn_big.gif") repeat scroll 0 0 transparent;border:medium none;color:white;font-size:14px;font-weight:bold;height:30px;width:100px;}
+.normal-titile{border-bottom:1px solid #DDDDDD;margin-bottom:10px;padding-bottom:5px;margin-left:20px;}
+.normal-titile strong{color:#3B485B;font-family:Simson;font-size:14px;font-weight:700;}
+#gnjd tr{line-height:25px;height:25px;}
+#overlay{background-color:#333333;left:0;filter:alpha(opacity=50);/* IE */
+ -moz-opacity:0.5;/* 老版Mozilla */
+ -khtml-opacity:0.5;/* 老版Safari */
+ opacity:0.5;position:absolute;top:0;width:100%;z-index:999;height:100%}
+#loading{margin-top:10px;margin-left:-240px;width:420px;border:0 none;text-align:center;padding:40px 30px 40px 30px;color:#707070;font-size:18px;line-height:180%;position:absolute;left:50%;top:30%;z-index:1000;background:url(../img/mainbg.gif) center no-repeat; background-color:#ffffff}
+.Statis{background-color:#ffffff;padding:0px 10px;}
+.Statis h2{font-size:14px;height:27px;line-height:27px;text-align:left;}
+.ListTit{background:url("../img/TitBg1.gif") repeat-x scroll 0 0 transparent;height:30px;line-height:30px;}
+.ListTit b{display:block;float:left;font-size:14px;height:30px;padding-left:35px;}
+.BodyBox{border:1px solid #DFDFDF;}
+.font_14{float:left;font-size:14px;height:30px;line-height:30px;}
+.bank-logo{background:url("../img/banklist_cz.png") no-repeat  0 0 ;border:1px solid #FFFFFF;cursor:pointer;display:block;height:25px;line-height:25px;margin:0 0 5px;padding:0 3px 5px;text-decoration:none;width:155px;}
+.icbc{background-position:20px -380px;}
+.icbcb2b{background-position:20px -759px;}
+.cmb{background-position:20px -420px;}
+.GZCB{background-position:20px -1367px;}
+.HXB{background-position:20px -1295px;}
+.BJRCB{background-position:20px -587px;}
+.BEA{background-position:20px -956px;}
+.CBHB{background-position:20px -992px;}
+.POST{background-position:20px -502px;}
+.SHRCC{background-position:20px -716px;}
+.HZB{background-position:20px -759px;}
+.CZB{background-position:20px -1024px;}
+.SHB{background-position:20px -836px;}
+.HSB{background-position:20px -1063px;}
+.PSBC{background-position:20px -1218px;}
+.cmbb2b{background-position:20px -840px;}
+.ccb{background-position:20px -60px;}
+.abc{background-position:20px -20px;}
+.spdb{background-position:20px -340px;}
+.sdb{background-position:20px -300px;}
+.cib{background-position:20px -460px;}
+.cebb{background-position:20px -100px;}
+.boc{background-position:20px -182px;}
+.cmbc{background-position:20px -140px;}
+.bob{background-position:20px -588px;}
+.udpay{background-position:20px -723px;}
+.gzupay{background-position:20px -680px;}
+.zxyh{background-position:20px -260px;}
+.gfyh{background-position:20px -220px;}
+.gdb{background-position:20px -220px;}
+.pingan{background-position:20px -875px;}
+.bofc{background-position:20px -913px;}
+.postupay{background-position:20px -500px;}
+.cib_1009{background-position:20px -955px;}
+.cib_1059{background-position:20px -990px;}
+.ccb_b2b{background-position:20px -1026px;}
+.abc_b2b{background-position:20px -1064px;}
+.shchinapay{background-position:20px -1099px;}
+.njcb{background-position:20px -1140px;}
+.nbcb{background-position:20px -1177px;}
+.kuai{background-position:20px -1250px;}
+#morePayment{width:100%;overflow:hidden;}
+#morePayment li{display:block;float:left;margin-right:5px;}
+#morePayment a{border:1px solid rgb(255,255,255);}
+#morePayment a:hover{border:1px solid #e6e6e6;}
+.bank-logo input{cursor:pointer;display:inline;height:30px;vertical-align:middle;}
+.inputtxtdat{border-color:#B8B8B8 #DCDCDC #DCDCDC #B8B8B8;border-style:solid;border-width:1px;font:12px/20px "microsoft yahei",simsun;height:20px;padding-left:3px;box-shadow:1px 1px 3px #DDDDDD inset;}
+.inputtxtdat:focus{background-color:#F1F9FF;border-color:#5D9DE5 #67A1E2 #67A1E2 #5D9DE5;border-style:solid;border-width:1px;box-shadow:1px 1px 3px #ffdbce inset;}

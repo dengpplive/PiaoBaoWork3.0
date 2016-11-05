@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="GetAirB2BPolicy">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CpCpyNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Pnr" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="BigPnr" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CarryCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAirB2BPolicyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAirB2BPolicyResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DataSet" nillable="true">
+        <s:complexType>
+          <s:sequence>
+            <s:element ref="s:schema" />
+            <s:any />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetAirB2BPolicySoapIn">
+    <wsdl:part name="parameters" element="tns:GetAirB2BPolicy" />
+  </wsdl:message>
+  <wsdl:message name="GetAirB2BPolicySoapOut">
+    <wsdl:part name="parameters" element="tns:GetAirB2BPolicyResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAirB2BPolicyHttpGetIn">
+    <wsdl:part name="CpCpyNo" type="s:string" />
+    <wsdl:part name="Pnr" type="s:string" />
+    <wsdl:part name="BigPnr" type="s:string" />
+    <wsdl:part name="CarryCode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetAirB2BPolicyHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="GetAirB2BPolicyHttpPostIn">
+    <wsdl:part name="CpCpyNo" type="s:string" />
+    <wsdl:part name="Pnr" type="s:string" />
+    <wsdl:part name="BigPnr" type="s:string" />
+    <wsdl:part name="CarryCode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetAirB2BPolicyHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:portType name="B2BPolicyWebServiceSoap">
+    <wsdl:operation name="GetAirB2BPolicy">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;font style="color:red;"&gt;实时获取航空公司B2B政策信息&lt;/font&gt;</wsdl:documentation>
+      <wsdl:input message="tns:GetAirB2BPolicySoapIn" />
+      <wsdl:output message="tns:GetAirB2BPolicySoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="B2BPolicyWebServiceHttpGet">
+    <wsdl:operation name="GetAirB2BPolicy">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;font style="color:red;"&gt;实时获取航空公司B2B政策信息&lt;/font&gt;</wsdl:documentation>
+      <wsdl:input message="tns:GetAirB2BPolicyHttpGetIn" />
+      <wsdl:output message="tns:GetAirB2BPolicyHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="B2BPolicyWebServiceHttpPost">
+    <wsdl:operation name="GetAirB2BPolicy">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;font style="color:red;"&gt;实时获取航空公司B2B政策信息&lt;/font&gt;</wsdl:documentation>
+      <wsdl:input message="tns:GetAirB2BPolicyHttpPostIn" />
+      <wsdl:output message="tns:GetAirB2BPolicyHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="B2BPolicyWebServiceSoap" type="tns:B2BPolicyWebServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetAirB2BPolicy">
+      <soap:operation soapAction="http://tempuri.org/GetAirB2BPolicy" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="B2BPolicyWebServiceSoap12" type="tns:B2BPolicyWebServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetAirB2BPolicy">
+      <soap12:operation soapAction="http://tempuri.org/GetAirB2BPolicy" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="B2BPolicyWebServiceHttpGet" type="tns:B2BPolicyWebServiceHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="GetAirB2BPolicy">
+      <http:operation location="/GetAirB2BPolicy" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="B2BPolicyWebServiceHttpPost" type="tns:B2BPolicyWebServiceHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="GetAirB2BPolicy">
+      <http:operation location="/GetAirB2BPolicy" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="B2BPolicyWebService">
+    <wsdl:port name="B2BPolicyWebServiceSoap" binding="tns:B2BPolicyWebServiceSoap">
+      <soap:address location="http://210.14.138.26:997/B2BPolicyWebService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="B2BPolicyWebServiceSoap12" binding="tns:B2BPolicyWebServiceSoap12">
+      <soap12:address location="http://210.14.138.26:997/B2BPolicyWebService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="B2BPolicyWebServiceHttpGet" binding="tns:B2BPolicyWebServiceHttpGet">
+      <http:address location="http://210.14.138.26:997/B2BPolicyWebService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="B2BPolicyWebServiceHttpPost" binding="tns:B2BPolicyWebServiceHttpPost">
+      <http:address location="http://210.14.138.26:997/B2BPolicyWebService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

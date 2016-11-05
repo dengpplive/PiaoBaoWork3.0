@@ -1,0 +1,505 @@
+﻿left, .l {
+    float: left;
+}
+right {
+    float: right;
+}
+.r {
+    clear: right;
+    float: right;
+}
+.c {
+    clear: both;
+    font-size: 0;
+}
+.tal {
+    text-align: left;
+}
+.tar {
+    text-align: right;
+}
+.tac {
+    text-align: center;
+}
+input {
+    vertical-align: middle;
+}
+input[type="radio"], input[type="checkbox"] {
+    padding: 3px;
+}
+input.text, textarea.text {
+    background: none repeat scroll 0 0 white;
+    border: 1px solid #AFAFAF;
+    padding: 2px;
+}
+.text.error {
+    border-color: red;
+}
+input.btn {
+    border: 1px solid lavender;
+}
+input.btn.big2 {
+    background: url("../images/btn_big2.gif") repeat scroll 0 0 transparent;
+    border: medium none;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    height: 25px;
+    width: 200px;
+}
+input.btn.big {
+    background: url("../img/btn_big.gif") repeat scroll 0 0 transparent;
+    border: medium none;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    height: 30px;
+    width: 122px;
+}
+input.btn.small {
+    background: url("../images/btn_small.gif") repeat scroll 0 0 transparent;
+    border: medium none;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    height: 22px;
+    width: 56px;
+}
+input.btn.y70 {
+    background: url("../images/btn_yellow.gif") repeat scroll 0 0 transparent;
+    border: medium none;
+    color: white;
+    font-size: 12px;
+    height: 20px;
+    margin-bottom: -3px;
+    width: 70px;
+}
+.wdate {
+    background: url("../js/My97DatePicker/skin/datePicker.gif") no-repeat scroll right center transparent !important;
+}
+.wdate.date, .wdate.time {
+    width: 15ex;
+}
+.wdate.datetime {
+    width: 25ex;
+}
+span.error {
+    color: red;
+}
+.sector {
+    border: medium none;
+    margin:  10px 0 0 0;
+}
+.sector h5 {
+    font-size: 12px;
+    font-weight: bold;
+    height: 25px;
+    line-height: 25px;
+}
+.sector h6 {
+    background: -moz-linear-gradient(#FFFFFF 0%, #F1F9FF 100%) repeat scroll 0 0 transparent;
+    border: 1px solid #AACCEE;
+    color: #07519A;
+    font-size: 12px;
+    font-weight: normal;
+    height: 27px;
+    line-height: 27px;
+    margin: 0;
+}
+
+.sector div.content {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: -moz-use-text-color #BBD2DE #BBD2DE;
+    border-right: 1px solid #BBD2DE;
+    border-style: none solid solid;
+    border-width: medium 1px 1px;
+    overflow: hidden;
+     padding:5px;
+}
+.item {
+    padding: 5px 10px;
+    width: 778px;
+}
+.form {
+    padding-top: 8px;
+}
+.form div {
+    margin-bottom: 8px;
+}
+.form div label {
+    float: left;
+    text-align: center;
+    width: 120px;
+}
+.form div label b {
+    color: red;
+    font-weight: bold;
+}
+.form div p {
+    float: left;
+}
+.form div p label {
+    float: none;
+    margin-right: 12px;
+    text-align: right;
+    width: auto;
+}
+.panel label.top {
+    background: url("../images/panel.gif") no-repeat scroll right top transparent;
+    display: block;
+    font-size: 1px;
+    height: 6px;
+}
+.panel label.top span {
+    background: url("../images/panel.gif") repeat scroll 0 0 transparent;
+    display: block;
+    height: 6px;
+    width: 60%;
+}
+.panel div.content {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #ACC8D3;
+    border-style: solid;
+    border-width: 0 1px;
+    overflow: hidden;
+}
+.panel label.bottom {
+    background: url("../images/panel.gif") no-repeat scroll right bottom transparent;
+    display: block;
+    font-size: 1px;
+    height: 6px;
+}
+.panel label.bottom span {
+    background: url("../images/panel.gif") repeat scroll left bottom transparent;
+    display: block;
+    height: 6px;
+    width: 60%;
+}
+.tabset {
+    border-bottom: 2px solid #198CDC;
+    overflow: hidden;
+}
+.tabset dd {
+    background: url("../images/tabs.gif") repeat scroll right top transparent;
+    cursor: pointer;
+    float: left;
+    height: 26px;
+    line-height: 26px;
+    margin-right: 4px;
+    text-align: center;
+    width: 90px;
+}
+.tabset dd.current {
+    background-position: left top;
+    color: white;
+}
+label.star {
+    background: url("../images/star.gif") repeat scroll 0 0 transparent;
+    display: inline-block;
+    height: 16px;
+    overflow: hidden;
+    width: 80px;
+}
+label.s5 {
+    background-position: 0 50%;
+}
+label.s4 {
+    background-position: -16px 50%;
+}
+label.s3 {
+    background-position: -32px 50%;
+}
+label.s2 {
+    background-position: -48px 50%;
+}
+label.s1 {
+    background-position: -64px 50%;
+}
+.bar {
+    background: url("../images/barbg.gif") repeat-x scroll 0 0 transparent;
+    height: 29px;
+    line-height: 29px;
+}
+.bar label {
+    background: url("../images/barbg.gif") no-repeat scroll left bottom transparent;
+    color: #FF6700;
+    float: left;
+    font-weight: bold;
+    height: 29px;
+    padding-left: 12px;
+}
+.pupop_title {
+    background-image: url("../images/layer_global.png");
+}
+.pupop_title label {
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 24px;
+    padding-left: 8px;
+}
+.pupop_title button {
+    background: url("../images/layer_global.png") no-repeat scroll 4px -36px transparent;
+    cursor: pointer;
+    height: 17px;
+    margin: 3px;
+    padding: 0;
+    width: 17px;
+}
+.pupop_title button:hover {
+    background-position: -17px -36px;
+}
+.select {
+    vertical-align: middle;
+}
+.select label {
+    background: none repeat scroll 0 0 white;
+    border: 1px solid silver;
+    display: block;
+}
+.select.expand label {
+    border-bottom: medium none;
+}
+.select dl {
+    background: none repeat scroll 0 0 white;
+    border: 1px solid silver;
+    display: none;
+}
+.select.expand dl {
+    display: block;
+}
+.select dl dd {
+    cursor: default;
+}
+.select dl dd.hover {
+    background-color: #CCFFCC;
+}
+.select dl dd.current {
+    background-color: #B7D6F2;
+}
+table.grid {
+    background: none repeat scroll 0 0 lavender;
+    border: 0 solid #CAEAFF;
+    width: 100%;
+}
+table.grid thead {
+    background-color: #CAEAFF;
+    line-height: 22px;
+}
+table.grid tbody tr {
+    background-color: white;
+    line-height: 20px;
+}
+table.grid tbody tr.alt {
+    background-color: #F4F4F4;
+}
+table.grid tbody tr:hover td {
+    background-color: #F8F8F8;
+}
+table.searcher {
+    margin: 6px 0 6px 12px;
+}
+table.searcher td {
+    padding: 0 2px;
+}
+p.searcher {
+    padding-left: 12px;
+}
+p.searcher b {
+    color: red;
+    font-weight: normal;
+}
+dl.info {
+    background: none repeat scroll 0 0 #FFFAE6;
+    border: 1px solid #FFE8B4;
+    margin: 12px;
+    padding: 12px;
+}
+dl.info dt {
+    font-size: 14px;
+    font-weight: bold;
+    padding-bottom: 6px;
+}
+dl.info dd {
+    padding-left: 16px;
+}
+table.info {
+    background: none repeat scroll 0 0 #A5D7FF;
+    margin: 12px;
+    width: 816px;
+}
+table.info th, table.info td {
+    background: none repeat scroll 0 0 #F3F8FE;
+    line-height: 22px;
+    text-align: center;
+}
+table.info thead th {
+    font-size: 14px;
+    padding: 8px 12px;
+    text-align: left;
+}
+.info span {
+    color: red;
+}
+.b {
+    font-weight: bold;
+}
+.tar {
+    text-align: right;
+}
+.pl150 {
+    padding-left: 150px;
+}
+.h5 {
+    height: 5px;
+}
+.load_mask {
+    background-color: gray;
+    height: 100%;
+    left: 0;
+    opacity: 0.3;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+.load_image {
+    background-color: white;
+    height: 100px;
+    left: 50%;
+    line-height: 100px;
+    margin: -50px 0 0 -150px;
+    position: fixed;
+    text-align: center;
+    top: 50%;
+    width: 300px;
+    z-index: 101;
+}
+.title {
+    display: block;
+    margin-bottom: 6px;
+    margin-top: 10px;
+    overflow: hidden;
+    padding: 0 12px;
+    position: relative;
+}
+.title h2 {
+    color: #424242;
+    float: left;
+    font: bold 18px "微软雅黑";
+}
+.line {
+    background: none repeat scroll 0 0 #E1E1E1;
+    height: 1px;
+    margin-left: 12px;
+    overflow: hidden;
+    width: 776px;
+}
+.line1 {
+    background: none repeat scroll 0 0 #E1E1E1;
+    height: 1px;
+    overflow: hidden;
+}
+.info-list {
+    background: none repeat scroll 0 0 #FFFAE6;
+    border: 1px solid #FFE8B4;
+    float: left;
+    margin: 12px;
+    padding: 12px;
+    width: 750px;
+}
+.info-table td, .info-table th {
+    padding: 5px 0;
+}
+.info-table td {
+    color: #0077FF;
+    margin: 0 2px 0 0;
+}
+.info-table th {
+    text-align: right;
+    width: 100px;
+}
+.dn {
+    display: none;
+}
+.msg-cert {
+    padding-left: 5px;
+}
+.msg-cert li {
+    color: #535353;
+    list-style: none outside none;
+}
+.msg-cert span {
+    display: none;
+}
+#detail {
+    border: 1px solid #EBEBEB;
+    margin-bottom: 10px;
+    padding: 15px 30px 0;
+}
+#detail .mt {
+    padding-bottom: 2px;
+    position: relative;
+}
+#detail h1 {
+    border-bottom: 1px solid #EBEBEB;
+    font-family: "microsoft yahei",宋体;
+    font-size: 20px;
+    height: 24px;
+    line-height: 24px;
+    margin-bottom: 10px;
+    padding: 10px 0;
+    text-align: center;
+}
+#detail .summary {
+    color: #999999;
+    text-align: center;
+}
+#detail .mc {
+    font-size: 14px;
+    line-height: 2em;
+    padding: 30px 10px;
+}
+.content .mc {
+    border: 1px solid #EBEBEB;
+    margin-bottom: 10px;
+}
+.content h5 {
+    background: none repeat scroll 0 0 #F6F6F6;
+    padding: 4px 8px;
+}
+.content h5 span {
+    float: right;
+}
+.content ul {
+    padding: 8px;
+}
+.content li {
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+    padding: 3px 0;
+}
+.content li div {
+    float: left;
+    margin-right: 5px;
+}
+.content li span {
+    color: #999999;
+    float: right;
+    margin-left: 5px;
+}
+.content li .line2 {
+    border-top: 1px dotted #CCCCCC;
+    float: none;
+    height: 10px;
+    margin-top: 11px;
+    overflow: hidden;
+}

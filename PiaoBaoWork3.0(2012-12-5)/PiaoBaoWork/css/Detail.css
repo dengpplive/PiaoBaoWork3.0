@@ -1,0 +1,102 @@
+﻿
+
+.dialog_link
+{
+	padding: .4em 1em .4em 20px;
+	text-decoration: none;
+	position: relative;
+	font-size: 12px;
+}
+
+.dialog_link span.ui-icon
+{
+	margin: 0 5px 0 0;
+	position: absolute;
+	left: .2em;
+	top: 50%;
+	margin-top: -8px;
+}
+
+.table_info
+{
+	font-size: 12px;
+	line-height: 18px;
+	width: 100%;
+	text-align: center;
+	font: 12px , "Trebuchet MS" , sans-serif;
+	border-collapse:collapse;
+}
+.table_info th
+{
+	background: #dfeffc;
+}
+form, p
+{
+	margin: 0;
+	padding: 0;
+}
+.infomain {
+    padding: 10px;
+}
+.mainPanel {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #D4D4D4;
+    border-radius: 5px 5px 5px 5px;
+}
+.table_info th, .table_info td
+{ padding:2px;
+}
+.table_info .bt {
+    background: none repeat scroll 0 0 #EFF4F8;
+    border-bottom: 1px solid #E0E0E0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-size: 16px;
+    height: 20px;
+    line-height: 20px;
+    padding: 10px 0 10px 35px;
+}
+.table_info td
+{
+	margin: 0;
+	font-size: 12px;
+	text-align: left;
+	color: Black;
+	line-height: 24px;
+	background-color: #fff;
+}
+.table_info td input
+{
+	border: 1px solid #8AC6F4;
+}
+.table_info .td
+{
+	margin: 0;
+	font-size: 12px;
+	text-align: right;
+	color:#006699;
+	line-height: 24px;
+	background-color: #F7F7F7;
+}
+.table_info .bindtd
+{
+	margin: 0;
+	font-size: 12px;
+	text-align: left;
+	color: Black;
+	line-height: 24px;
+	background-color: #FFECD1;
+}
+.sugges
+{
+	font-size: 12px;
+}
+.sugges tr
+{
+	height: 22px;
+	line-height: 22px;
+}
+.sugtitle
+{
+	color: Orange;
+}

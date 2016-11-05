@@ -1,0 +1,6 @@
+2013-01-07 16:46:42,062 [12] ERROR - 执行SQL出错: 将字符串转换为 uniqueidentifier 时失败。
+select * from Tb_Ticket_Order  where id=''
+
+
+select * from Tb_Ticket_Order  where id=''
+

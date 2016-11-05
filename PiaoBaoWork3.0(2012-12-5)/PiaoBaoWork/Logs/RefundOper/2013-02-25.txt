@@ -1,0 +1,185 @@
+记录时间：2013-2-25 17:11:24
+      IP：127.0.0.1
+内    容: <drawBackApi>
+<orderId></orderId>
+<pid>10022169944</pid>
+<processId></processId>
+<seqId>2013022517110130221111203750550</seqId>
+<returnAllAmount>18800</returnAllAmount>
+<returnFee></returnFee>
+<dealId></dealId>
+<returnSupAmount></returnSupAmount>
+<result>11</result>
+<errCode>10010</errCode>
+<returnData>
+<returnDetail>
+<returnContactType></returnContactType>
+<returnContact>80</returnContact>
+<returnAmount></returnAmount>
+<toBeAdvance></toBeAdvance>
+<returnDesc></returnDesc>
+<microErrorCode>10008</microErrorCode>
+</returnDetail><returnDetail>
+<returnContactType></returnContactType>
+<returnContact>18701</returnContact>
+<returnAmount></returnAmount>
+<toBeAdvance></toBeAdvance>
+<returnDesc></returnDesc>
+<microErrorCode>10008</microErrorCode>
+</returnDetail></returnData><signMsg>oqOAT3dEoZ4Aw3yEHpoVGxjZNhszqXzBPMVMtK7kROaN2OTYUzdRcP6poThN5XfaNUe%2FxTdgVQCo2cKAFkC1umDHfSbytOVC9xQpA18aazctyVH9SQ29YCTvouwrOthqBZzBKLDr7vNlayeGYRxFK%2FlHUjCP6N3LD6OrMlI6tGfD8dVV5yyiS6sDWmxWqfr5GL0N9CzhXNZH9jOuteq24JxAwxHPzafTWDDtpoGvJ%2F1DP1X9LNyqj8NX1rWxlzmhrDeVva05HzG4DNVDrOXHgY7MZaOGke%2FEXysjlFBD9OSZRavZmu8prYnpTRB1haJJmRamK%2FvrEOv7dZK6b1IfIw%3D%3D</signMsg>
+</drawBackApi>
+----------------------------------------------------------------------------------------------------
+
+
+记录时间：2013-2-25 17:21:39
+      IP：127.0.0.1
+内    容: <drawBackApi>
+<orderId></orderId>
+<pid>10022169944</pid>
+<processId></processId>
+<seqId>2013022517140130221111203750550</seqId>
+<returnAllAmount>18800</returnAllAmount>
+<returnFee></returnFee>
+<dealId></dealId>
+<returnSupAmount></returnSupAmount>
+<result>11</result>
+<errCode>10010</errCode>
+<returnData>
+<returnDetail>
+<returnContactType>1</returnContactType>
+<returnContact>money@mypb.cn</returnContact>
+<returnAmount>80</returnAmount>
+<toBeAdvance></toBeAdvance>
+<returnDesc>Refund</returnDesc>
+<microErrorCode></microErrorCode>
+</returnDetail><returnDetail>
+<returnContactType>1</returnContactType>
+<returnContact>806570471@qq.com</returnContact>
+<returnAmount>18701</returnAmount>
+<toBeAdvance></toBeAdvance>
+<returnDesc>Refund</returnDesc>
+<microErrorCode></microErrorCode>
+</returnDetail></returnData><signMsg>O%2FNngLHwA98dUYrF%2FpcKweqjEHsHehvUITE%2BabWruYJjohdHUGdKcqOkP%2FNoCJovb%2B%2FIsn5Pi9%2BfrGZUoqVKexUJo%2Fyv2tO%2Bc%2FUYZczLlPD3r4qPr%2FAInjcqQzDRifoepyR68a0xdSRxczOMO4LGI%2FUu9030PLtmOjI2fZN0TkaAnzQf1Z33g0xGyQMcH4ZiN6h4aT3ErXQDWizeh1aDzCSrvq0ZiFIWAlL6rdVq9FKReinhbJdW4yVFWe%2Bkb5CIdQv1miWxNNvxWP5ny%2FjMQXAstz5RrF%2Bh%2Bw4mioQsUw1yInKJxP9q4ZSBc4RSnsf%2BsguXYT%2FVJjNwbtNsi%2BGEjA%3D%3D</signMsg>
+</drawBackApi>
+----------------------------------------------------------------------------------------------------
+
+
+记录时间：2013-2-25 17:26:44
+      IP：127.0.0.1
+内    容: <drawBackApi>
+<orderId>0130221111203750550</orderId>
+<pid>10022169944</pid>
+<processId></processId>
+<seqId>2013022517240130221111203750550</seqId>
+<returnAllAmount>18800</returnAllAmount>
+<returnFee></returnFee>
+<dealId></dealId>
+<returnSupAmount></returnSupAmount>
+<result>11</result>
+<errCode>10012</errCode>
+<returnData>
+<returnDetail>
+<returnContactType>1</returnContactType>
+<returnContact>money@mypb.cn</returnContact>
+<returnAmount>80</returnAmount>
+<toBeAdvance></toBeAdvance>
+<returnDesc>Refund</returnDesc>
+<microErrorCode></microErrorCode>
+</returnDetail><returnDetail>
+<returnContactType>1</returnContactType>
+<returnContact>806570471@qq.com</returnContact>
+<returnAmount>18701</returnAmount>
+<toBeAdvance></toBeAdvance>
+<returnDesc>Refund</returnDesc>
+<microErrorCode></microErrorCode>
+</returnDetail></returnData><signMsg>TVTxT7LERr9%2FaxYVFnFoNiWSTTJo%2BTpWXkkOpexoxKt%2FE%2BcRYENLLUb7IIeqtqCqPF6Vlpqwwhr1b3O%2B3LCQT%2FvrIEATIgBwmIdK%2F5fzyYSfeegq3Y7ruBDDzImFSzFUItNoDvj5aH1L9KNDA0EJG7hgtUibMIOBNGG8d8wgrS%2FEjHK6fuKU1P8NdMLWGz5%2BBy5rrSlpIjrxJcXQaVGJdfhQ7t3wA723%2FryOgqOT02jm0aB%2BxUGni1IuW2mt91ix1KYhLxLKl4DH8ON%2BBt9PKlzyhcBoR4KkcQ%2FaPMHkcLg%2BVWY%2FOwEuxa0LePP4ctWusTZT9%2F8UvLSGZ1%2FUq%2BpMcQ%3D%3D</signMsg>
+</drawBackApi>
+----------------------------------------------------------------------------------------------------
+
+
+记录时间：2013-2-25 17:36:27
+      IP：127.0.0.1
+内    容: <drawBackApi>
+<orderId>0130221111203750550</orderId>
+<pid>10022169944</pid>
+<processId></processId>
+<seqId>2013022517350130221111203750550</seqId>
+<returnAllAmount>18800</returnAllAmount>
+<returnFee></returnFee>
+<dealId></dealId>
+<returnSupAmount></returnSupAmount>
+<result>11</result>
+<errCode>10012</errCode>
+<returnData>
+<returnDetail>
+<returnContactType>1</returnContactType>
+<returnContact>money@mypb.cn</returnContact>
+<returnAmount>80</returnAmount>
+<toBeAdvance></toBeAdvance>
+<returnDesc>Refund</returnDesc>
+<microErrorCode></microErrorCode>
+</returnDetail><returnDetail>
+<returnContactType>1</returnContactType>
+<returnContact>806570471@qq.com</returnContact>
+<returnAmount>18701</returnAmount>
+<toBeAdvance></toBeAdvance>
+<returnDesc>Refund</returnDesc>
+<microErrorCode></microErrorCode>
+</returnDetail><returnDetail>
+<returnContactType>1</returnContactType>
+<returnContact>1076090377@qq.com</returnContact>
+<returnAmount>19</returnAmount>
+<toBeAdvance></toBeAdvance>
+<returnDesc>Refund</returnDesc>
+<microErrorCode></microErrorCode>
+</returnDetail></returnData><signMsg>fxCaY0AjIcl%2BsOI493ab5lW3E%2B4lOFTR1f3XTv4lUrhKUp9ErsLOC0feS%2FgYbd4YVaiQqlTyd%2FdlhTiNzPm4j4uN4lxHoRIx6F1BQJzNCEBlAURBQkPsNsHZRBVHalPvsukeCNU993gbhkNqSaiOJGlui04o%2Fhf5%2BgD%2FZc9l%2BfAdd%2Fw8uS3mI32kPIDVi%2FrK6%2F9qAmbt9bBBpqEM%2Fg4EbADJgDj5OlTg%2BL7Oq%2BMjKx1ADtLUpsnjR2eviJONJNdmFQ50yuldP02PIkeB2Fx%2BCmMkBPWja0l4QgS8SSDk9kiH7Sflk8U39wSvbX%2FO3eQQaxa4VA%2BN01W0090vPTQxSw%3D%3D</signMsg>
+</drawBackApi>
+----------------------------------------------------------------------------------------------------
+
+
+记录时间：2013-2-25 17:39:24
+      IP：127.0.0.1
+内    容: <drawBackApi>
+<orderId>0130221111203750550</orderId>
+<pid>10022169944</pid>
+<processId></processId>
+<seqId>201302251739150130221111203750550</seqId>
+<returnAllAmount>18800</returnAllAmount>
+<returnFee>19</returnFee>
+<dealId>922144169</dealId>
+<returnSupAmount></returnSupAmount>
+<result>10</result>
+<errCode></errCode>
+<returnData>
+<returnDetail>
+<returnContactType>1</returnContactType>
+<returnContact>money@mypb.cn</returnContact>
+<returnAmount>80</returnAmount>
+<toBeAdvance></toBeAdvance>
+<returnDesc>Refund</returnDesc>
+<microErrorCode></microErrorCode>
+</returnDetail><returnDetail>
+<returnContactType>1</returnContactType>
+<returnContact>806570471@qq.com</returnContact>
+<returnAmount>18701</returnAmount>
+<toBeAdvance></toBeAdvance>
+<returnDesc>Refund</returnDesc>
+<microErrorCode></microErrorCode>
+</returnDetail><returnDetail>
+<returnContactType>1</returnContactType>
+<returnContact>1076090377@qq.com</returnContact>
+<returnAmount>19</returnAmount>
+<toBeAdvance></toBeAdvance>
+<returnDesc>Refund</returnDesc>
+<microErrorCode></microErrorCode>
+</returnDetail></returnData><signMsg>tM6Z31rv71asOvW6v%2FXxxZ98ugX4h0Gf2Eze7KnxEMx3n3443XGBofqUUGV9wShukPy%2BMLYwGa0MplivgwUhCmErhCY%2FOwOkzkhPnvwMKxXzBgnL58wd9QZEiociEKdVpeoqYs47YiXCuY4GkK%2Fas7BRKilxfbrF9unPsXPxifnc26bcnS9B5ogWSz1FdZg8GN8QcksKUJXr00Fsvst3MVrGrTVspYwYa%2FaNtTmxKuqVSnY%2Fd2J0qmrBZ5VixgOqwhxssL6WMdkWVaL5CujefUzB8x0Q%2BbOJufz8q9yheaMUYvpkcW3Guny2WU60mXhjDnKDcGXV6Kop2rrHWyRgQQ%3D%3D</signMsg>
+</drawBackApi>
+----------------------------------------------------------------------------------------------------
+
+
+记录时间：2013-2-25 17:51:24
+      IP：127.0.0.1
+内    容: <drawBackApi><orderId>0130221111203750550</orderId><pid>10022169944</pid><processId></processId><seqId>201302251739150130221111203750550</seqId><returnAllAmount>18800</returnAllAmount><returnFee>19</returnFee><dealId>922144169</dealId><returnSupAmount></returnSupAmount><result>10</result><errCode></errCode><returnData><returnDetail><returnContactType>1</returnContactType><returnContact>money@mypb.cn</returnContact><returnAmount>80</returnAmount><toBeAdvance></toBeAdvance><returnDesc>Refund</returnDesc><microErrorCode></microErrorCode></returnDetail><returnDetail><returnContactType>1</returnContactType><returnContact>806570471@qq.com</returnContact><returnAmount>18701</returnAmount><toBeAdvance></toBeAdvance><returnDesc>Refund</returnDesc><microErrorCode></microErrorCode></returnDetail><returnDetail><returnContactType>1</returnContactType><returnContact>1076090377@qq.com</returnContact><returnAmount>19</returnAmount><toBeAdvance></toBeAdvance><returnDesc>Refund</returnDesc><microErrorCode></microErrorCode></returnDetail></returnData><signMsg>tM6Z31rv71asOvW6v%2FXxxZ98ugX4h0Gf2Eze7KnxEMx3n3443XGBofqUUGV9wShukPy%2BMLYwGa0MplivgwUhCmErhCY%2FOwOkzkhPnvwMKxXzBgnL58wd9QZEiociEKdVpeoqYs47YiXCuY4GkK%2Fas7BRKilxfbrF9unPsXPxifnc26bcnS9B5ogWSz1FdZg8GN8QcksKUJXr00Fsvst3MVrGrTVspYwYa%2FaNtTmxKuqVSnY%2Fd2J0qmrBZ5VixgOqwhxssL6WMdkWVaL5CujefUzB8x0Q%2BbOJufz8q9yheaMUYvpkcW3Guny2WU60mXhjDnKDcGXV6Kop2rrHWyRgQQ%3D%3D</signMsg></drawBackApi>
+----------------------------------------------------------------------------------------------------
+
+

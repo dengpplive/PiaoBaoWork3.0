@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="99BillNotifyUrl.aspx.cs" Inherits="Pay_ReturnPage_99BillNotifyUrl" %>

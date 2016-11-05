@@ -1,0 +1,68 @@
+﻿.title{background: none repeat scroll 0pt 0pt #FFECD1; font-size: 14px; font-weight: bold; height: 26px; line-height: 26px; color: rgb(7, 81, 154); padding-left: 10px;}
+.sector{border: 1px solid #FFD190; padding: 1px 0pt 5px; margin: 10px;}
+
+
+
+
+.table
+{
+	font-size: 12px;
+	line-height: 18px;
+	text-align: center;
+	border: 1px solid #dfeffc;
+	border-collapse:collapse;
+    font-size: 12px;
+    line-height: normal;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-family: "Trebuchet MS", sans-serif;
+     margin:10px 3px 3px 3px;
+     width:98%;
+     
+}
+.th
+{
+	background: #FFECD1;
+}
+.th2
+{
+	background: #dfeffc;
+	text-align: right;
+}
+.td
+{
+	margin: 0;
+	font-size: 12px;
+	text-align: left;
+	color: Black;
+	line-height: 24px;
+	background-color: #fff; border: 1px  solid #DDDDDD
+}
+.td2
+{
+	margin: 0;
+	font-size: 12px;
+	text-align: center;
+	color: Black;
+	line-height: 24px;
+	background-color: #fff;
+}
+.td3
+{
+	margin: 0;
+	font-size: 12px;
+	text-align: right;
+	color: Black;
+	line-height: 24px;
+	background-color: #fff;
+}
+.btn {
+    background: url("../img/btn_big.gif") repeat scroll 0 0 transparent;
+    border: medium none;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    height: 30px;
+    width: 100px;
+}

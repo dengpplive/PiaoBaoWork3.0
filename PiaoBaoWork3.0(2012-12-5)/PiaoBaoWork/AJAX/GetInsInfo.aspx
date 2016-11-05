@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="GetInsInfo.aspx.cs" Inherits="AJAX_GetInsInfo" %>

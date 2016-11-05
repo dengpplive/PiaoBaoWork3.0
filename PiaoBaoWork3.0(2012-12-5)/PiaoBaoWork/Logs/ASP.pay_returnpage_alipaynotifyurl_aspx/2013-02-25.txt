@@ -1,0 +1,193 @@
+记录时间：2013-2-25 09:56:23
+      IP：127.0.0.1
+内    容: Pay_ReturnPage_AliPayNotifyUrl
+  Request.HttpMethod:POST
+discount = 0.00
+extra_common_param = ecb3a487-7d66-4196-a84d-b2f108ff1561
+payment_type = 8
+subject = 机票订单
+trade_no = 2013022531926196
+buyer_email = jianghui520you@126.com
+gmt_create = 2013-02-25 09:49:05
+notify_type = trade_status_sync
+quantity = 1
+out_trade_no = 0130221111203750538
+seller_id = 2088801432717360
+notify_time = 2013-02-25 09:50:16
+body = 机票订单
+trade_status = TRADE_SUCCESS
+is_total_fee_adjust = N
+total_fee = 188.00
+gmt_payment = 2013-02-25 09:50:16
+seller_email = pay@mypb.cn
+price = 188.00
+buyer_id = 2088302324545963
+notify_id = 0dfacd400e3ffe2eccc0b1282bae8dee09
+use_coupon = N
+sign_type = MD5
+sign = de787aed2b25ac14c9f90877739eb9c6
+----------------------------------------------------------------------------------------------------
+
+
+记录时间：2013-2-25 09:56:41
+      IP：127.0.0.1
+内    容: IsDataUrl()验签失败1
+----------------------------------------------------------------------------------------------------
+
+
+记录时间：2013-2-25 09:59:16
+      IP：127.0.0.1
+内    容: IsDataUrl()验签失败1
+----------------------------------------------------------------------------------------------------
+
+
+记录时间：2013-2-25 10:25:07
+      IP：127.0.0.1
+内    容: Pay_ReturnPage_AliPayNotifyUrl
+  Request.HttpMethod:POST
+discount = 0.00
+extra_common_param = ecb3a487-7d66-4196-a84d-b2f108ff1561
+payment_type = 8
+subject = 机票预订
+trade_no = 2013022531926196
+buyer_email = jianghui520you@126.com
+gmt_create = 2013-02-25 09:49:05
+notify_type = trade_status_sync
+quantity = 1
+out_trade_no = 0130221111203750538
+seller_id = 2088801432717360
+notify_time = 2013-02-25 09:50:16
+body = 机票订单
+trade_status = TRADE_SUCCESS
+is_total_fee_adjust = N
+total_fee = 188.00
+gmt_payment = 2013-02-25 09:50:16
+seller_email = pay@mypb.cn
+price = 188.00
+buyer_id = 2088302324545963
+notify_id = 0dfacd400e3ffe2eccc0b1282bae8dee09
+use_coupon = N
+sign_type = MD5
+sign = de787aed2b25ac14c9f90877739eb9c6
+----------------------------------------------------------------------------------------------------
+
+
+记录时间：2013-2-25 10:26:31
+      IP：127.0.0.1
+内    容: Pay_ReturnPage_AliPayNotifyUrl
+  Request.HttpMethod:POST
+discount = 0.00
+extra_common_param = ecb3a487-7d66-4196-a84d-b2f108ff1561
+payment_type = 8
+subject = 机票预订
+trade_no = 2013022531926196
+buyer_email = jianghui520you@126.com
+gmt_create = 2013-02-25 09:49:05
+notify_type = trade_status_sync
+quantity = 1
+out_trade_no = 0130221111203750538
+seller_id = 2088801432717360
+notify_time = 2013-02-25 09:50:16
+body = 机票订单
+trade_status = TRADE_SUCCESS
+is_total_fee_adjust = N
+total_fee = 188.00
+gmt_payment = 2013-02-25 09:50:16
+seller_email = pay@mypb.cn
+price = 188.00
+buyer_id = 2088302324545963
+notify_id = 0dfacd400e3ffe2eccc0b1282bae8dee09
+use_coupon = N
+sign_type = MD5
+sign = de787aed2b25ac14c9f90877739eb9c6
+----------------------------------------------------------------------------------------------------
+
+
+记录时间：2013-2-25 10:27:57
+      IP：127.0.0.1
+内    容: Pay_ReturnPage_AliPayNotifyUrl
+  Request.HttpMethod:POST
+discount = 0.00
+extra_common_param = ecb3a487-7d66-4196-a84d-b2f108ff1561
+payment_type = 8
+subject = 机票预订
+trade_no = 2013022531926196
+buyer_email = jianghui520you@126.com
+gmt_create = 2013-02-25 09:49:05
+notify_type = trade_status_sync
+quantity = 1
+out_trade_no = 0130221111203750538
+seller_id = 2088801432717360
+notify_time = 2013-02-25 09:50:16
+body = 机票订单
+trade_status = TRADE_SUCCESS
+is_total_fee_adjust = N
+total_fee = 188.00
+gmt_payment = 2013-02-25 09:50:16
+seller_email = pay@mypb.cn
+price = 188.00
+buyer_id = 2088302324545963
+notify_id = 0dfacd400e3ffe2eccc0b1282bae8dee09
+use_coupon = N
+sign_type = MD5
+sign = de787aed2b25ac14c9f90877739eb9c6
+----------------------------------------------------------------------------------------------------
+
+
+记录时间：2013-2-25 10:29:11
+      IP：127.0.0.1
+内    容: IsDataUrl()验签失败1
+----------------------------------------------------------------------------------------------------
+
+
+记录时间：2013-2-25 13:44:49
+      IP：127.0.0.1
+内    容: Pay_ReturnPage_AliPayNotifyUrl
+  Request.HttpMethod:POST
+sign = 7ceb3e1bd086e01e271085c428313afe
+result_details = 2013022532357796^188.00^SUCCESS$pay@mypb.cn^2088801432717360^0.19^SUCCESS|money@mypb.cn^2088801966411134^pay@mypb.cn^2088801432717360^0.80^SUCCESS|2646798837@qq.com^2088802476429705^pay@mypb.cn^2088801432717360^187.01^SUCCESS
+notify_time = 2013-02-25 13:40:53
+sign_type = MD5
+notify_type = batch_refund_notify
+notify_id = bcd76199b67bdee80ae2de7820145ed600
+batch_no = 201302250130221111203750520
+success_num = 1
+----------------------------------------------------------------------------------------------------
+
+
+记录时间：2013-2-25 13:44:55
+      IP：127.0.0.1
+内    容: Pay_ReturnPage_AliPayNotifyUrl:else:签名失败
+----------------------------------------------------------------------------------------------------
+
+
+记录时间：2013-2-25 13:44:59
+      IP：127.0.0.1
+内    容: Pay_ReturnPage_AliPayNotifyUrl
+  Request.HttpMethod:POST
+sign = 7ceb3e1bd086e01e271085c428313afe
+result_details = 2013022532357796^188.00^SUCCESS$pay@mypb.cn^2088801432717360^0.19^SUCCESS|money@mypb.cn^2088801966411134^pay@mypb.cn^2088801432717360^0.80^SUCCESS|2646798837@qq.com^2088802476429705^pay@mypb.cn^2088801432717360^187.01^SUCCESS
+notify_time = 2013-02-25 13:40:53
+sign_type = MD5
+notify_type = batch_refund_notify
+notify_id = bcd76199b67bdee80ae2de7820145ed600
+batch_no = 201302250130221111203750520
+success_num = 1
+----------------------------------------------------------------------------------------------------
+
+
+记录时间：2013-2-25 13:47:19
+      IP：127.0.0.1
+内    容: Pay_ReturnPage_AliPayNotifyUrl
+  Request.HttpMethod:POST
+sign = 7ceb3e1bd086e01e271085c428313afe
+result_details = 2013022532357796^188.00^SUCCESS$pay@mypb.cn^2088801432717360^0.19^SUCCESS|money@mypb.cn^2088801966411134^pay@mypb.cn^2088801432717360^0.80^SUCCESS|2646798837@qq.com^2088802476429705^pay@mypb.cn^2088801432717360^187.01^SUCCESS
+notify_time = 2013-02-25 13:40:53
+sign_type = MD5
+notify_type = batch_refund_notify
+notify_id = bcd76199b67bdee80ae2de7820145ed600
+batch_no = 201302250130221111203750520
+success_num = 1
+----------------------------------------------------------------------------------------------------
+
+

@@ -1,0 +1,374 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D66867E4-835F-43AE-922C-597BBCBCAE11}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PbProject.Logic</RootNamespace>
+    <AssemblyName>Logic</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DataBase, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dll\DataBase.dll</HintPath>
+    </Reference>
+    <Reference Include="IRemoteMethod">
+      <HintPath>..\dll\IRemoteMethod.dll</HintPath>
+    </Reference>
+    <Reference Include="PublicClass">
+      <HintPath>..\dll\PublicClass.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="tenpayLib">
+      <HintPath>..\dll\tenpayLib.dll</HintPath>
+    </Reference>
+    <Reference Include="WebManage">
+      <HintPath>..\dll\WebManage.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Buy\AirQurey.cs" />
+    <Compile Include="Buy\PnrImportManage.cs" />
+    <Compile Include="ControlBase\BaseDataManage.cs" />
+    <Compile Include="ControlBase\Bd_Base_DictionaryBLL.cs" />
+    <Compile Include="ControlBase\Bd_Base_PageBLL.cs" />
+    <Compile Include="ControlBase\Bd_Base_ParametersBLL.cs" />
+    <Compile Include="DiscountSet\Tb_Ticket_StrategyGroupBll.cs" />
+    <Compile Include="Login.cs" />
+    <Compile Include="Log\Log_ErrorBLL.cs" />
+    <Compile Include="Log\Log_OperationBll.cs" />
+    <Compile Include="Order\Tb_Order_PayDetailBLL.cs" />
+    <Compile Include="Order\Tb_Ticket_OrderBLL.cs" />
+    <Compile Include="Order\Tb_Ticket_PassengerBLL.cs" />
+    <Compile Include="Order\Tb_Ticket_SkyWayBLL.cs" />
+    <Compile Include="Pay\AliPay.cs" />
+    <Compile Include="Pay\batch_trans\AlipayConfig.cs" />
+    <Compile Include="Pay\batch_trans\AlipayCore.cs" />
+    <Compile Include="Pay\batch_trans\AlipayNotify.cs" />
+    <Compile Include="Pay\batch_trans\AlipaySubmit.cs" />
+    <Compile Include="Pay\batch_trans\MD5.cs" />
+    <Compile Include="Pay\Bill.cs" />
+    <Compile Include="Pay\ChinaPnr.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pay\Data.cs" />
+    <Compile Include="Pay\OperOnline.cs" />
+    <Compile Include="Pay\TenPay.cs" />
+    <Compile Include="Pay\VirtualPay.cs" />
+    <Compile Include="Pay\_99Bill.cs" />
+    <Compile Include="PID\SendInsManage.cs" />
+    <Compile Include="Policy\AirB2BPolicy.cs" />
+    <Compile Include="Policy\LocalPolicy.cs" />
+    <Compile Include="Policy\PolicyMatch.cs" />
+    <Compile Include="Policy\SpecialCabinPriceInfoBLL.cs" />
+    <Compile Include="Policy\Tb_Ticket_PolicyBLL.cs" />
+    <Compile Include="Policy\UGroupPolicy.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="PTInterface\AllInterface.cs" />
+    <Compile Include="PTInterface\PbInterfaceNotify.cs" />
+    <Compile Include="PTInterface\PTBy517.cs" />
+    <Compile Include="PTInterface\PTBy51book.cs" />
+    <Compile Include="PTInterface\PTBy8000yi.cs" />
+    <Compile Include="PTInterface\PTBybaituo.cs" />
+    <Compile Include="PTInterface\PTByJinri.cs" />
+    <Compile Include="PTInterface\PTByPiaomeng.cs" />
+    <Compile Include="PTInterface\PTByYeeXing.cs" />
+    <Compile Include="Service References\w_517WebService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\w_51bookService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\w_8000YService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\w_BTWebService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\w_IBEWebservice\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\w_PMWebService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\w_TodayService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\w_YeeXingService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="SessionContent.cs" />
+    <Compile Include="SQLEXBLL\SQLEXBLL_Base.cs" />
+    <Compile Include="User\User_CompanyBLL.cs" />
+    <Compile Include="User\User_EmployeesBLL.cs" />
+    <Compile Include="User\User_PermissionsBLL.cs" />
+    <Compile Include="Utils\ChinaPnrAsyncClient.cs" />
+    <Compile Include="Utils\ChinaPnrClient.cs" />
+    <Compile Include="Utils\EntityClassUtils.cs" />
+    <Compile Include="Utils\StringUtils.cs" />
+    <Compile Include="Web References\w_Airb2bPolicy\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Dal\Dal.csproj">
+      <Project>{EBF95D78-2562-49E3-8E26-87C8EE911CBF}</Project>
+      <Name>Dal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{2F0A008B-F5B9-4149-AE2D-5949F5E662AD}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PnrAnalysis\PnrAnalysis.csproj">
+      <Project>{8B4C3980-A7B8-4A81-8DF2-CFFA576FE414}</Project>
+      <Name>PnrAnalysis</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PnrAnalysis\PnrAnalysis.csproj">
+      <Project>{8B4C3980-A7B8-4A81-8DF2-CFFA576FE414}</Project>
+      <Name>PnrAnalysis</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WebCommon\WebCommon.csproj">
+      <Project>{AC38A4B4-BC4D-4C34-95A9-79120A124B96}</Project>
+      <Name>WebCommon</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\w_517WebService\517WebService1.wsdl" />
+    <None Include="Service References\w_51bookService\51bookService1.wsdl" />
+    <None Include="Service References\w_8000YService\W8000YService1.wsdl" />
+    <None Include="Service References\w_BTWebService\BaiTuoWeb1.wsdl" />
+    <None Include="Service References\w_IBEWebservice\WebService1.wsdl" />
+    <None Include="Service References\w_PMWebService\PMService1.wsdl" />
+    <None Include="Service References\w_TodayService\WTodayService1.wsdl" />
+    <None Include="System.Data.DataSet.datasource" />
+    <None Include="System.Xml.Linq.XElement.datasource" />
+    <None Include="Web References\w_Airb2bPolicy\B2BPolicyWebService.wsdl" />
+    <None Include="Web References\w_Airb2bPolicy\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\w_517WebService\" />
+    <WCFMetadataStorage Include="Service References\w_51bookService\" />
+    <WCFMetadataStorage Include="Service References\w_8000YService\" />
+    <WCFMetadataStorage Include="Service References\w_BTWebService\" />
+    <WCFMetadataStorage Include="Service References\w_IBEWebservice\" />
+    <WCFMetadataStorage Include="Service References\w_PMWebService\" />
+    <WCFMetadataStorage Include="Service References\w_TodayService\" />
+    <WCFMetadataStorage Include="Service References\w_YeeXingService\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\w_IBEWebservice\WebService1.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\w_IBEWebservice\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\w_IBEWebservice\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\w_IBEWebservice\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\w_BTWebService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\w_BTWebService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\w_BTWebService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\w_517WebService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\w_517WebService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\w_517WebService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\w_PMWebService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\w_PMWebService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\w_PMWebService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\w_51bookService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\w_51bookService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\w_51bookService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\w_8000YService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\w_8000YService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\w_8000YService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\w_TodayService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\w_TodayService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\w_TodayService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\Cache.dll" />
+    <Content Include="bin\Debug\Dal.dll" />
+    <Content Include="bin\Debug\DataBase.dll" />
+    <Content Include="bin\Debug\FirebirdSql.Data.FirebirdClient.dll" />
+    <Content Include="bin\Debug\ICSharpCode.SharpZipLib.dll" />
+    <Content Include="bin\Debug\log4net.dll" />
+    <Content Include="bin\Debug\Memcached.ClientLibrary.dll" />
+    <Content Include="bin\Debug\Model.dll" />
+    <Content Include="bin\Debug\MySql.Data.dll" />
+    <Content Include="bin\Debug\WebCommon.dll" />
+    <None Include="Web References\w_Airb2bPolicy\B2BPolicyWebService.disco" />
+    <None Include="Service References\w_517WebService\517WebService1.disco" />
+    <None Include="Service References\w_51bookService\51bookService1.disco" />
+    <None Include="Service References\w_8000YService\W8000YService1.disco" />
+    <None Include="Service References\w_BTWebService\BaiTuoWeb1.disco" />
+    <None Include="Service References\w_TodayService\WTodayService1.disco" />
+    <None Include="Service References\w_PMWebService\PMService1.disco" />
+    <None Include="Service References\w_YeeXingService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\w_YeeXingService\configuration.svcinfo" />
+    <None Include="Service References\w_YeeXingService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="CHINAPNRLib">
+      <Guid>{0B5B1A44-4590-4081-8D9D-570DA6B2F31C}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://210.14.138.26:997/B2BPolicyWebService.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\w_Airb2bPolicy\</RelPath>
+      <UpdateFromURL>http://210.14.138.26:997/B2BPolicyWebService.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Logic_w_Airb2bPolicy_B2BPolicyWebService</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,55 @@
+2012-12-21 14:41:14,828 [4] ERROR - “ddlZT”的 DataSourceID 必须是 IDataSource 类型的控件的 ID。未能找到 ID 为“ObjectDataSource3”的控件。
+System.Web.HttpException (0x80004005): “ddlZT”的 DataSourceID 必须是 IDataSource 类型的控件的 ID。未能找到 ID 为“ObjectDataSource3”的控件。
+   在 System.Web.UI.WebControls.DataBoundControl.GetDataSource()
+   在 System.Web.UI.WebControls.DataBoundControl.ConnectToDataSourceView()
+   在 System.Web.UI.WebControls.DataBoundControl.GetData()
+   在 System.Web.UI.WebControls.ListControl.OnDataBinding(EventArgs e)
+   在 System.Web.UI.WebControls.ListControl.PerformSelect()
+   在 System.Web.UI.WebControls.BaseDataBoundControl.DataBind()
+   在 User_FlyerEdit.BindZJType() 位置 f:\V3.0\v3.0(2012-12-20)\PiaoBaoWork\User\FlyerEdit.aspx.cs:行号 35
+   在 User_FlyerEdit.Page_Load(Object sender, EventArgs e) 位置 f:\V3.0\v3.0(2012-12-20)\PiaoBaoWork\User\FlyerEdit.aspx.cs:行号 16
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2012-12-21 15:04:09,453 [9] ERROR - “ddlZT”的 DataSourceID 必须是 IDataSource 类型的控件的 ID。未能找到 ID 为“ObjectDataSource3”的控件。
+System.Web.HttpException (0x80004005): “ddlZT”的 DataSourceID 必须是 IDataSource 类型的控件的 ID。未能找到 ID 为“ObjectDataSource3”的控件。
+   在 System.Web.UI.WebControls.DataBoundControl.GetDataSource()
+   在 System.Web.UI.WebControls.DataBoundControl.ConnectToDataSourceView()
+   在 System.Web.UI.WebControls.DataBoundControl.GetData()
+   在 System.Web.UI.WebControls.ListControl.OnDataBinding(EventArgs e)
+   在 System.Web.UI.WebControls.ListControl.PerformSelect()
+   在 System.Web.UI.WebControls.BaseDataBoundControl.DataBind()
+   在 User_FlyerList.BindZJType() 位置 f:\V3.0\v3.0(2012-12-20)\PiaoBaoWork\User\FlyerList.aspx.cs:行号 41
+   在 User_FlyerList.Page_Load(Object sender, EventArgs e) 位置 f:\V3.0\v3.0(2012-12-20)\PiaoBaoWork\User\FlyerList.aspx.cs:行号 17
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2012-12-21 15:21:56,734 [9] ERROR - DataBinding:“PbProject.Model.User_Flyer”不包含名为“BornTime”的属性。
+System.Web.HttpException (0x80004005): DataBinding:“PbProject.Model.User_Flyer”不包含名为“BornTime”的属性。
+   在 System.Web.UI.DataBinder.GetPropertyValue(Object container, String propName)
+   在 System.Web.UI.DataBinder.Eval(Object container, String[] expressionParts)
+   在 System.Web.UI.DataBinder.Eval(Object container, String expression)
+   在 System.Web.UI.TemplateControl.Eval(String expression)
+   在 ASP.user_flyerlist_aspx.__DataBind__control14(Object sender, EventArgs e) 位置 f:\V3.0\v3.0(2012-12-20)\PiaoBaoWork\User\FlyerList.aspx:行号 284
+   在 System.Web.UI.Control.OnDataBinding(EventArgs e)
+   在 System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   在 System.Web.UI.Control.DataBind()
+   在 System.Web.UI.Control.DataBindChildren()
+   在 System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   在 System.Web.UI.Control.DataBind()
+   在 System.Web.UI.WebControls.Repeater.CreateItem(Int32 itemIndex, ListItemType itemType, Boolean dataBind, Object dataItem)
+   在 System.Web.UI.WebControls.Repeater.CreateControlHierarchy(Boolean useDataSource)
+   在 System.Web.UI.WebControls.Repeater.OnDataBinding(EventArgs e)
+   在 System.Web.UI.WebControls.Repeater.DataBind()
+   在 User_FlyerList.BindFlyerInfo() 位置 f:\V3.0\v3.0(2012-12-20)\PiaoBaoWork\User\FlyerList.aspx.cs:行号 61
+   在 User_FlyerList.SelButton_Click(Object sender, EventArgs e) 位置 f:\V3.0\v3.0(2012-12-20)\PiaoBaoWork\User\FlyerList.aspx.cs:行号 122
+   在 System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   在 System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   在 System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   在 System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   在 System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)

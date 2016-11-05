@@ -1,0 +1,9 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="PbProject.Logic.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Logic_w_Airb2bPolicy_B2BPolicyWebService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://210.14.138.26:997/B2BPolicyWebService.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -1,0 +1,68 @@
+﻿em.error
+{
+    background: url(<%=WebResource("PbProject.WebCommon.Script.images.error.gif")%>) left center no-repeat;
+    margin-left:2px;
+	padding-left:20px;
+	color:#F00;
+    font-family:Verdana, Geneva, sans-serif;
+    font:12px/1.6 Tahoma,"宋体";
+}
+em.success
+{
+    background: url(<%=WebResource("PbProject.WebCommon.Script.images.success.gif")%>) left center no-repeat;
+    margin-left:2px;
+	padding-left:20px;
+	color:#999;
+    font-family:Verdana, Geneva, sans-serif;
+    font:12px/1.6 Tahoma,"宋体";
+}
+
+/*提示文字样式*/
+#HintMsg{
+	width:271px;
+	position:absolute;
+	display:none;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+	color:#666;
+}
+#HintMsg .HintTop{
+	height:9px;
+	background:url(<%=WebResource("PbProject.WebCommon.Script.images.hintbg1.gif")%>) no-repeat;
+	overflow:hidden;
+}
+#HintMsg .HintInfo{
+	padding:0 5px;
+	border-left:1px solid #000;
+	border-right:1px solid #000;
+	background:#FFFFE1;
+	line-height:1.5em;
+}
+#HintMsg .HintInfo b{
+	display:block;
+	margin-bottom:6px;
+	padding-left:15px;
+	background:url(<%=WebResource("PbProject.WebCommon.Script.images.hint.gif")%>) left center no-repeat;
+	height:13px;
+	line-height:16px;
+}
+#HintMsg .HintInfo b span{
+	display:block;
+	float:right;
+	text-indent:-9999px;
+	background:url(<%=WebResource("PbProject.WebCommon.Script.images.close.gif")%>) no-repeat;
+	width:12px;
+	height:12px;
+	cursor:pointer;
+}
+#HintMsg .HintFooter{
+	height:22px;
+	background:url(<%=WebResource("PbProject.WebCommon.Script.images.hintbg2.gif")%>) no-repeat;
+}
+/*设置提示样式*/
+
+.focus{
+	border:1px solid #FC0 !important;
+	background:url(<%=WebResource("PbProject.WebCommon.Script.images.focus_bg.jpg")%>) repeat-x !important;
+	color:#00F !important;
+}
